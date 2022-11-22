@@ -1,2 +1,6 @@
-@import './common';
-@import './example';
+@import './utils/main_utils';
+@import './shared/main_shared';
+@import './main_page/main_main';
+@import './restaurant_page/main_restaurant';
+@import './hotel_page/main_hotel';
+@import './room_page/main_room';
