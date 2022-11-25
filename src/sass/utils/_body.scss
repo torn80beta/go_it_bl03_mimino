@@ -1,16 +1,18 @@
 body {
-
+    font-family: 'Montserrat', sans-serif;
+    
     &.modal-open {
         overflow: hidden;
     }
 }
-
+/* 
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
+ */
+/* 
 .container {
     width: 100%;
 
@@ -27,6 +29,7 @@ img {
 
     }
 }
+ */
 
 .section {
 
