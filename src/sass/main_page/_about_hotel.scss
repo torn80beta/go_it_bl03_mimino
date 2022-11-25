@@ -5,7 +5,6 @@ section {
 .about-hotel {
     width: 414px;
     height: 1191px;
-    /* background-color: $background-light-color; */
     background-image: linear-gradient(to right,
         $background-light-color 138px,
         rgba(186, 186, 186, 0.4) 139px,
@@ -14,8 +13,7 @@ section {
         $background-light-color 273px,
         rgba(186, 186, 186, 0.4) 274px,
         rgba(186, 186, 186, 0.4) 274px,
-        $background-light-color 275px)
-        
+        $background-light-color 275px)     
 }
 
 .container {
