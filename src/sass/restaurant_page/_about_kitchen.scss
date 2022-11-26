@@ -1,0 +1,86 @@
+section {
+    margin: 0 auto;
+}
+
+.about-kitchen {
+    width: 414px;
+    height: 1191px;
+    background-image: linear-gradient(to right,
+            $background-light-color 138px,
+            rgba(186, 186, 186, 0.4) 139px,
+            $background-light-color 140px,
+            $background-light-color 273px,
+            rgba(186, 186, 186, 0.4) 274px,
+            $background-light-color 275px)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-bottom: 28px;
+}
+
+.about-kitchen__text-wrapper {
+    width: 242px;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+.about-kitchen__meat-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.times {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
+    line-height: calc(23/20);
+    color: #B4B4B4;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 127px;
+    height: 43px;
+    margin-bottom: 12px;
+    fill: #494848;
+}
+
+.about-kitchen__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+
+    &--brown {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: calc(15/12);
+        letter-spacing: 0.02em;
+        color: #C79002;
+    }
+}
+
+.about-kitchen__kitchen {
+    max-width: 244px;
+    max-height: 322px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    background-color: #939393;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.about-kitchen__meat {
+    max-width: 200px;
+    max-height: 278px;
+    margin-right: 20px;
+    margin-bottom: 32px;
+    background-color: #939393;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
