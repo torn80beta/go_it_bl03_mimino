@@ -1,5 +1,6 @@
 section {
     margin: 0 auto;
+    margin-top: 32px;
 }
 
 .about-kitchen {
@@ -11,7 +12,23 @@ section {
             $background-light-color 140px,
             $background-light-color 273px,
             rgba(186, 186, 186, 0.4) 274px,
-            $background-light-color 275px)
+            $background-light-color 275px);
+    
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        height: 1238px;
+        background-image: linear-gradient(to right,
+            $background-light-color 278px,
+            rgba(186, 186, 186, 0.4) 279px,
+            $background-light-color 280px,
+            $background-light-color 511px,
+            rgba(186, 186, 186, 0.4) 512px,
+            $background-light-color 513px,
+            $background-light-color 745px,
+            rgba(186, 186, 186, 0.4) 746px,
+            $background-light-color 747px);
+
+    }
 }
 
 .container {
@@ -22,18 +39,23 @@ section {
     padding-right: 15px;
     padding-top: 18px;
     padding-bottom: 28px;
+
+    @media screen and (min-width: 1024px) {
+        padding: 120px 47px 0px;
+
+    }
 }
 
 .about-kitchen__text-wrapper {
     width: 242px;
     margin-right: auto;
     margin-bottom: 28px;
-}
 
-.about-kitchen__meat-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
+    @media screen and (min-width: 1024px) {
+        width: 439px;
+        margin-bottom: 142px;
+    }
+
 }
 
 .times {
@@ -43,6 +65,12 @@ section {
     color: #B4B4B4;
     text-align: left;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: calc(37/32);
+        margin-bottom: 4px;
+    }
 }
 
 .logo {
@@ -50,6 +78,12 @@ section {
     height: 43px;
     margin-bottom: 12px;
     fill: #494848;
+
+    @media screen and (min-width: 1024px) {
+        width: 202px;
+        height: 69px;
+        margin-bottom: 24px;
+    }
 }
 
 .about-kitchen__text {
@@ -66,9 +100,20 @@ section {
         letter-spacing: 0.02em;
         color: #C79002;
     }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: calc(20/16);
+
+        &--brown {
+            font-size: 16px;
+            line-height: calc(20/16);
+        }
+    }
 }
 
 .about-kitchen__kitchen {
+    display: block;
     overflow: hidden;
     max-width: 244px;
     max-height: 322px;
@@ -77,17 +122,41 @@ section {
     background-color: #939393;
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: -32px;
+        right: 112px;
+        min-width: 400px;
+        min-height: 524px;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
 }
 
+.about-kitchen__meat-wrapper {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 262px;
+        width: 710px;
+    }
+}
 .about-kitchen__meat {
     overflow: hidden;
     min-width: 200px;
     height: 278px;
     margin-right: 20px;
-    margin-bottom: 32px;
     border-radius: 2px;
     background-color: #939393;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+        min-width: 350px;
+        min-height: 500px;
+        margin-right: 48px;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .slider-wrapper {
@@ -97,15 +166,30 @@ section {
     width: 330px;
     border-radius: 2px;
     overflow: hidden;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);   
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 948px;
+        left: 536px;
+        width: 428px;
+
+    }
 }
 
 .slick__item {
     display: flex;
+    min-width: 330px;
     padding-right: 24px;
     margin-left: -60px;
-    min-width: 330px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+        min-width: 194px;
+        padding-right: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .slick__box {
@@ -117,10 +201,18 @@ section {
 .slider-nav {
     position: absolute;
     display: flex;
-    bottom: -220px;
+    bottom: -284px;
     right: 0px;
     width: 98px;
     height: 32px;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: space-between;
+        bottom: 50px;
+        right: 55px;
+        width: 104px;
+        height: 17px
+    }
 }
 
 .slider-nav__arrow {
@@ -135,8 +227,6 @@ section {
 .my-slick-next,
 .my-slick-prev {
     position: absolute;
-    width: 53px;
-    height: 32px;
     background-color: transparent;
     color: transparent;
     border: none;
@@ -145,8 +235,18 @@ section {
 
 .my-slick-next {
     left: 42px;
+
+    @media screen and (min-width: 1024px) {
+        left: 70px;
+        bottom: -1px;
+    }
 }
 
 .my-slick-prev {
     left: -11px;
+
+    @media screen and (min-width: 1024px) {
+        left: 3px;
+        bottom: -1px;
+    }
 }
