@@ -15,6 +15,7 @@ section {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -68,19 +69,78 @@ section {
 }
 
 .about-kitchen__kitchen {
+    overflow: hidden;
     max-width: 244px;
     max-height: 322px;
     margin-bottom: 32px;
     margin-left: auto;
     background-color: #939393;
+    border-radius: 2px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 .about-kitchen__meat {
-    max-width: 200px;
-    max-height: 278px;
+    overflow: hidden;
+    min-width: 200px;
+    height: 278px;
     margin-right: 20px;
     margin-bottom: 32px;
+    border-radius: 2px;
     background-color: #939393;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slider-wrapper {
+    position: absolute;
+    top: 874px;
+    left: 82px;
+    width: 330px;
+    /* height: 245px; */
+    /* outline: 1px solid black; */
+    /* margin-left: auto; */
+    /* overflow: hidden; */
+}
+
+
+.variable-width {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+    /* overflow: hidden; */
+}
+
+
+.slick__item {
+    display: flex;
+
+    /* padding-right: 24px; */
+    /* min-width: 269px; */
+    /* min-height: 245px; */
+    /* margin-right: 0 24px; */
+}
+
+.slick__box {
+    /* display: block; */
+    /* max-width: 245px; */
+    /* height: 245px; */
+    margin-right: 24px;
+    border-radius: 2px;
+    overflow: hidden;
+    /* background-color: green; */
+    /* font-size: 58px; */
+    /* outline: 1px solid black; */
+}
+
+.my-slick-prev {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.my-slick-next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
