@@ -213,14 +213,12 @@ section {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     
     @media screen and (min-width: 1024px) {
-        position: absolute;
         top: 948px;
         left: 536px;
         width: 428px;
     }
 
     @media screen and (min-width: 1280px) {
-        position: absolute;
         top: 908px;
         left: 665px;
         width: 530px;
@@ -228,24 +226,21 @@ section {
 }
 
 .slick__item {
-    display: flex;
     min-width: 330px;
     padding-right: 24px;
     margin-left: -60px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: 1024px) {
-        min-width: 194px;
-        padding-right: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+        min-width: 428px;
+        padding-right: 40px;
+        margin-left: -194px;
     }
 
-    @media screen and (min-width: 1024px) {
-        min-width: 194px;
-        padding-right: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
+    @media screen and (min-width: 1280px) {
+        min-width: 530px;
+        padding-right: 40px;
+        margin-left: -245px;
     }
 }
 
@@ -268,15 +263,13 @@ section {
         bottom: 50px;
         right: 55px;
         width: 104px;
-        height: 17px
+        height: 17px;
     }
 
     @media screen and (min-width: 1280px) {
         justify-content: space-between;
         bottom: 40px;
         right: 83px;
-        width: 104px;
-        height: 17px
     }
 }
 
