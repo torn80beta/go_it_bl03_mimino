@@ -3,10 +3,10 @@
     height: 1191px;
     background-image: linear-gradient(to right,
             $background-light-color 138px,
-            rgba(186, 186, 186, 0.4) 139px,
+            $bg-gradient-color 139px,
             $background-light-color 140px,
             $background-light-color 273px,
-            rgba(186, 186, 186, 0.4) 274px,
+            $bg-gradient-color 274px,
             $background-light-color 275px);
 
     @media screen and (min-width: 1024px) {
@@ -14,13 +14,13 @@
         height: 1238px;
         background-image: linear-gradient(to right,
                 $background-light-color 278px,
-                rgba(186, 186, 186, 0.4) 279px,
+                $bg-gradient-color 279px,
                 $background-light-color 280px,
                 $background-light-color 511px,
-                rgba(186, 186, 186, 0.4) 512px,
+                $bg-gradient-color 512px,
                 $background-light-color 513px,
                 $background-light-color 745px,
-                rgba(186, 186, 186, 0.4) 746px,
+                $bg-gradient-color 746px,
                 $background-light-color 747px);
     }
 
@@ -29,13 +29,13 @@
         height: 1257px;
         background-image: linear-gradient(to right,
                 $background-light-color 338px,
-                rgba(186, 186, 186, 0.4) 339px,
+                $bg-gradient-color 339px,
                 $background-light-color 340px,
                 $background-light-color 639px,
-                rgba(186, 186, 186, 0.4) 640px,
+                $bg-gradient-color 640px,
                 $background-light-color 641px,
                 $background-light-color 941px,
-                rgba(186, 186, 186, 0.4) 942px,
+                $bg-gradient-color 942px,
                 $background-light-color 943px);
     }
 }
