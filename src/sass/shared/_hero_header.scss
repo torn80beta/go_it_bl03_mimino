@@ -337,7 +337,7 @@
   }
 }
 
-// hero backgrounds
+// Header and hero  backgrounds
 
 .hero-main-background {
   margin: 0 auto;
@@ -412,148 +412,148 @@
   }
 }
 
-// .hero-restaurant-background {
-//   margin: 0 auto;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+.hero-restaurant-background {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(0, 0, 0, 0.65),
-//       rgba(0, 0, 0, 0.65)
-//     ),
-//     url(./src/images/hero_backgrouds/hero-restaurant_414.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/hero_backgrounds/hero-restaurant_414.jpg);
 
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     & {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(0, 0, 0, 0.65),
-//           rgba(0, 0, 0, 0.65)
-//         ),
-//         url(./src/images/hero_backgrouds/hero-restaurant_414x2.jpg);
-//     }
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero_backgrounds/hero-restaurant_414x2.jpg);
+    }
+  }
 
-//   @media screen and (min-width: 415px) {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(0, 0, 0, 0.65),
-//         rgba(0, 0, 0, 0.65)
-//       ),
-//       url(./src/images/hero_backgrouds/hero-restaurant_1024.jpg);
+  @media screen and (min-width: 415px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_backgrounds/hero-restaurant_1024.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: linear-gradient(
-//             to right,
-//             rgba(0, 0, 0, 0.65),
-//             rgba(0, 0, 0, 0.65)
-//           ),
-//           url(./src/images/hero_backgrouds/hero-restaurant_1024x2.jpg);
-//       }
-//     }
-//   }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_backgrounds/hero-restaurant_1024x2.jpg);
+      }
+    }
+  }
 
-//   @media screen and (min-width: 1025px) {
-//     max-width: 1280px;
+  @media screen and (min-width: 1025px) {
+    max-width: 1280px;
 
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(0, 0, 0, 0.65),
-//         rgba(0, 0, 0, 0.65)
-//       ),
-//       url(./src/images/hero_backgrouds/hero-restaurant_1280.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_backgrounds/hero-restaurant_1280.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: linear-gradient(
-//             to right,
-//             rgba(0, 0, 0, 0.65),
-//             rgba(0, 0, 0, 0.65)
-//           ),
-//           url(./src/images/hero_backgrouds/hero-restaurant_1280x2.jpg);
-//       }
-//     }
-//   }
-// }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_backgrounds/hero-restaurant_1280x2.jpg);
+      }
+    }
+  }
+}
 
-// .hero-hotel-background {
-//   margin: 0 auto;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+.hero-hotel-background {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(0, 0, 0, 0.65),
-//       rgba(0, 0, 0, 0.65)
-//     ),
-//     url(../images/hero-hotel_414.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/hero_backgrounds/hero-hotel_414.jpg);
 
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     & {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(0, 0, 0, 0.65),
-//           rgba(0, 0, 0, 0.65)
-//         ),
-//         url(../images/hero-hotel_414x2.jpg);
-//     }
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero_backgrounds/hero-hotel_414x2.jpg);
+    }
+  }
 
-//   @media screen and (min-width: 415px) {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(0, 0, 0, 0.65),
-//         rgba(0, 0, 0, 0.65)
-//       ),
-//       url(../images/hero-hotel_1024.jpg);
+  @media screen and (min-width: 415px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_backgrounds/hero-hotel_1024.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: linear-gradient(
-//             to right,
-//             rgba(0, 0, 0, 0.65),
-//             rgba(0, 0, 0, 0.65)
-//           ),
-//           url(../images/hero-hotel_1024x2.jpg);
-//       }
-//     }
-//   }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_backgrounds/hero-hotel_1024x2.jpg);
+      }
+    }
+  }
 
-//   @media screen and (min-width: 1025px) {
-//     max-width: 1280px;
+  @media screen and (min-width: 1025px) {
+    max-width: 1280px;
 
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(0, 0, 0, 0.65),
-//         rgba(0, 0, 0, 0.65)
-//       ),
-//       url(../images/hero-hotel_1280.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(../images/hero_backgrounds/hero-hotel_1280.jpg);
 
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: linear-gradient(
-//             to right,
-//             rgba(0, 0, 0, 0.65),
-//             rgba(0, 0, 0, 0.65)
-//           ),
-//           url(../images/hero-hotel_1280x2.jpg);
-//       }
-//     }
-//   }
-// }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero_backgrounds/hero-hotel_1280x2.jpg);
+      }
+    }
+  }
+}
