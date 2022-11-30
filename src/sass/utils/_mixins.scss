@@ -1,0 +1,12 @@
+@mixin respond-to($max-min, $breakpoint) {
+  @if map-has-key($breakpoints-list, $breakpoint) and $max-min == 'min' {
+    @media screen and (min-width: map-get($breakpoints-list, $breakpoint)) {
+      @content;
+    }
+  }
+  @if map-has-key($breakpoints-list, $breakpoint) and $max-min == 'max' {
+    @media screen and (max-width: calc(map-get($breakpoints-list, $breakpoint) - 1px)) {
+      @content;
+    }
+  }
+}
