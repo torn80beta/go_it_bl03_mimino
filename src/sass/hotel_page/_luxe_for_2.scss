@@ -1,0 +1,264 @@
+.list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+.rooms {
+   padding-bottom: 32px;
+   padding-top: 32px;
+   background-color: $background-light-color;
+   overflow: hidden;
+
+   @include tablet {
+      position: relative;
+      overflow: visible;
+      padding-top: 62px;
+      padding-bottom: 112px;
+      background-image: repeating-linear-gradient(to right,
+            $background-light-color,
+            $background-light-color 25%,
+            $background-gradient 0.1%,
+            $background-gradient 25.1%);
+   }
+
+   @include desktop {
+      padding-top: 72px;
+   }
+}
+.rooms__container {
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+
+   @include mobile {
+      width: 414px;
+   }
+
+   @include tablet {
+      width: 1024px;
+      padding-left: 47px;
+      padding-right: 47px;
+   }
+
+   @include desktop {
+      width: 1280px;
+      padding-left: 85px;
+      padding-right: 85px;
+
+   }
+}
+
+.rooms__title {
+   margin-bottom: 12px;
+   color: $main-dark-color;
+   font-family: 'Times New Roman', serif;
+   font-size: 24px;
+   line-height: 1.167;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+
+   @include tablet {
+      font-size: 30px;
+      line-height: 1.133;
+      margin-bottom: 16px;
+   }
+
+   @include desktop {
+      font-size: 36px;
+      line-height: 1.139;
+      margin-bottom: 24px;
+   }
+
+   &--lowercase {
+      text-transform: lowercase;
+   }
+}
+
+.rooms__text {
+   margin-bottom: 32px;
+   max-width: 258px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.25;
+   letter-spacing: 0.02em;
+   color: $text-rest-homepage-color;
+
+   @include tablet {
+      font-size: 16px;
+      margin-bottom: 176px;
+      max-width: 439px;
+   }
+
+   @include desktop {
+      margin-bottom: 188px;
+      max-width: 400px;
+   }
+}
+
+.rooms__logo {
+   display: block;
+   margin-bottom: 32px;
+   font-family: 'Film P3';
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 1.075;
+   letter-spacing: 0.3em;
+   color: $logo-rest-hotel-color;
+   text-decoration: none;
+   text-transform: uppercase;
+
+   @include tablet {
+      font-size: 64px;
+      line-height: 1.078;
+      margin-bottom: 62px;
+   }
+
+   @include desktop {
+      margin-bottom: 72px;
+   }
+}
+
+.rooms__slogan {
+   margin-bottom: 8px;
+   font-family: 'Times New Roman', serif;
+   font-size: 20px;
+   line-height: 1.15;
+   color: $subtitles-color;
+
+   @include tablet {
+      margin-bottom: 4px;
+      font-size: 32px;
+      line-height: 1.156;
+   }
+}
+
+.rooms__slider {
+   display: flex;
+      gap: 32px;
+   
+      @include tablet-down {
+         margin-bottom: 20px;
+      }
+   
+      @include tablet {
+         position: absolute;
+         right: 502px;
+         top: 226px;
+      }
+}
+
+.rooms__picture {
+   display: block;
+   width: 244px;
+   margin-left: auto;
+   margin-bottom: 32px;
+   background: $background-img-color;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   border-radius: 2px;
+
+   @include tablet {
+      position: absolute;
+      top: -32px;
+      right: 112px;
+      width: 400px;
+      margin-bottom: 0;
+   }
+
+   @include desktop {
+      width: 460px;
+      right: 180px;
+   }
+}
+
+.rooms-gallery {
+      @include tablet-down {
+            margin-bottom: 20px;
+         }
+}
+
+.rooms-gallery__list {
+   position: relative;
+   width: auto;
+   right: 115px;
+   display: flex;
+   gap: 16px;
+
+   @include tablet {
+      position: static;
+      right: 0;
+      gap: 40px;
+   }
+
+}
+
+.rooms-gallery__img {
+   width: 194px;
+   background: $background-img-color;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   border-radius: 2px;
+
+   @include desktop {
+      width: 254px;
+   }
+
+}
+
+// .rooms-gallery__box {
+//    @include tablet {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-end;
+//    }
+// }
+
+
+.rooms__item:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.rooms__list {
+   text-align: center;
+}
+
+.rooms__box {
+   @include tablet {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+.rooms__button--dark {
+   background-color: $main-dark-color;
+   color: $accent-color;
+   width: 236px;
+   padding: 14px 0;
+   border: 2px solid $logo-header-room-color;
+   border-radius: 25px;
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.25;
+   letter-spacing: 0.02em;
+   cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      background-color: $main-light-color;
+      border-color: $accent-color;
+   }
+
+}
+
+.rooms__button-arrow {
+   display: flex;
+   background-color: transparent;
+   border: none;
+   align-items: center;
+   padding: 0;
+   fill: $main-dark-color;
+   cursor: pointer;
+}
