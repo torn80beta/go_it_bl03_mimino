@@ -1,0 +1,138 @@
+.home-contacts {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 15px 32px;
+    background-color:$background-light-color;
+    &__container {
+        margin: 0 auto;
+        @include mobile {
+            width: 384px;
+        }
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            width: 930px;
+        }
+        @include desktop {
+            width: 1180px;
+        }
+    }
+
+  &_title{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $text-rest-homepage-color;
+    margin-bottom: 16px;
+  }
+  &_list-restaurant {
+        display: flex;
+        gap: 22px;
+        margin-bottom: 16px;
+    } 
+  &_list-hotel{
+    display: flex;
+    gap: 54px;
+    }
+
+  &__text{
+    font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $second-accent-color;
+    }
+  
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: $main-light-color;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    padding: 8px 8px 7px;
+    
+  }
+
+  &__link{
+    text-decoration: none;
+    display: flex;
+    
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(17px / 14px);
+    letter-spacing: 0.02em;
+    color: #494848;
+    // background-color: $main-light-color;
+    // border: 1px solid rgba(243, 198, 83, 0.7);
+  }
+  
+// location
+  &__location{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 33px 7px 10px;
+    max-width: 260px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    margin-left: 137px;
+    margin-top: 16px;
+    margin-bottom: 34px;
+    background-color: $main-light-color;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20px / 16px);
+    letter-spacing: 0.01em;
+    color: #494848;
+  }
+
+  &__icon{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        fill: rgba(199, 144, 2, 1);
+  }
+
+//   Iframe
+  &__frame{
+    width: 100%;
+    height: 220px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    @include tablet {
+            width: 535px;
+            height: 412px;
+        }
+    @include desktop {
+            width: 634px;
+        }
+  }
+}
+
+.logo--darck{
+    font-size: 40px;
+    color: $logo-rest-hotel-color;
+    margin-bottom: 12px;
+}
+.item--reset {
+    border: none;
+    background-color: none;
+}
+// .link--bleft {
+//     border-left: none;
+
+// }
+
+// .link--bright {
+//     border-right: none;
+// }
+// .item--border{
+//     border: 1px solid rgba(243, 198, 83, 0.7);
+// }
