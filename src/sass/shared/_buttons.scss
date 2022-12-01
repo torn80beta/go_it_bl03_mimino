@@ -1,0 +1,77 @@
+@mixin button($bgnd-color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+    background-color: $bgnd-color;
+    border: 2px solid $main-light-color;
+    border-radius: 25px;
+    color: $accent-color;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    padding: 14px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $main-light-color;
+        border: 2px solid $accent-color;  
+    } 
+}
+
+.header-button {
+ @include button($buttons-light-color);
+}
+
+.page-button {
+    @include button($main-dark-color);
+}
+
+@mixin button-long($BorRad, $width, $fontSize) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: 64px;
+    background-color: $main-dark-color;
+    border: 1px solid $accent-color;
+    border-radius: $BorRad;
+    color: $main-light-color;
+    font-family: inherit;
+    font-size: $fontSize;
+    font-weight: 500;
+    line-height: 1.208;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 18px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $main-dark-color;  
+    }
+}
+
+
+.room-button {
+   @include button-long(25px, 434px, 24px);
+}
+
+.modal-button {
+    @include button-long(0px, 592px, 24px);
+}
+
+.mobile-room-button {
+    @include button-long(25px, 384px, 20px);
+}
+
+.modal-mobile-button {
+    @include button-long(0px, 384px, 20px);
+}
+
+
