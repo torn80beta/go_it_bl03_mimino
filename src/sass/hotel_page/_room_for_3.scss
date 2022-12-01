@@ -1,0 +1,79 @@
+.triple-room {
+  background-color: $logo-header-hotel-color;
+}
+.triple-room__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mobile {
+    width: 414px;
+  }
+
+  @include tablet {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @include desktop {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+.triple-room__subtitle {
+  text-align: end;
+  width: 242px;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: $subtitles-color;
+}
+.triple-room__logo {
+  display: block;
+  text-align: end;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: $logo-rest-hotel-color;
+  text-transform: uppercase;
+}
+.triple-room__title {
+  text-align: end;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: $main-dark-color;
+  text-transform: uppercase;
+}
+.triple-room__text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: $text-rest-homepage-color;
+}
+.triple-room__img {
+  background: $background-img-color;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.gallery-swiper__img {
+  width: 194px;
+  background: $background-img-color;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include desktop {
+    width: 254px;
+  }
+}
