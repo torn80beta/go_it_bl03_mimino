@@ -3,6 +3,9 @@
     margin: 0 auto;
     padding: 36px 15px 32px;
     background-color:$background-light-color;
+@include tablet {
+        padding: 56px 47px 40px;
+    }
     &__container {
         margin: 0 auto;
         @include mobile {
@@ -10,14 +13,20 @@
         }
         @include tablet {
             display: flex;
-            justify-content: space-between;
+           justify-content: space-between;
+           align-items: center;
             width: 930px;
         }
         @include desktop {
             width: 1180px;
         }
     }
-
+    &__box{
+       width: 100%;
+    @include tablet {
+        width:294px;
+    }
+    }
   &_title{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -31,59 +40,93 @@
         display: flex;
         gap: 22px;
         margin-bottom: 16px;
-    } 
-  &_list-hotel{
-    display: flex;
-    gap: 54px;
+        flex-direction: column;
+    @include tablet {
+        margin-bottom: 0;
     }
-
-  &__text{
+    } 
+  &__text-hotel,&__text-restaurant{
     font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         color: $second-accent-color;
+        @include tablet {
+            margin-bottom: 8px;
+        }
     }
-  
+  &__text-restaurant{
+    margin-right: 22px;
+    @include tablet {
+        margin-top: 52px;
+        margin-right: 0;
+    }
+  }
+  &__text-hotel{
+    margin-right: 54px;
+    @include tablet {
+     margin-right: 0;   
+    }
+  }
   &__item{
     display: flex;
     align-items: center;
-    gap: 12px;
-    background-color: $main-light-color;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    padding: 8px 8px 7px;
-    
+    @include tablet{
+        flex-direction: column;
+        align-items: flex-start;
+    }
   }
-
+    &__border {
+        display: flex;
+        align-items: center;
+        width: 260px;
+        flex-wrap: wrap;
+        gap: 11px;
+        background-color: $main-light-color;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        padding: 9px 7px 7px 8px;
+}
   &__link{
     text-decoration: none;
     display: flex;
-    
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: calc(17px / 14px);
     letter-spacing: 0.02em;
     color: #494848;
-    // background-color: $main-light-color;
-    // border: 1px solid rgba(243, 198, 83, 0.7);
+    background-color: $main-light-color;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    padding: 9px 8px 7px;
   }
   
 // location
+  &__address{
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    @include tablet {
+        justify-content: flex-start;
+        margin-top: 48px;
+        margin-bottom: 0;
+        }
+    }
   &__location{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8px 33px 7px 10px;
-    max-width: 260px;
+    padding: 8px 32px 7px 10px;
+    width: 260px;
+    margin-right: 2px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
-    margin-left: 137px;
-    margin-top: 16px;
-    margin-bottom: 34px;
     background-color: $main-light-color;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -91,6 +134,11 @@
     line-height: calc(20px / 16px);
     letter-spacing: 0.01em;
     color: #494848;
+   @include tablet{
+        width: 285px;
+        padding: 9px 8px 7px 10px;
+        margin-right: 0;
+    }
   }
 
   &__icon{
@@ -118,21 +166,17 @@
 
 .logo--darck{
     font-size: 40px;
+    line-height: 1.075;
     color: $logo-rest-hotel-color;
     margin-bottom: 12px;
+    @include tablet {
+        font-size: 64px;
+        line-height: 1.078;
+    }
 }
-.item--reset {
-    border: none;
-    background-color: none;
+.link--none {
+    border:none;
+    padding:0;
 }
-// .link--bleft {
-//     border-left: none;
 
-// }
 
-// .link--bright {
-//     border-right: none;
-// }
-// .item--border{
-//     border: 1px solid rgba(243, 198, 83, 0.7);
-// }
