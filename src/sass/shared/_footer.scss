@@ -1,7 +1,28 @@
+.footer-container  { 
+    margin: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+ @media screen and (max-width: 414px) {
+        width: 320px;
+}
+ @media screen and (min-width: 414px) {
+        width: 414px;
+}
+
+@media screen and (min-width: 1024px) {
+    width: 1024px;
+}
+
+@media screen and (min-width: 1280px) {
+    width: 1280px;
+}
+}
+
+
 .footer {
     display: flex;
-    margin: auto;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 240px;
@@ -11,7 +32,13 @@
             $bg-gradient-footer-color 274px,
             $footer-background-color 275px);
 
-   
+            @media screen and (max-width: 414px) {
+            background-image: linear-gradient(to right,
+            $footer-background-color 273px,
+            // $bg-gradient-footer-color 274px,
+            $footer-background-color 275px);
+            }
+            
 
     @media screen and (min-width: 1024px) {
     width: 100%;
@@ -23,7 +50,6 @@
                 $footer-background-color 745px,
                 $bg-gradient-footer-color 746px,
                 $footer-background-color 747px);
-                justify-content: flex-start;
     }
 
     @media screen and (min-width: 1280px) {
@@ -41,6 +67,7 @@
 
 
 .footer__logo {
+    display: block;
     font-family: 'Film P3', sans-serif;
     color: $accent-color;
     font-size: 40px;
@@ -49,10 +76,19 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     margin-left: 59px;
-    margin-right: 85px;
+    margin-right: 70px;
+    @media screen and (max-width: 414px) {
+
+        margin-right: 40px;
+        margin-left: 10px;
+      
+        
+    }
+
+
     @media screen and (min-width: 1024px) {
 
-        margin-right: 163px;
+        margin-right: 148px;
         margin-left: 154px;
         font-size: 64px;
         width: 202px;
@@ -62,7 +98,7 @@
 
     @media screen and (min-width: 1280px) {
 
-        margin-right: 216px;
+        margin-right: 201px;
         margin-left: 231px;
     
     }
@@ -73,7 +109,6 @@
     display: flex;
     flex-direction: column;
     color: $accent-color;
-    margin-right: 40px;
     @media screen and (min-width: 1024px) {
         margin-right: 137px;
         
