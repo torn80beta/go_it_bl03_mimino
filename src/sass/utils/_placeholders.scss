@@ -3,14 +3,15 @@
     to right,
     $logo-header-room-color,
     $logo-header-room-color 140px,
-    $bg-gradient-colo 140px,
-    $bg-gradient-colo 141px,
+    $bg-gradient-color 140px,
+    $bg-gradient-color 141px,
     $logo-header-room-color 141px,
     $logo-header-room-color 275px,
-    $bg-gradient-colo 275px,
-    $bg-gradient-colo 276px,
+    $bg-gradient-color 275px,
+    $bg-gradient-color 276px,
     $logo-header-room-color 276px
   );
+
   @include respond-to('min', 'tablet') {
     background-image: repeating-linear-gradient(
       to right,

@@ -1,4 +1,3 @@
-
 @mixin respond-to($max-min, $breakpoint) {
   @if map-has-key($breakpoints-list, $breakpoint) and $max-min == 'min' {
     @media screen and (min-width: map-get($breakpoints-list, $breakpoint)) {
@@ -10,6 +9,7 @@
       @content;
     }
   }
+}
 
 @mixin tablet-down {
    @media screen and (max-width: 1023px) {
