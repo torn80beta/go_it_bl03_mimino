@@ -275,7 +275,8 @@ img {
 }
 @media screen and (min-width: 1280px) {
   .amenities__link {
-    margin-right: 112px;
+    margin-right: 114px;
+    margin-left: 563px;
   }
 }
 .amenities__link:hover, .amenities__link:focus {
