@@ -11,6 +11,13 @@
   @include tablet() {
     padding-top: 66px;
     padding-bottom: 112px;
+    background-image: repeating-linear-gradient(
+      to right,
+      $logo-header-hotel-color,
+      $logo-header-hotel-color 25%,
+      $logo-header-hotel-color 0.1%,
+      $logo-header-hotel-color 25.1%
+    );
   }
 }
 .triple-room__container {
@@ -88,6 +95,7 @@
     font-size: 30px;
     line-height: calc(34 / 30);
     margin-bottom: 16px;
+    padding-right: 43px;
   }
 }
 .triple-room__text {
@@ -108,7 +116,7 @@
     line-height: calc(20 / 16);
     margin-bottom: 169px;
     width: 420px;
-    margin-left: calc(100% - 350px);
+    margin-left: calc(100% - 392px);
     padding-right: 20px;
   }
 }
