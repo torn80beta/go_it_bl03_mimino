@@ -1,33 +1,38 @@
-$accent-color: #F3C653;
-$second-accent-color: #C79002;
+$accent-color: #f3c653;
+$second-accent-color: #c79002;
 $bg-gradient-color: rgba(186, 186, 186, 0.4);
 $bg-gradient-footer-color: rgba(122, 122, 122, 0.4);
 $icons-footer-color: rgba(243, 198, 83, 0.7);
 // titles, dark buttons and menu color
 $main-dark-color: #000000;
-$main-light-color: #FFFFFF;
+$main-light-color: #ffffff;
 // use for tablet
-$logo-header-room-color: #FFFDEE;
-$logo-header-hotel-color: #F0ECD6;
+$logo-header-room-color: #fffdee;
+$logo-header-hotel-color: #f0ecd6;
 // use for mobile
-$logo-header-rest-color: #FDFBEC;
+$logo-header-rest-color: #fdfbec;
 // use in placeholders on homepage
 $logo-homepage-color: #828282;
 $logo-rest-hotel-color: #494848;
-$text-hotel-color: #7A7A7A;
-$text-rest-homepage-color: #5F5F5F;
-$subtitles-color: #B4B4B4;
-$address-header-color: #E5E5E5;
+$text-hotel-color: #7a7a7a;
+$text-rest-homepage-color: #5f5f5f;
+$subtitles-color: #b4b4b4;
+$address-header-color: #e5e5e5;
 $net-icon-color: rgba(243, 198, 83, 0.7);
 $buttons-light-color: rgba(0, 0, 0, 0.4);
 // use on dark background
-$text-second-homepage-color: #BABABA;
-$background-light-color: #FFFDEE;
-$background-dark-color: #F0ECD6;
-$footer-background-color: #0E0C07;
-$background-img-color: #DADADA;
+$text-second-homepage-color: #bababa;
+$background-light-color: #fffdee;
+$background-dark-color: #f0ecd6;
+$footer-background-color: #0e0c07;
+$background-img-color: #dadada;
 // use for gradient
 $background-gradient: rgba(186, 186, 186, 0.4);
 $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 // modalka placeholder
 $modal-placeholder: #808080;
+$breakpoints-list: (
+  'phone': 414px,
+  'tablet': 1024px,
+  'desktop': 1280px,
+) !default;
