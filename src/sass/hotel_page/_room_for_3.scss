@@ -1,8 +1,17 @@
 .triple-room {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: $logo-header-hotel-color;
-  overflow: hidden;
+
+  @include tablet-down() {
+    overflow: hidden;
+  }
+
+  @include tablet() {
+    padding-top: 66px;
+    padding-bottom: 112px;
+  }
 }
 .triple-room__container {
   margin-left: auto;
@@ -34,6 +43,12 @@
   font-size: 20px;
   line-height: calc(23 / 20);
   color: $subtitles-color;
+
+  @include tablet() {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    margin-bottom: 4px;
+  }
 }
 .triple-room__logo {
   display: block;
@@ -46,14 +61,20 @@
   letter-spacing: 0.3em;
   color: $logo-rest-hotel-color;
   text-transform: uppercase;
-}
-.text-box {
-display: flex;
-flex-direction: column;
 
+  @include tablet() {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 62px;
+  }
 }
+// .text-box {
+// display: flex;
+// flex-direction: column;
+
+// }
 .triple-room__title {
-    text-align: end;
+  text-align: end;
   margin-bottom: 12px;
   font-family: 'Times New Roman';
   font-weight: 700;
@@ -62,9 +83,16 @@ flex-direction: column;
   letter-spacing: 0.05em;
   color: $main-dark-color;
   text-transform: uppercase;
+
+  @include tablet() {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    margin-bottom: 16px;
+  }
 }
 .triple-room__text {
   //   margin-left: 98px;
+  margin-left: calc(100% - 280px);
   margin-bottom: 32px;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -73,12 +101,28 @@ flex-direction: column;
   letter-spacing: 0.02em;
   width: 242px;
   color: $text-rest-homepage-color;
+
+  @include tablet() {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 169px;
+    width: 420px;
+    margin-left: calc(100% - 350px);
+    padding-right: 20px;
+  }
 }
 .triple-room__img {
   margin-bottom: 32px;
   background: $background-img-color;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+
+  @include tablet() {
+    position: absolute;
+    top: -32px;
+    left: 112px;
+  }
 }
 .gallery-swiper {
   position: relative;
@@ -86,6 +130,12 @@ flex-direction: column;
   display: flex;
   gap: 16px;
   margin-bottom: 27px;
+
+  @include tablet() {
+    left: 0;
+    gap: 40px;
+    margin-bottom: 0;
+  }
 }
 .gallery-swiper__img {
   width: 194px;
@@ -97,20 +147,34 @@ flex-direction: column;
     width: 254px;
   }
 }
-.triple-room__slider{
+.triple-room__box {
+  @include tablet() {
     display: flex;
-    justify-content: flex-end;
-    gap: 33px;
-    margin-bottom: 27px;
-}
-.triple-room__btn{
-    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    fill: $main-dark-color;
-    cursor: pointer;
+    position: relative;
+  }
+}
+.triple-room__slider {
+  display: flex;
+  justify-content: flex-end;
+  gap: 33px;
+  margin-bottom: 27px;
+  @include tablet() {
+    position: absolute;
+    top: 226px;
+    left: 502px;
+  }
+}
+.triple-room__btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: $main-dark-color;
+  cursor: pointer;
 }
 .btn-list__btn {
   display: flex;
