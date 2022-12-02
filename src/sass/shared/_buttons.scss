@@ -18,8 +18,8 @@
 
     &:hover,
     &:focus {
-        background-color: $main-light-color;
-        border: 2px solid $accent-color;  
+        background-color: $main-light-color; 
+        border: 2px solid $main-light-color; 
     } 
 }
 
@@ -29,8 +29,11 @@
 
 .page-button {
     @include button($main-dark-color);
+    &:hover,
+    &:focus {
+        border: 2px solid $accent-color;  
+    } 
 }
-
 @mixin button-long($BorRad, $width, $fontSize) {
     display: flex;
     justify-content: center;
