@@ -1,3 +1,51 @@
+.section {
+  width: 100%;
+  padding: 32px 0;
+  background-color: $background-light-color;
+  @media screen and (min-width: 1024px) {
+    padding: 58px 0 40px 0;
+    background-image: linear-gradient(
+      to right,
+      $background-light-color 745px,
+      $bg-gradient-color 746px,
+      $background-light-color 747px
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 58px 0 60px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+      to right,
+      $background-light-color 338px,
+      $bg-gradient-color 339px,
+      $background-light-color 340px,
+      $background-light-color 639px,
+      $bg-gradient-color 640px,
+      $background-light-color 641px,
+      $background-light-color 941px,
+      $bg-gradient-color 942px,
+      $background-light-color 943px
+    );
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 414px) {
+    max-width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}
 .menu {
   width: 100%;
   max-width: 384px;
@@ -17,12 +65,15 @@
       order: 4;
     }
   }
+  @media screen and (min-width: 1280px) {
+    max-width: 485px;
+  }
 
   &__title {
     font-family: 'Times New Roman';
     text-transform: uppercase;
     font-size: 32px;
-    line-height: 37px;
+    line-height: 1.156;
     margin-bottom: 32px;
     @media screen and (min-width: 1024px) {
       margin-bottom: 40px;
@@ -33,7 +84,7 @@
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     margin-bottom: 16px;
     @media screen and (min-width: 1024px) {
       margin-bottom: 20px;
@@ -49,11 +100,14 @@
       margin-bottom: 60px;
       row-gap: 20px;
     }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
   }
   &__button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     color: $accent-color;
     background-color: $main-dark-color;
@@ -65,12 +119,16 @@
 .dish {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
   &:not(:last-child) {
     padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
   &__container {
     &:last-child {
@@ -81,7 +139,7 @@
   &__weight {
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
@@ -89,7 +147,7 @@
   &__price {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     padding: 0;
     max-width: 27px;
@@ -97,45 +155,34 @@
     @media screen and (min-width: 370px) {
       max-width: none;
     }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
   }
   &__description {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     display: block;
     max-width: 210px;
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  @media screen and (min-width: 414px) {
-    width: 414px;
-  }
-  @media screen and (min-width: 1024px) {
-    width: 1024px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
-.section {
-  width: 100%;
-  padding: 32px 0;
-}
 .snack {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
   &:not(:last-child) {
     padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
   &__container {
     &:last-child {
@@ -145,7 +192,7 @@
   &__description {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     display: block;
     max-width: 210px;
@@ -153,7 +200,7 @@
   &__weight {
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
@@ -161,25 +208,33 @@
   &__price {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     padding: 0;
     max-width: 27px;
     text-align: right;
     @media screen and (min-width: 370px) {
       max-width: none;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
     }
   }
 }
 .salads {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
   &:not(:last-child) {
     padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
   &__container {
     &:last-child {
@@ -189,7 +244,7 @@
   &__weight {
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
@@ -197,7 +252,7 @@
   &__price {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     padding: 0;
     max-width: 27px;
@@ -205,11 +260,15 @@
     @media screen and (min-width: 370px) {
       max-width: none;
     }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
   }
   &__description {
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     display: block;
     max-width: 225px;
@@ -221,12 +280,15 @@
 .desserts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   min-width: 197px;
   word-wrap: break-word;
   padding: 0 0 8px 0;
-
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
   &__container {
     &:last-child {
       margin-bottom: 16px;
@@ -237,7 +299,7 @@
   &__weight {
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
@@ -245,13 +307,17 @@
   &__price {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     padding: 0;
     max-width: 27px;
     text-align: right;
     @media screen and (min-width: 370px) {
       max-width: none;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
     }
   }
 }
@@ -261,12 +327,16 @@
 .drinks {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
   .drinks__container &:not(:last-child) {
     padding: 0 0 8px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
   }
   &__container {
     &:last-child {
@@ -276,7 +346,7 @@
   &__weight {
     font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
@@ -284,13 +354,17 @@
   &__price {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.214;
     letter-spacing: 0.02em;
     padding: 0;
     max-width: 27px;
     text-align: right;
     @media screen and (min-width: 370px) {
       max-width: none;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.25;
     }
   }
 }
@@ -302,4 +376,10 @@
       justify-content: end;
     }
   }
+}
+.btn {
+  border: 2px solid $background-light-color;
+  width: auto;
+  height: auto;
+  padding: 15px 24px 14px;
 }
