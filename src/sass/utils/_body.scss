@@ -1,36 +1,32 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
-    &.modal-open {
-        overflow: hidden;
-    }
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+/* 
 .container {
+  @media screen and (min-width: 414px) {
+  }
 
-    @media screen and (min-width: 414px) {
+  @media screen and (min-width: 1024px) {
+  }
 
-    }
-
-    @media screen and (min-width: 1024px) {
-
-    }
-
-    @media screen and (min-width: 1280px) {
-
-    }
+  @media screen and (min-width: 1280px) {
+  }
 }
+ */
 
 .section {
-
 }
 
 .title {
-
 }
