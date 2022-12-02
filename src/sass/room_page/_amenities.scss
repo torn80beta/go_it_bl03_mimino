@@ -1,7 +1,8 @@
 .amenities{
         max-width: 414px;
         padding: 32px 15px;
-        background-color: rgba(255, 253, 238, 1);
+        background-color: $background-light-color;
+        
 
         @media screen and (min-width: 1024px) {
         max-width: 1024px;
@@ -10,46 +11,19 @@
 
         @media screen and (min-width: 1280px) {
         max-width: 1280px;
-        padding: 48px 85px;  
+        padding: 48px 85px;
+
+        background-image: linear-gradient(to right,
+                            $background-light-color 338px,
+                            $bg-gradient-color 339px,
+                            $background-light-color 340px,
+                            $background-light-color 639px,
+                            $bg-gradient-color 640px,
+                            $background-light-color 641px,
+                            $background-light-color 941px,
+                            $bg-gradient-color 942px,
+                            $background-light-color 943px);
         }
-
-    &__splitters{
-        display: none;
-
-        @media screen and (min-width: 1280px) {
-        display: block;
-            }
-    }
-
-    &__line-second{
-        @media screen and (min-width: 1280px) {
-            width: 177%;
-            margin-left: 190px;
-            border: 1px solid rgba(186, 186, 186, 0.4);
-            filter: blur(0.5px);
-            transform: rotate(-90deg);
-    }
-    }
-
-    &__line-first{
-        @media screen and (min-width: 1280px) {
-            width: 177%;
-            margin-left: 153px;
-            border: 1px solid rgba(186, 186, 186, 0.4);
-            filter: blur(0.5px);
-            transform: rotate(-90deg);
-    }
-}
-
-    &__line-middle{
-        @media screen and (min-width: 1280px) {
-            width: 177%;
-            margin-left: 113px;
-            border: 1px solid rgba(186, 186, 186, 0.4);
-            filter: blur(0.5px);
-            transform: rotate(-90deg);
-    }
-    }
 
     &__title{
         margin-bottom: 16px;
@@ -60,7 +34,7 @@
         line-height: 1.16;
         text-transform: uppercase;
 
-        color: rgba(0, 0, 0, 1);
+        color: $main-dark-color;
     }
 
     &__title-text{
@@ -71,20 +45,22 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
 
-        color: rgba(122, 122, 122, 1);
+        color: $text-hotel-color;
     }
 
     &__text{
-        max-width: 400px;
+        max-width: 384px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.02em;
 
-        color: rgba(122, 122, 122, 1);
+        color: $text-hotel-color;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 400px;
+            }
     }
-
-
     
     &__item{
         @media screen and (min-width: 1024px) {
@@ -101,26 +77,40 @@
         line-height: 1.17;
         text-transform: uppercase;
 
-        color: rgba(0, 0, 0, 1);
+        color: $main-dark-color;
     }
     
     &__desc{
-        max-width: 450px;
+        max-width: 384px;
         margin-bottom: 16px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.02em;
 
-        color: rgba(122, 122, 122, 1);
+        color: $text-hotel-color;
 
         @media screen and (min-width: 1024px) {
+        max-width: 400px;
         margin-right: 80px;
         margin-bottom: 0;
         }
 
         @media screen and (min-width: 1280px) {
         margin-right: 159px;
+        }
+
+        &--wide{
+
+        @media screen and (min-width: 1024px) {
+        max-width: 450px;
+        margin-right: 30px;
+                        }
+
+        @media screen and (min-width: 1280px) {
+        max-width: 495px;
+        margin-right: 64px;
+                }
         }
     }
     
@@ -142,10 +132,10 @@
         text-transform: uppercase;
         line-height: 1.2;
 
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(0, 0, 0, 1);
+        color: $main-light-color;
+        background-color: $main-dark-color;
 
-        border: 1px solid #F3C653;
+        border: 1px solid $accent-color;
         border-radius: 25px;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -165,8 +155,8 @@
         }
 
         &:hover, &:focus{
-        color: rgba(0, 0, 0, 1);
-        background-color: rgba(243, 198, 83, 1);
+        color: $main-dark-color;
+        background-color: $accent-color;
         cursor: pointer;
         }
     }
@@ -183,8 +173,8 @@
         letter-spacing: 0.02em;
         text-decoration: none;
 
-        color: rgba(199, 144, 2, 1);
-        fill: rgba(199, 144, 2, 1);
+        color: $second-accent-color;
+        fill: $second-accent-color;
 
 
 
@@ -199,13 +189,12 @@
 
         @media screen and (min-width: 1280px) {
         margin-right: 114px;
-        margin-left: 563px;
         
         }
 
         &:hover, &:focus{
-        color: rgba(243, 198, 83, 1);
-        fill: rgba(243, 198, 83, 1);
+        color: $accent-color;
+        fill: $accent-color;
         cursor: pointer;
         }
     }
