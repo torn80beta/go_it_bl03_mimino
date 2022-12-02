@@ -1,0 +1,34 @@
+.about {
+  background-color: $logo-header-room-color;
+
+  &__container-hotel {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include desktop {
+      width: 1280px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    @include tablet {
+      width: 1024px;
+      padding-top: 120px;
+      padding-bottom: 96px;
+    }
+
+    @include tablet-down {
+      max-width: 413px;
+      padding-top: 18px;
+      padding-bottom: 72px;
+    }
+
+    @include mobile {
+      width: 414px;
+      padding-top: 18px;
+      padding-bottom: 72px;
+    }
+  }
+}
