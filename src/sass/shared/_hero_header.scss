@@ -317,7 +317,8 @@
 }
 
 .hero__button {
-  padding: 12px 22px;
+  width: 232px;
+  height: 48px;
   border: 2px solid $main-light-color;
   border-radius: 25px;
   cursor: pointer;
@@ -333,7 +334,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &--background-color {
+  &--longer {
+    width: 236px;
+  }
+
+  &--background-light {
     background-color: $buttons-light-color;
   }
 
@@ -359,6 +364,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  background-color: $footer-background-color;
 
   background-image: linear-gradient(
       to right,
@@ -433,6 +440,8 @@
   background-position: center;
   background-size: cover;
 
+  background-color: $footer-background-color;
+
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.65),
@@ -505,6 +514,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  background-color: $footer-background-color;
 
   background-image: linear-gradient(
       to right,
