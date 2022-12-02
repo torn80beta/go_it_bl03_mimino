@@ -1,0 +1,50 @@
+%background-linear-gradient {
+  background-image: repeating-linear-gradient(
+    to right,
+    $logo-header-room-color,
+    $logo-header-room-color 140px,
+    $bg-gradient-colo 140px,
+    $bg-gradient-colo 141px,
+    $logo-header-room-color 141px,
+    $logo-header-room-color 275px,
+    $bg-gradient-colo 275px,
+    $bg-gradient-colo 276px,
+    $logo-header-room-color 276px
+  );
+  @include respond-to('min', 'tablet') {
+    background-image: repeating-linear-gradient(
+      to right,
+      $logo-header-room-color,
+      $logo-header-room-color 278px,
+      $bg-gradient-color 278px,
+      $bg-gradient-color 279px,
+      $logo-header-room-color 279px,
+      $logo-header-room-color 513px,
+      $bg-gradient-color 513px,
+      $bg-gradient-color 514px,
+      $logo-header-room-color 514px,
+      $logo-header-room-color 748px,
+      $bg-gradient-color 748px,
+      $bg-gradient-color 749px,
+      $logo-header-room-color 749px
+    );
+  }
+  @include respond-to('min', 'desktop') {
+    background-image: repeating-linear-gradient(
+      to right,
+      $logo-header-room-color,
+      $logo-header-room-color 338px,
+      $bg-gradient-color 338px,
+      $bg-gradient-color 339px,
+      $logo-header-room-color 339px,
+      $logo-header-room-color 641px,
+      $bg-gradient-color 641px,
+      $bg-gradient-color 642px,
+      $logo-header-room-color 642px,
+      $logo-header-room-color 943px,
+      $bg-gradient-color 943px,
+      $bg-gradient-color 944px,
+      $logo-header-room-color 944px
+    );
+  }
+}
