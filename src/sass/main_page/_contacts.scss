@@ -98,12 +98,15 @@
         }
     }
 
-    &__logo--darck {
+    &__logo {
+        font-family: 'Film P3', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.3em;
         font-size: 40px;
         line-height: 1.075;
         color: $logo-homepage-color;
         margin-bottom: 12px;
-
+        text-transform: uppercase;
         @include tablet {
             font-size: 64px;
             line-height: 1.078;
