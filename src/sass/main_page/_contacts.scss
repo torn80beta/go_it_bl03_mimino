@@ -3,7 +3,6 @@
     margin: 0 auto;
     padding: 36px 15px 32px;
     background-color: $background-light-color;
-
     @include tablet {
         padding: 56px 47px 40px;
     }
@@ -14,9 +13,9 @@
 
     &__container {
         margin: 0 auto;
-
         @include mobile {
             width: 384px;
+           
         }
 
         @include tablet {
@@ -218,3 +217,4 @@
     }
 
 }
+
