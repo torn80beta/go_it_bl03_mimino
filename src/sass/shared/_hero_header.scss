@@ -6,6 +6,10 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  &--room-page {
+    height: 620px;
+  }
+
   @media screen and (min-width: 414px) {
     width: 414px;
   }
@@ -139,10 +143,31 @@
   display: flex;
   gap: 20px;
 
+  &--room-page {
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &--room-page {
+      flex-direction: row;
+      gap: 20px;
+      position: absolute;
+      bottom: 38px;
+      left: 372px;
+    }
+  }
+
   @media screen and (min-width: 1280px) {
     position: absolute;
-    top: -126px;
-    right: 85px;
+    bottom: 594px;
+    left: 1083px;
+    &--room-page {
+      bottom: 658px;
+    }
   }
 
   &-link {
@@ -295,11 +320,26 @@
     position: absolute;
     top: -121px;
     right: 15px;
+    &--room-page {
+      top: -16px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     font-size: 16px;
     line-height: calc(19.5px / 16px);
+
+    &--room-page {
+      position: absolute;
+      bottom: 24px;
+      left: 47px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &--room-page {
+      display: none;
+    }
   }
 }
 
@@ -317,12 +357,12 @@
 }
 
 .hero__button {
-  width: 232px;
+  width: 236px;
   height: 48px;
   border: 2px solid $main-light-color;
   border-radius: 25px;
   cursor: pointer;
-  background-color: $main-dark-color;
+  background-color: $buttons-light-color;
 
   font-family: inherit;
   font-weight: 700;
@@ -334,26 +374,148 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &--longer {
-    width: 236px;
+  &--shorter {
+    width: 232px;
   }
 
-  &--background-light {
-    background-color: $buttons-light-color;
+  &--room-page {
+    position: absolute;
+    bottom: 40px;
+    left: 55px;
+
+    @media screen and (min-width: 414px) {
+      bottom: 40px;
+      left: 109px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      bottom: 64px;
+      left: 745px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: 66px;
+      left: 963px;
+    }
+  }
+
+  &--margin-right {
+    @media screen and (min-width: 1024px) {
+      margin-right: 40px;
+    }
   }
 
   &:hover,
   &:focus {
     background-color: $main-light-color;
-  }
-  &--border-color:hover,
-  &--border-color:focus {
     border-color: $accent-color;
   }
-  &--margin-right {
-    @media screen and (min-width: 1024px) {
-      margin-right: 40px;
-    }
+}
+
+// Hero room-page
+
+.hero-room-background {
+  background-color: #4b4109;
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    width: 1280px;
+  }
+}
+
+.hero-slider-buttons-position {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 15px;
+  bottom: 350px;
+
+  @media screen and (min-width: 1024px) {
+    width: calc(100% - 94px);
+    left: 47px;
+    bottom: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc(100% - 170px);
+    left: 85px;
+    bottom: 268px;
+  }
+}
+
+.hero-slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.65);
+  &--left {
+    margin-right: auto;
+  }
+}
+
+.hero-slider-icon {
+  width: 37px;
+  height: 21px;
+  fill: $accent-color;
+}
+
+.hero-room__content {
+  position: absolute;
+  width: 280px;
+  bottom: 118px;
+  left: 15px;
+
+  @media screen and (min-width: 414px) {
+    width: 325px;
+    bottom: 118px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 507px;
+    bottom: 104px;
+    left: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 48px;
+    left: 85px;
+  }
+}
+
+.hero-room__title {
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32.2px / 28px);
+  letter-spacing: 0.05em;
+  color: $main-light-color;
+  margin-bottom: 14px;
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: calc(41px / 36px);
+  }
+}
+
+.hero-room__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  letter-spacing: 0.02em;
+  color: $main-light-color;
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    font-size: 16px;
+    line-height: calc(20px / 16px);
   }
 }
 
