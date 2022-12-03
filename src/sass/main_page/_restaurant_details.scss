@@ -1,0 +1,439 @@
+.restaurant-details {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px 0 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include respond-to('min', 'tablet') {
+    padding: 48px 0 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 1),
+    screen and (min-resolution: 96dpi),
+    screen and (min-resolution: 1dppx) {
+    background-image: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0) 140px,
+        rgba(122, 122, 122, 0.4) 140px,
+        rgba(122, 122, 122, 0.4) 141px,
+        rgba(0, 0, 0, 0) 141px,
+        rgba(0, 0, 0, 0) 275px,
+        rgba(122, 122, 122, 0.4) 275px,
+        rgba(122, 122, 122, 0.4) 276px,
+        rgba(0, 0, 0, 0) 276px
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0) 140px,
+        rgba(122, 122, 122, 0.4) 140px,
+        rgba(122, 122, 122, 0.4) 141px,
+        rgba(0, 0, 0, 0) 141px,
+        rgba(0, 0, 0, 0) 275px,
+        rgba(122, 122, 122, 0.4) 275px,
+        rgba(122, 122, 122, 0.4) 276px,
+        rgba(0, 0, 0, 0) 276px
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0) 140px,
+        rgba(122, 122, 122, 0.4) 140px,
+        rgba(122, 122, 122, 0.4) 141px,
+        rgba(0, 0, 0, 0) 141px,
+        rgba(0, 0, 0, 0) 275px,
+        rgba(122, 122, 122, 0.4) 275px,
+        rgba(122, 122, 122, 0.4) 276px,
+        rgba(0, 0, 0, 0) 276px
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
+  }
+  @include respond-to('min', 'tablet') {
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 278px,
+          rgba(122, 122, 122, 0.4) 278px,
+          rgba(122, 122, 122, 0.4) 279px,
+          rgba(0, 0, 0, 0) 279px,
+          rgba(0, 0, 0, 0) 513px,
+          rgba(122, 122, 122, 0.4) 513px,
+          rgba(122, 122, 122, 0.4) 514px,
+          rgba(0, 0, 0, 0) 514px,
+          rgba(0, 0, 0, 0) 748px,
+          rgba(122, 122, 122, 0.4) 748px,
+          rgba(122, 122, 122, 0.4) 749px,
+          rgba(0, 0, 0, 0) 749px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 278px,
+          rgba(122, 122, 122, 0.4) 278px,
+          rgba(122, 122, 122, 0.4) 279px,
+          rgba(0, 0, 0, 0) 279px,
+          rgba(0, 0, 0, 0) 513px,
+          rgba(122, 122, 122, 0.4) 513px,
+          rgba(122, 122, 122, 0.4) 514px,
+          rgba(0, 0, 0, 0) 514px,
+          rgba(0, 0, 0, 0) 748px,
+          rgba(122, 122, 122, 0.4) 748px,
+          rgba(122, 122, 122, 0.4) 749px,
+          rgba(0, 0, 0, 0) 749px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 278px,
+          rgba(122, 122, 122, 0.4) 278px,
+          rgba(122, 122, 122, 0.4) 279px,
+          rgba(0, 0, 0, 0) 279px,
+          rgba(0, 0, 0, 0) 513px,
+          rgba(122, 122, 122, 0.4) 513px,
+          rgba(122, 122, 122, 0.4) 514px,
+          rgba(0, 0, 0, 0) 514px,
+          rgba(0, 0, 0, 0) 748px,
+          rgba(122, 122, 122, 0.4) 748px,
+          rgba(122, 122, 122, 0.4) 749px,
+          rgba(0, 0, 0, 0) 749px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
+    }
+  }
+  @include respond-to('min', 'desktop') {
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 338px,
+          rgba(122, 122, 122, 0.4) 338px,
+          rgba(122, 122, 122, 0.4) 339px,
+          rgba(0, 0, 0, 0) 339px,
+          rgba(0, 0, 0, 0) 641px,
+          rgba(122, 122, 122, 0.4) 641px,
+          rgba(122, 122, 122, 0.4) 642px,
+          rgba(0, 0, 0, 0) 642px,
+          rgba(0, 0, 0, 0) 944px,
+          rgba(122, 122, 122, 0.4) 944px,
+          rgba(122, 122, 122, 0.4) 945px,
+          rgba(0, 0, 0, 0) 945px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_landscape_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 338px,
+          rgba(122, 122, 122, 0.4) 338px,
+          rgba(122, 122, 122, 0.4) 339px,
+          rgba(0, 0, 0, 0) 339px,
+          rgba(0, 0, 0, 0) 641px,
+          rgba(122, 122, 122, 0.4) 641px,
+          rgba(122, 122, 122, 0.4) 642px,
+          rgba(0, 0, 0, 0) 642px,
+          rgba(0, 0, 0, 0) 944px,
+          rgba(122, 122, 122, 0.4) 944px,
+          rgba(122, 122, 122, 0.4) 945px,
+          rgba(0, 0, 0, 0) 945px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_landscape_2x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 338px,
+          rgba(122, 122, 122, 0.4) 338px,
+          rgba(122, 122, 122, 0.4) 339px,
+          rgba(0, 0, 0, 0) 339px,
+          rgba(0, 0, 0, 0) 641px,
+          rgba(122, 122, 122, 0.4) 641px,
+          rgba(122, 122, 122, 0.4) 642px,
+          rgba(0, 0, 0, 0) 642px,
+          rgba(0, 0, 0, 0) 944px,
+          rgba(122, 122, 122, 0.4) 944px,
+          rgba(122, 122, 122, 0.4) 945px,
+          rgba(0, 0, 0, 0) 945px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant-details/restaurant-details_background_landscape_3x.jpg);
+    }
+  }
+}
+.restaurant-details-section-container {
+  margin-right: 0;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include respond-to('min', 'phone') {
+    width: screen-width('phone');
+  }
+  @include respond-to('min', 'tablet') {
+    width: screen-width('tablet');
+    padding: 0 47px;
+  }
+  @include respond-to('min', 'desktop') {
+    width: screen-width('desktop');
+    padding: 0 85px;
+  }
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+.restaurant-details__container {
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+
+.restaurant-details__wrapper-first {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+  align-content: center;
+  // padding-bottom: 94px;
+  @include respond-to('min', 'tablet') {
+    padding-bottom: 50px;
+  }
+}
+.restaurant-details__wrapper-second {
+  @include respond-to('min', 'tablet') {
+    flex-grow: 1;
+  }
+}
+.restaurant-details__button {
+  // display: block;
+  // width: 236px;
+  // align-self: center;
+  @include button($main-dark-color);
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-color;
+  }
+}
+.restaurant-details__logo {
+  padding: 0;
+  margin: 0 0 12px;
+  font-family: 'Film P3';
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  margin-bottom: 12px;
+
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+  }
+  @include respond-to('min', 'tablet') {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 16px;
+    position: relative;
+    left: -34px;
+  }
+}
+.restaurant-details__title {
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+  }
+  @include respond-to('min', 'tablet') {
+    font-size: 24px;
+    line-height: calc(29.3 / 24);
+    margin-bottom: 8px;
+    position: relative;
+    left: -34px;
+  }
+}
+.restaurant-details__info {
+  padding: 0;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(14.6 / 12);
+  letter-spacing: 0.02em;
+
+  color: #bababa;
+  margin-bottom: 48px;
+
+  @include respond-to('max', 'phone') {
+    font-size: calc((100vw) / (414px) * 12px);
+    max-width: calc((100vw) / (414px) * 259px);
+  }
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+    max-width: 259px;
+  }
+  @include respond-to('min', 'tablet') {
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    margin-bottom: 40px;
+    width: 610px;
+    position: relative;
+    left: -34px;
+  }
+}
+
+.restaurant-details-slider {
+  &__svg-left-arrow {
+    fill: white;
+    transition: fill 1000ms linear;
+    &:hover,
+    &:focus {
+      fill: yellow;
+    }
+  }
+  &__svg-right-arrow {
+    fill: white;
+    transition: fill 1000ms linear;
+    &:hover,
+    &:focus {
+      fill: yellow;
+    }
+  }
+}
+//   @include respond-to('max', 'phone') {
+//     @include slider-two-images-before-phone(270px, 26px, 0px, 16px, 25px);
+//     &__wrapper {
+//       left: 25px;
+//     }
+//   }
+//   @include respond-to('min', 'phone') {
+//     @include slider-two-images(270px, 25px, 0px, 16px);
+//     &__wrapper {
+//       left: 25px;
+//       margin: 0;
+//     }
+//   }
+//   @include respond-to('min', 'tablet') {
+//     &__wrapper {
+//       display: none;
+//     }
+//   }
+// }
+// .restaurant-details-slider__wrapper {
+//   margin-bottom: 80px;
+//   left: 25px;
+// }
+// .restaurant-details-slider__buttons-wrapper {
+//   top: 286px;
+// }
+.restaurant-details__wrapper-slider-three-cards {
+  display: none;
+  @include respond-to('min', 'tablet') {
+    display: block;
+
+    // display: flex;
+    // flex-direction: column;
+    // gap: 30px;
+    @include three-cards-slider(270px, 162px, 34px, 'left');
+  }
+}
+.restaurant-details-slider {
+  &__buttons-wrapper {
+    // position: relative;
+    // top: 30px;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+  }
+  &__svg-left-arrow {
+    fill: white;
+    transition: fill 1000ms linear;
+    &:hover,
+    &:focus {
+      fill: yellow;
+    }
+  }
+  &__svg-right-arrow {
+    fill: white;
+    transition: fill 1000ms linear;
+    &:hover,
+    &:focus {
+      fill: yellow;
+    }
+  }
+}
+
+
+  @include respond-to('max', 'phone') {
+    @include slider-two-images-before-phone(270px, 26px, 0px, 16px, 25px);
+    &__wrapper {
+      left: 25px;
+    }
+  }
+  @include respond-to('min', 'phone') {
+    @include slider-two-images(270px, 25px, 0px, 16px);
+    &__wrapper {
+      left: 25px;
+      margin: 0;
+    }
+  }
+  @include respond-to('min', 'tablet') {
+    &__wrapper {
+      display: none;
+    }
+  }
+}
+.restaurant-details-slider__wrapper {
+  margin-bottom: 80px;
+  left: 25px;
+}
