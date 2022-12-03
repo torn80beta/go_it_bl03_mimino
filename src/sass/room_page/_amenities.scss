@@ -1,13 +1,8 @@
 .amenities{
 
         max-width: 414px;
-        
         padding: 32px 15px;
-<<<<<<< Updated upstream
         margin: 0 auto;
-=======
-        
->>>>>>> Stashed changes
         background-color: $background-light-color;
         
 
@@ -208,13 +203,13 @@
     }
 }
 
-.backdrop{
+.backdrop-room{
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $modal-backdrop;
     visibility: visible;
     opacity: 1;
     transition: opacity $cubic,
