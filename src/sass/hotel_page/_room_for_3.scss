@@ -11,12 +11,16 @@
   @include tablet() {
     padding-top: 66px;
     padding-bottom: 112px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
     background-image: repeating-linear-gradient(
       to right,
       $logo-header-hotel-color,
       $logo-header-hotel-color 25%,
-      $logo-header-hotel-color 0.1%,
-      $logo-header-hotel-color 25.1%
+      $background-gradient 0.1%,
+      $background-gradient 25.1%
     );
   }
 }
@@ -44,6 +48,7 @@
 }
 .triple-room__subtitle {
   margin-bottom: 8px;
+  padding-right: 10px;
   text-align: end;
   font-family: 'Times New Roman';
   font-weight: 400;
@@ -55,6 +60,11 @@
     font-size: 32px;
     line-height: calc(37 / 32);
     margin-bottom: 4px;
+    padding-right: 20px;
+  }
+
+  @include desktop() {
+    padding-right: 57px;
   }
 }
 .triple-room__logo {
@@ -73,6 +83,11 @@
     font-size: 64px;
     line-height: calc(69 / 64);
     margin-bottom: 62px;
+  }
+
+  @include desktop() {
+    margin-bottom: 72px;
+    padding-right: 40px;
   }
 }
 // .text-box {
@@ -97,6 +112,13 @@
     margin-bottom: 16px;
     padding-right: 43px;
   }
+
+  @include desktop() {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 24px;
+    padding-right: 57px;
+  }
 }
 .triple-room__text {
   //   margin-left: 98px;
@@ -119,6 +141,11 @@
     margin-left: calc(100% - 392px);
     padding-right: 20px;
   }
+
+  @include desktop() {
+    margin-bottom: 188px;
+    margin-left: calc(100% - 475px);
+  }
 }
 .triple-room__img {
   margin-bottom: 32px;
@@ -130,6 +157,12 @@
     position: absolute;
     top: -32px;
     left: 112px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  @include desktop() {
+    left: 180px;
+    width: 460px;
   }
 }
 .gallery-swiper {
@@ -174,6 +207,10 @@
     top: 226px;
     left: 502px;
   }
+  @include desktop() {
+    top: 300px;
+    left: 560px;
+  }
 }
 .triple-room__btn {
   display: flex;
@@ -183,6 +220,11 @@
   padding: 0;
   fill: $main-dark-color;
   cursor: pointer;
+}
+.triple-room__icon {
+  @include desktop() {
+    fill: $modal-placeholder;
+  }
 }
 .btn-list__btn {
   display: flex;
