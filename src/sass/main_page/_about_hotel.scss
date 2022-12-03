@@ -1,5 +1,17 @@
 .about {
+  padding-top: 18px;
+  padding-bottom: 28px;
   background-color: $logo-header-room-color;
+
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 58px;
+  }
+ @include tablet {
+  padding-top: 120px;
+    padding-bottom: 40px;
+  }
+ }
 
   &__container-hotel {
     padding-left: 15px;
@@ -8,26 +20,28 @@
     width: 1280px;
 
     @include desktop {
-      width: 1280px;
-      padding-top: 120px;
-      padding-bottom: 120px;
+      max-height: 1280px;
+      
     }
 
     @include tablet {
-      width: 1024px;
-      padding-top: 120px;
-      padding-bottom: 96px;
+      max-width: 1024px;
+     
     }
 
     @include mobile {
-      max-width: 1023px;
-      padding-top: 18px;
-      padding-bottom: 72px;
+      max-width: 414px;
+      
     }
   }
-  &__title-about {
+
+    &__article-about {
+
+    }
+
+&__title-about {
     display: flex;
-    justify-content: flex-end;
+   
     margin: 0 0 6px auto;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -50,7 +64,7 @@
 
   &__logo-about {
     display: flex;
-    justify-content: flex-end;
+   
     margin-right: 0;
     margin-left: auto;
     font-family: 'Film P3';
@@ -72,31 +86,14 @@
       margin: 4px 85px 24px auto;
     }
   }
-}
-
-.card {
-  &__item-hotel {
-  }
 
   &__couch {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-
-    @include tablet {
-       display: flex;
-       justify-content: space-between; 
-      }
     
-      @include desktop {
-        display: flex;
-          justify-content: space-between;
-      }
   }
 
   &__text-couch {
-    margin: 16px 0 28px auto;
-    width: 242px;
+    // margin: 16px 0 28px auto;
+   width: 242px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -112,16 +109,17 @@
     @include desktop {
       font-size: 16px;
     }
-  }
+ 
 
   &__photo-apartment {
   }
+ }
 
-  &__hall {
-    display: flex;
+  .hotel-hall {
+    display: block;
     justify-content: space-between;
     align-items: center;
-  }
+ 
 
   &__text-hall {
     margin-right: 45px;
@@ -133,5 +131,18 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $second-accent-color;
+
+    @include tablet {
+        font-size: 16px;
+      }
+    
+      @include desktop {
+        font-size: 16px;
+      }
   }
-}
+
+  &__photo-hall {
+
+  }
+
+ }
