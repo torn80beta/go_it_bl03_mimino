@@ -1,14 +1,43 @@
 .home-contacts {
-    max-width: 1280px;
+    max-width: 414px;
     margin: 0 auto;
     padding: 36px 15px 32px;
     background-color: $background-light-color;
+    background-image: linear-gradient(to right,
+                $background-light-color 135px,
+                $bg-gradient-footer-color 136px,
+                $background-light-color 137px,
+                $background-light-color 273px,
+                $bg-gradient-footer-color 274px,
+                $background-light-color 275px);
     @include tablet {
         padding: 56px 47px 40px;
+        max-width: 1024px;
+        background-image: linear-gradient(to right,
+                    $background-light-color 270px,
+                    $bg-gradient-footer-color 271px,
+                    $background-light-color 272px,
+                    $background-light-color 511px,
+                    $bg-gradient-footer-color 512px,
+                    $background-light-color 513px,
+                    $background-light-color 745px,
+                    $bg-gradient-footer-color 746px,
+                    $background-light-color 747px);
     }
 
     @include desktop {
         padding: 56px 85px 73px;
+        max-width: 1280px;
+        background-image: linear-gradient(to right,
+                    $background-light-color 338px,
+                    $bg-gradient-color 339px,
+                    $background-light-color 340px,
+                    $background-light-color 639px,
+                    $bg-gradient-color 640px,
+                    $background-light-color 641px,
+                    $background-light-color 941px,
+                    $bg-gradient-color 942px,
+                    $background-light-color 943px);
     }
 
     &__container {
@@ -158,7 +187,7 @@
     }
 
     &__address {
-        padding-left: 122px;
+        padding-left: 121px;
         margin-bottom: 32px;
 
         @include tablet {
