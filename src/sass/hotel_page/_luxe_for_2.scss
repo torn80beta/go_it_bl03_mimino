@@ -1,4 +1,6 @@
 .rooms {
+   margin-left: auto;
+   margin-right: auto;
    padding-bottom: 32px;
    padding-top: 32px;
    background-color: $background-light-color;
@@ -7,14 +9,10 @@
       position: relative;
       padding-top: 62px;
       padding-bottom: 104px;
-      background-image: repeating-linear-gradient(to right,
-            $background-light-color,
-            $background-light-color 25%,
-            $background-gradient 0.1%,
-            $background-gradient 25.1%);
    }
 
    @include desktop {
+      max-width: 1280px;
       padding-top: 72px;
       padding-bottom: 112px;
    }
@@ -246,6 +244,9 @@
    }
 
 }
+.button-link {
+   display: inline-block;
+}
 
 .rooms__button-arrow {
    display: flex;
@@ -255,4 +256,21 @@
    padding: 0;
    fill: $main-dark-color;
    cursor: pointer;
+}
+.background-gradient {
+   @media screen and (min-width: 1024px) {
+            background-image: linear-gradient(to right,
+                     $background-light-color 27%,
+                     $bg-gradient-color 27%,
+                     $bg-gradient-color 27.1%,
+                     $background-light-color 27.1%,
+                     $background-light-color 50%,
+                     $bg-gradient-color 50%,
+                     $bg-gradient-color 50.1%,
+                     $background-light-color 50.1%,
+                     $background-light-color 73%,
+                     $bg-gradient-color 73%,
+                     $bg-gradient-color 73.1%,
+                     $background-light-color 73.1%);
+   }
 }
