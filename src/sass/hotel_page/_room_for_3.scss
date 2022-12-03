@@ -16,12 +16,12 @@
   @include desktop {
     padding-top: 72px;
     background-image: repeating-linear-gradient(
-      to right,
-      $logo-header-hotel-color,
-      $logo-header-hotel-color 25%,
-      $background-gradient 0.1%,
-      $background-gradient 25.1%
-    );
+    to right,
+    $logo-header-hotel-color,
+    $logo-header-hotel-color 25%,
+    $background-gradient 0.1%,
+    $background-gradient 25.1%
+  );
   }
 }
 .triple-room__container {
