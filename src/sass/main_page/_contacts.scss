@@ -1,0 +1,220 @@
+.home-contacts {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 15px 32px;
+    background-color: $background-light-color;
+
+    @include tablet {
+        padding: 56px 47px 40px;
+    }
+
+    @include desktop {
+        padding: 56px 85px 73px;
+    }
+
+    &__container {
+        margin: 0 auto;
+
+        @include mobile {
+            width: 384px;
+        }
+
+        @include tablet {
+            width: 930px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include desktop {
+            width: 1110px;
+        }
+
+    }
+
+    &__box {
+        margin: 0 auto;
+
+        @include tablet {
+            margin: 0;
+        }
+    }
+
+    &__box1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__box2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 54px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo--darck {
+        font-size: 40px;
+        line-height: 1.075;
+        color: $logo-homepage-color;
+        margin-bottom: 12px;
+
+        @include tablet {
+            font-size: 64px;
+            line-height: 1.078;
+            margin-bottom: 8px;
+        }
+
+        @include desktop {
+            margin-bottom: 16px;
+        }
+    }
+
+    &_title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $text-rest-homepage-color;
+        margin-bottom: 16px;
+
+        @include tablet {
+            margin-bottom: 52px;
+        }
+
+        @include desktop {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $second-accent-color;
+    }
+
+    &__item {
+        display: flex;
+        gap: 11px;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-light-color;
+        border: 0.5px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        padding: 8px;
+
+        @include tablet {
+            max-width: 264px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-grow: 1;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(17px / 14px);
+        letter-spacing: 0.02em;
+        color: #494848;
+
+        @include desktop {
+            gap: 10px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: rgba(199, 144, 2, 1);
+    }
+
+    &__address {
+        padding-left: 122px;
+        margin-bottom: 32px;
+
+        @include tablet {
+            max-width: 285px;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-top: 48px;
+        }
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        padding: 8px 32px 8px 10px;
+        gap: 10px;
+        max-width: 260px;
+        flex-grow: 1;
+        border: 0.5px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        background-color: $main-light-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(19.5px / 16px);
+        letter-spacing: 0.01em;
+        color: #494848;
+
+        @include tablet {
+            max-width: 285px;
+            padding: 8px 8px 8px 10px;
+            margin-right: 0;
+        }
+    }
+
+    &__frame-box {
+        max-width: 100%;
+        height: 220px;
+        margin: 0 auto;
+
+        @include tablet {
+            width: 535px;
+            height: 412px;
+            margin: 0;
+        }
+
+        @include desktop {
+            width: 634px;
+        }
+    }
+
+    &__frame {
+        width: 100%;
+        height: 100%;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+
+}
