@@ -381,7 +381,7 @@
   &--room-page {
     position: absolute;
     bottom: 40px;
-    left: 60px;
+    left: 55px;
 
     @media screen and (min-width: 414px) {
       bottom: 40px;
@@ -409,6 +409,113 @@
   &:focus {
     background-color: $main-light-color;
     border-color: $accent-color;
+  }
+}
+
+// Hero room-page
+
+.hero-room-background {
+  background-color: #4b4109;
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    width: 1280px;
+  }
+}
+
+.hero-slider-buttons-position {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 15px;
+  bottom: 350px;
+
+  @media screen and (min-width: 1024px) {
+    width: calc(100% - 94px);
+    left: 47px;
+    bottom: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc(100% - 170px);
+    left: 85px;
+    bottom: 268px;
+  }
+}
+
+.hero-slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.65);
+  &--left {
+    margin-right: auto;
+  }
+}
+
+.hero-slider-icon {
+  width: 37px;
+  height: 21px;
+  fill: $accent-color;
+}
+
+.hero-room__content {
+  position: absolute;
+  width: 280px;
+  bottom: 118px;
+  left: 15px;
+
+  @media screen and (min-width: 414px) {
+    width: 325px;
+    bottom: 118px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 507px;
+    bottom: 104px;
+    left: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 48px;
+    left: 85px;
+  }
+}
+
+.hero-room__title {
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(32.2px / 28px);
+  letter-spacing: 0.05em;
+  color: $main-light-color;
+  margin-bottom: 14px;
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: calc(41px / 36px);
+  }
+}
+
+.hero-room__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15px / 12px);
+  letter-spacing: 0.02em;
+  color: $main-light-color;
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    font-size: 16px;
+    line-height: calc(20px / 16px);
   }
 }
 
@@ -637,48 +744,4 @@
       }
     }
   }
-}
-
-// Hero-room
-
-.hero-room-background {
-  background-color: #4b4109;
-}
-
-.hero-slider-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.65);
-}
-
-.hero-slider-icon {
-  width: 37px;
-  height: 21px;
-  fill: $accent-color;
-}
-
-.hero-room__title {
-  font-family: 'Times New Roman', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(41px / 36px);
-  letter-spacing: 0.05em;
-  color: $main-light-color;
-  &-uppercase {
-    text-transform: uppercase;
-  }
-}
-
-.hero-room__text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20px / 16px);
-  letter-spacing: 0.02em;
-  color: $main-light-color;
 }
