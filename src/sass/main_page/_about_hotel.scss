@@ -58,12 +58,16 @@
     color: $subtitles-color;
 
     @include desktop {
+      display: block;
       margin-right: 85px;
       margin-bottom: 4px;
       font-size: 32px;
     }
 
     @include tablet {
+      display: block;
+      margin-left: auto;
+      margin-right: 47px;
       margin-bottom: 4px;
       font-size: 32px;
     }
