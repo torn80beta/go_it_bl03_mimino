@@ -151,6 +151,7 @@
    text-transform: uppercase;
    cursor: pointer;
    transition: background-color $cubic;
+   transition: color $cubic;
 
    @include tablet {
       font-size: 24px;
@@ -158,7 +159,8 @@
 
    &:hover,
    &:focus {
-      background-color: $main-light-color;
+      background-color: $accent-color;
+      color: $main-dark-color;
    }
 }
 

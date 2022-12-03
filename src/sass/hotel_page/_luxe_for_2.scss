@@ -9,11 +9,11 @@
       position: relative;
       padding-top: 62px;
       padding-bottom: 104px;
-      background-image: repeating-linear-gradient(to right,
-            $background-light-color,
-            $background-light-color 25%,
-            $background-gradient 0.1%,
-            $background-gradient 25.1%);
+      // background-image: repeating-linear-gradient(to right,
+      //       $background-light-color,
+      //       $background-light-color 25%,
+      //       $background-gradient 0.1%,
+      //       $background-gradient 25.1%);
    }
 
    @include desktop {
@@ -249,6 +249,9 @@
    }
 
 }
+.button-link {
+   display: inline-block;
+}
 
 .rooms__button-arrow {
    display: flex;
@@ -259,44 +262,58 @@
    fill: $main-dark-color;
    cursor: pointer;
 }
-// .bg-gradient {
-//    width: 414px;
-//    height: 1191px;
-//    background-image: linear-gradient(to right,
-//          $background-light-color 138px,
-//          $bg-gradient-color 139px,
-//          $background-light-color 140px,
-//          $background-light-color 273px,
-//          $bg-gradient-color 274px,
-//          $background-light-color 275px);
+.background-gradient {
+   // width: 414px;
+   // height: 1191px;
+   // background-image: linear-gradient(to right,
+   //       $background-light-color 138px,
+   //       $bg-gradient-color 139px,
+   //       $background-light-color 140px,
+   //       $background-light-color 273px,
+   //       $bg-gradient-color 274px,
+   //       $background-light-color 275px);
 
-//    @media screen and (min-width: 1024px) {
-//       width: 1024px;
-//       height: 1238px;
-//       background-image: linear-gradient(to right,
-//             $background-light-color 278px,
-//             $bg-gradient-color 279px,
-//             $background-light-color 280px,
-//             $background-light-color 511px,
-//             $bg-gradient-color 512px,
-//             $background-light-color 513px,
-//             $background-light-color 745px,
-//             $bg-gradient-color 746px,
-//             $background-light-color 747px);
-//    }
+   @media screen and (min-width: 1024px) {
+      // width: 1024px;
+      // height: 1238px;
+      // background-image: linear-gradient(to right,
+      //       $background-light-color 278px,
+      //       $bg-gradient-color 279px,
+      //       $background-light-color 280px,
+      //       $background-light-color 511px,
+      //       $bg-gradient-color 512px,
+      //       $background-light-color 513px,
+      //       $background-light-color 745px,
+      //       $bg-gradient-color 746px,
+      //       $background-light-color 747px);
 
-//    @media screen and (min-width: 1280px) {
-//       width: 1280px;
-//       height: 1257px;
-//       background-image: linear-gradient(to right,
-//             $background-light-color 338px,
-//             $bg-gradient-color 339px,
-//             $background-light-color 340px,
-//             $background-light-color 639px,
-//             $bg-gradient-color 640px,
-//             $background-light-color 641px,
-//             $background-light-color 941px,
-//             $bg-gradient-color 942px,
-//             $background-light-color 943px);
-//    }
-// }
+            background-image: linear-gradient(to right,
+                     $background-light-color 27%,
+                     $bg-gradient-color 27%,
+                     $bg-gradient-color 27.1%,
+                     $background-light-color 27.1%,
+                     $background-light-color 50%,
+                     $bg-gradient-color 50%,
+                     $bg-gradient-color 50.1%,
+                     $background-light-color 50.1%,
+                     $background-light-color 73%,
+                     $bg-gradient-color 73%,
+                     $bg-gradient-color 73.1%,
+                     $background-light-color 73.1%);
+   }
+
+   // @media screen and (min-width: 1280px) {
+   //    // width: 1280px;
+   //    // height: 1257px;
+   //    background-image: linear-gradient(to right,
+   //          $background-light-color 338px,
+   //          $bg-gradient-color 339px,
+   //          $background-light-color 340px,
+   //          $background-light-color 639px,
+   //          $bg-gradient-color 640px,
+   //          $background-light-color 641px,
+   //          $background-light-color 941px,
+   //          $bg-gradient-color 942px,
+   //          $background-light-color 943px);
+   // }
+}
