@@ -6,6 +6,8 @@
   padding-bottom: 28px;
   background-color: $logo-header-room-color;
 
+  
+
   @include desktop {
     position: relative;
     padding-top: 120px;
@@ -24,8 +26,15 @@
     margin: 0 auto;
     // width: 1280px;
     // max-height: 100%;
-    // overflow: hidden;
-
+    // overflow: hidden;height: 1191px;
+      background-image: linear-gradient(to right,
+          $background-light-color 138px,
+          $bg-gradient-color 139px,
+          $background-light-color 140px,
+          $background-light-color 273px,
+          $bg-gradient-color 274px,
+          $background-light-color 275px);
+ 
     @include mobile {
         max-width: 414px;
     
@@ -33,10 +42,32 @@
 
  @include tablet {
    max-width: 1024px;
+  height: 1238px;
+    background-image: linear-gradient(to right,
+        $background-light-color 278px,
+        $bg-gradient-color 279px,
+        $background-light-color 280px,
+        $background-light-color 511px,
+        $bg-gradient-color 512px,
+        $background-light-color 513px,
+        $background-light-color 745px,
+        $bg-gradient-color 746px,
+        $background-light-color 747px);
 
  }
     @include desktop {
       max-width: 100%;
+      height: 1257px;
+        background-image: linear-gradient(to right,
+            $background-light-color 338px,
+            $bg-gradient-color 339px,
+            $background-light-color 340px,
+            $background-light-color 639px,
+            $bg-gradient-color 640px,
+            $background-light-color 641px,
+            $background-light-color 941px,
+            $bg-gradient-color 942px,
+            $background-light-color 943px);
       
     }
 
