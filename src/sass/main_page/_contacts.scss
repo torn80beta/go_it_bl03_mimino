@@ -106,7 +106,7 @@
         line-height: 1.075;
         color: $logo-homepage-color;
         margin-bottom: 12px;
-
+        text-transform: uppercase;
         @include tablet {
             font-size: 64px;
             line-height: 1.078;
