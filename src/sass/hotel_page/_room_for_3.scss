@@ -16,12 +16,12 @@
   @include desktop {
     padding-top: 72px;
     background-image: repeating-linear-gradient(
-    to right,
-    $logo-header-hotel-color,
-    $logo-header-hotel-color 25%,
-    $background-gradient 0.1%,
-    $background-gradient 25.1%
-  );
+      to right,
+      $logo-header-hotel-color,
+      $logo-header-hotel-color 25%,
+      $bg-gradient-color 0.1%,
+      $bg-gradient-color 25.1%
+    );
   }
 }
 .triple-room__container {
@@ -230,11 +230,11 @@
   }
 }
 .btn-list__btn {
-    @include button($main-dark-color);
-    &:hover,
-    &:focus {
-        border: 2px solid $accent-color;  
-    } 
+  @include button($main-dark-color);
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-color;
+  }
 }
 .btn-list__item:not(:last-child) {
   margin-bottom: 16px;
