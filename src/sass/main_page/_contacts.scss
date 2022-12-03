@@ -3,12 +3,39 @@
     margin: 0 auto;
     padding: 36px 15px 32px;
     background-color: $background-light-color;
+    background-image: repeating-linear-gradient(to right,
+                $background-light-color 138px,
+                $bg-gradient-color 139px,
+                $background-light-color 140px,
+                $background-light-color 273px,
+                $bg-gradient-color 274px,
+                $background-light-color 275px);
     @include tablet {
         padding: 56px 47px 40px;
+        background-image: repeating-linear-gradient(to right,
+                    $background-light-color 278px,
+                    $bg-gradient-color 279px,
+                    $background-light-color 280px,
+                    $background-light-color 511px,
+                    $bg-gradient-color 512px,
+                    $background-light-color 513px,
+                    $background-light-color 745px,
+                    $bg-gradient-color 746px,
+                    $background-light-color 747px);
     }
 
     @include desktop {
         padding: 56px 85px 73px;
+        background-image: repeating-linear-gradient(to right,
+                    $background-light-color 338px,
+                    $bg-gradient-color 339px,
+                    $background-light-color 340px,
+                    $background-light-color 639px,
+                    $bg-gradient-color 640px,
+                    $background-light-color 641px,
+                    $background-light-color 941px,
+                    $bg-gradient-color 942px,
+                    $background-light-color 943px);
     }
 
     &__container {
