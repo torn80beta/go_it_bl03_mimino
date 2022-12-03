@@ -1,4 +1,7 @@
 .about {
+    max-width: 1280px;
+    margin: 0 auto;
+  max-height: 100%;
   padding-top: 18px;
   padding-bottom: 28px;
   background-color: $logo-header-room-color;
@@ -15,27 +18,31 @@
  
 
   &__container-hotel {
+  
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    max-width: 1280px;
+    // width: 1280px;
     // max-height: 100%;
-    overflow: hidden;
-
-    @include desktop {
-      max-widht: 1280px;
-      
-    }
-
-    @include tablet {
-      max-width: 1024px;
-     
-    }
+    // overflow: hidden;
 
     @include mobile {
-      max-width: 414px;
+        max-width: 414px;
+    
+      }
+
+ @include tablet {
+   max-width: 1024px;
+
+ }
+    @include desktop {
+      max-width: 100%;
       
     }
+
+   
+
+    
   }
 
 // &__article-about {
@@ -56,21 +63,24 @@
     font-size: 20px;
     line-height: 1.16;
     color: $subtitles-color;
-
-    @include desktop {
-      display: block;
-      margin-right: 85px;
-      margin-bottom: 4px;
-      font-size: 32px;
-    }
+ 
 
     @include tablet {
-      display: block;
+   
       margin-left: auto;
-      margin-right: 47px;
+      margin-right: 0;
       margin-bottom: 4px;
+      width: 307px;
       font-size: 32px;
     }
+         @include desktop {
+          
+           margin-left: auto;
+           margin-right: 0;
+           margin-bottom: 4px;
+           width: 304px;
+           font-size: 32px;
+         }
   }
 
   &__logo-about {
@@ -87,13 +97,19 @@
     text-transform: uppercase;
 
     @include tablet {
+      margin-left: auto;
+        margin-right: 0;
       font-size: 64px;
       line-height: 1.078;
       margin-bottom: 24px;
     }
 
     @include desktop {
-      margin: 4px 85px 24px auto;
+      margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 24px;
+        font-size: 64px;
+          line-height: 1.078;
     }
   }
 
@@ -112,10 +128,16 @@
     color: $text-rest-homepage-color;
 
     @include tablet {
+    margin-left: auto;
+      margin-right: 0;
+      min-width: 419px;
       font-size: 16px;
     }
 
     @include desktop {
+    margin-left: auto;
+      margin-right: 0;
+      min-width: 488px;
       font-size: 16px;
     }
   }
@@ -154,7 +176,8 @@
  
 
   &__text-hall {
-      max-width: 163px;
+    margin-right: 48px;
+     max-width: 163px;
     
     font-family: 'Montserrat';
     font-style: normal;
@@ -165,10 +188,19 @@
     color: $second-accent-color;
 
     @include tablet {
+      display: block;
+      margin-top: 340px;
+            margin-left: 220px;
+            margin-bottom: 154px;
+      min-width: 312px;
         font-size: 16px;
       }
     
       @include desktop {
+        display: block;
+        margin-left: 270px;
+        margin-bottom: 116px;
+            min-width: 311px;
         font-size: 16px;
       }
   }
@@ -195,6 +227,53 @@ display: block;
     height: 574px;
     top: 500px;
     right: 85px;
+  }
+  }
+ }
+.button-slider {
+  display: flex;
+  gap: 34px;
+  margin-top: 48px;
+  margin-left: 16px;
+
+  @include tablet {
+      margin-top: 40px;
+        margin-left: 48px;
+    }
+  
+    @include desktop {
+      margin-top: 48px;
+        margin-left: 86px;
+    }
+}
+ .button-slider__button-arrow {
+   display: flex;
+   background-color: transparent;
+   border: none;
+   align-items: center;
+   padding: 0;
+   fill: $main-dark-color;
+   cursor: pointer;
+ }
+
+ .swiper {  
+
+ &__swiper-wrapper {
+display: flex;
+gap: 40px
+ }
+
+ &__swiper-slide {
+   }
+
+  &__photo-slide {
+width: 194px;
+  background: $background-img-color;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include desktop {
+    width: 254px;
   }
   }
 
