@@ -11,16 +11,17 @@
   padding-top: 120px;
     padding-bottom: 40px;
   }
- }
+ 
 
   &__container-hotel {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     width: 1280px;
+    max-height: 100%;
 
     @include desktop {
-      max-height: 1280px;
+      max-widht: 1280px;
       
     }
 
@@ -35,14 +36,15 @@
     }
   }
 
-    &__article-about {
+&__article-about {
+display: block;
+flex-direction: column;
 
+margin-bottom: 28px;
     }
 
-&__title-about {
-    display: flex;
-   
-    margin: 0 0 6px auto;
+&__title-about {   
+    margin-left: 209px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
@@ -63,11 +65,8 @@
   }
 
   &__logo-about {
-    display: flex;
-   
-    margin-right: 0;
-    margin-left: auto;
-    font-family: 'Film P3';
+   margin-left: 2472px;
+       font-family: 'Film P3';
     font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
@@ -87,13 +86,10 @@
     }
   }
 
-  &__couch {
-    
-  }
-
   &__text-couch {
-    // margin: 16px 0 28px auto;
+    margin-left: 158px;
    width: 242px;
+   text-align: start;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -114,6 +110,7 @@
   &__photo-apartment {
   }
  }
+}
 
   .hotel-hall {
     display: block;
