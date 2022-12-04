@@ -303,20 +303,5 @@
             $bg-gradient-color 942px,
             $background-light-color 943px);
    }
-   @media screen and (min-width: 1024px) {
-            background-image: linear-gradient(to right,
-                     $background-light-color 27%,
-                     $bg-gradient-color 27%,
-                     $bg-gradient-color 27.1%,
-                     $background-light-color 27.1%,
-                     $background-light-color 50%,
-                     $bg-gradient-color 50%,
-                     $bg-gradient-color 50.1%,
-                     $background-light-color 50.1%,
-                     $background-light-color 73%,
-                     $bg-gradient-color 73%,
-                     $bg-gradient-color 73.1%,
-                     $background-light-color 73.1%);
-   }
 
 }
