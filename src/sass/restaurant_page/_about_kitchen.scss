@@ -405,12 +405,20 @@
 
         &.slick-prev {
             left: 0;
-            background: url('../images/svg/slider-prev-button.svg') 0 0 / 100% no-repeat;
+            background: url('../images/svg/slider-prev-button.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
         }
 
         &.slick-next {
             right: 0;
-            background: url('../images/svg/slider-next-button.svg') 0 0 / 100% no-repeat;
+            background: url('../images/svg/slider-next-button.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
         }
     }
 }
