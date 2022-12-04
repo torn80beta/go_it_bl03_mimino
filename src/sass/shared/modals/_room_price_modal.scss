@@ -100,6 +100,7 @@
    width: 100%;
    height: 54px;
    margin-bottom: 8px;
+   padding: 13px 20px 13px 15px;
    border: 1px solid $second-accent-color;
    background-color: $background-light-color;
    font-family: 'Times New Roman';
@@ -121,15 +122,12 @@
 }
 
 .modal-price__label {
+   margin-left: 12px;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.25;
    letter-spacing: 0.02em;
    color: $second-accent-color;
-
-   @include tablet {
-      margin-left: 12px;
-   }
 
    &--lowercase {
       text-transform: lowercase;
@@ -178,3 +176,33 @@
    border: none;
    cursor: pointer;
 }
+.modal-price__select {
+   display: block;
+      width: 100%;
+      height: 54px;
+      margin-bottom: 8px;
+      padding: 13px 20px 13px 15px;
+      border: 1px solid $second-accent-color;
+      background-color: $background-light-color;
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.05em;
+      color: $modal-placeholder;
+      outline: none;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      background-image: url(../images/arrow-down-bold.svg);
+      background-repeat: no-repeat;
+      background-position: 95%;
+      background-size: 24px;
+   
+      @include tablet {
+         width: 288px;
+         background-position: 95%;
+      }
+   }

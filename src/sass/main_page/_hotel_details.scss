@@ -1,0 +1,151 @@
+.hotel_details {
+  margin: 0 auto;
+  padding: 24px 15px 40px;
+  position: relative;
+  background-color: $main-dark-color;
+  background-image: linear-gradient(to right, #000000a6, #000000a6),
+    url(../images/homepage/background-hotel_414.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 414px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, #000000a6, #000000a6),
+      url(../images/homepage/background-hotel_414@2x.jpg);
+  }
+  @media screen and (min-width: 415px) {
+    max-width: 1024px;
+    background-image: linear-gradient(to right, #000000a6, #000000a6),
+      url(../images/homepage/background-hotel_1024.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #000000a6, #000000a6),
+        url(../images/homepage/background-hotel_1024@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    max-width: 1280px;
+    background-image: linear-gradient(to right, #000000a6, #000000a6),
+      url(../images/homepage/background-hotel_1280.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #000000a6, #000000a6),
+        url(../images/homepage/background-hotel_1280@2x.jpg);
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: 414px) {
+      width: 414px;
+      height: 1191px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 1024px;
+      height: 1238px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      height: 1257px;
+    }
+  }
+  &__info {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    max-width: 243px;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 549px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 595px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__logo {
+    font-family: 'Film P3';
+    color: $main-light-color;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+      line-height: 1.47;
+    }
+  }
+
+  &__sub-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $main-light-color;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-top: 55px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-top: 109px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    color: $text-second-homepage-color;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__photo-scroll {
+    height: 270px;
+
+    @media screen and (min-width: 1024px) {
+      width: 664px;
+      margin: 0;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 874px;
+    }
+  }
+  &__buttons {
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    @media screen and (min-width: 1024px) {
+      align-items: flex-end;
+      gap: 16px;
+      margin-right: 32px;
+      margin-bottom: 60px;
+    }
+  }
+}
