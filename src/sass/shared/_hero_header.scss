@@ -7,7 +7,10 @@
   padding: 0 15px;
 
   &--room-page {
-    height: 620px;
+    height: 664px;
+    @media screen and (min-width: 1024px) {
+      height: 620px;
+    }
   }
 
   @media screen and (min-width: 414px) {
@@ -28,6 +31,8 @@
 // Header
 
 .header-container {
+  position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
 }
@@ -140,6 +145,7 @@
 // Social networks
 
 .hero__social {
+  z-index: 10;
   display: flex;
   gap: 20px;
 
@@ -414,54 +420,6 @@
 
 // Hero room-page
 
-.hero-room-background {
-  background-color: $footer-background-color;
-  @media screen and (min-width: 1280px) {
-    margin: 0 auto;
-    width: 1280px;
-  }
-}
-
-.hero-slider-buttons-position {
-  display: flex;
-  position: absolute;
-  width: calc(100% - 30px);
-  left: 15px;
-  bottom: 350px;
-
-  @media screen and (min-width: 1024px) {
-    width: calc(100% - 94px);
-    left: 47px;
-    bottom: 340px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: calc(100% - 170px);
-    left: 85px;
-    bottom: 268px;
-  }
-}
-
-.hero-slider-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.65);
-  &--left {
-    margin-right: auto;
-  }
-}
-
-.hero-slider-icon {
-  width: 37px;
-  height: 21px;
-  fill: $accent-color;
-}
-
 .hero-room__content {
   position: absolute;
   width: 280px;
@@ -520,6 +478,14 @@
 }
 
 // Header and hero  backgrounds
+
+.hero-room-background {
+  background-color: $footer-background-color;
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    width: 1280px;
+  }
+}
 
 .hero-main-background {
   margin: 0 auto;
@@ -749,15 +715,14 @@
 // Hero slider
 
 .hero-slider-wrapper {
-  position: relative;
-
-  width: 414px;
-  height: 740px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .hero-slider {
   position: relative;
-
   & .slick-track {
     display: flex;
   }
@@ -765,23 +730,58 @@
   & .slick-list {
     overflow: hidden;
   }
+
+  & .slick-slide {
+    height: 740px;
+    @media screen and (min-width: 1024px) {
+      height: 720px;
+    }
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    &.slick-prev {
+      left: 15px;
+      @media screen and (min-width: 1024px) {
+        left: 47px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        left: 85px;
+      }
+
+      background-image: url('../images/svg/hero-slider-arrow-left.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.slick-next {
+      right: 15px;
+      @media screen and (min-width: 1024px) {
+        right: 47px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        right: 85px;
+      }
+
+      background-image: url('../images/svg/hero-slider-arrow-right.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
-
-.slick-arrow {
-  border: none;
-
-  width: 40px;
-  height: 40px;
-
-  z-index: 10;
-  font-size: 0;
-  border: none;
-  background-color: black;
-}
-
-// hero-slider-arrows {
-//   position: absolute;
-
-//   top: 0;
-//   left: 0;
-// }
