@@ -41,7 +41,11 @@
                 $background-light-color 943px);
     }
 }
-
+/* 
+.about-kitchen__wrapper {
+    background-color: $background-light-color;
+}
+ */
 .about-kitchen__container {
     position: relative;
     display: flex;
@@ -200,14 +204,6 @@
     }
 }
 
-.slick-list {
-    overflow: hidden;
-}
-
-.slick-track {
-    display: flex;
-}
-
 .about-kitchen__slider-wrapper {
     position: absolute;
     top: 879px;
@@ -228,6 +224,14 @@
         left: 665px;
         width: 530px;
     }
+
+    & .slick-list {
+        overflow: hidden;
+    }
+
+    & .slick-track {
+        display: flex;
+    }
 }
 
 .about-kitchen__slick-item {
@@ -247,14 +251,14 @@
         padding-right: 40px;
         margin-left: -245px;
     }
-}
 
-.slick__box {
-    border-radius: 2px;
-    overflow: hidden;
-
-    &:nth-child(1n) {
-        box-shadow: $slider-item-shadow;
+    & .slick__box {
+        border-radius: 2px;
+        overflow: hidden;
+    
+        &:nth-child(1n) {
+            box-shadow: $slider-item-shadow;
+        }
     }
 }
 
@@ -330,6 +334,14 @@
         right: 665px;
         width: 530px;
     }
+
+    & .slick-list {
+        overflow: hidden;
+    }
+
+    & .slick-track {
+        display: flex;
+    }
 }
 
 .about-kitchen__slick-item--left {
@@ -350,14 +362,14 @@
         padding-left: 285px;
         margin-left: -245px;
     }
-}
 
-.slick__box {
-    border-radius: 2px;
-    overflow: hidden;
+    & .slick__box {
+        border-radius: 2px;
+        overflow: hidden;
 
-    &:nth-child(1n) {
-        box-shadow: $slider-item-shadow;
+        &:nth-child(1n) {
+            box-shadow: $slider-item-shadow;
+        }
     }
 }
 
