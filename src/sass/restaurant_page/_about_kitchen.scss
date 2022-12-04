@@ -1,8 +1,14 @@
 .about-kitchen {
+    max-width: 1280px;
     margin: 0 auto;
-    width: 414px;
+    overflow: hidden;
+    background-color: $background-light-color;
+}
+
+.about-kitchen__wrapper {
+    margin: 0 auto;
+    max-width: 414px;
     height: 1191px;
-    /* overflow: hidden; */
     background-image: linear-gradient(to right,
             $background-light-color 138px,
             $bg-gradient-color 139px,
@@ -12,7 +18,7 @@
             $background-light-color 275px);
 
     @media screen and (min-width: 1024px) {
-        width: 1024px;
+        max-width: 1024px;
         height: 1238px;
         background-image: linear-gradient(to right,
                 $background-light-color 278px,
@@ -27,7 +33,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        max-width: 1280px;
         height: 1257px;
         background-image: linear-gradient(to right,
                 $background-light-color 338px,
@@ -41,11 +47,7 @@
                 $background-light-color 943px);
     }
 }
-/* 
-.about-kitchen__wrapper {
-    background-color: $background-light-color;
-}
- */
+
 .about-kitchen__container {
     position: relative;
     display: flex;
