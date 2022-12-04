@@ -3,7 +3,7 @@ $('.hero-slider').slick({
   nextArrow: '<button type="button" class="my-slick-next">&xrarr;</button>',
   infinite: true,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 2,
   // adaptiveHeight: true,
   fade: true,
   arrows: true,
@@ -11,11 +11,11 @@ $('.hero-slider').slick({
 });
 
 // $('.hero-slider').ready(function () {
-//     $('.variable-width').slick({
-//         arrows: true,
-//         slidesToShow: 2,
-//         variableWidth: true,
-//         appendArrows: $('.hero-slider-nav'),
-//         speed: 300,
-//     });
+//   $('.variable-width').slick({
+//     arrows: true,
+//     slidesToShow: 2,
+//     variableWidth: true,
+//     appendArrows: $('.hero-slider-nav'),
+//     speed: 300,
+//   });
 // });
