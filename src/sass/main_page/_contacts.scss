@@ -1,13 +1,14 @@
-.home-contacts {
+ .home-contacts {
     max-width: 1280px;
     margin: 0 auto;
     background-color: $background-light-color;
 
-    &__container {
+    &__section-gradient{
         margin: 0 auto;
         @include mobile {
+            padding: 36px 0px 32px;
             width: 414px;
-            padding: 36px 15px 32px;
+            
         background-image: linear-gradient(to right,
                 $background-light-color 138px,
                 $bg-gradient-color 139px,
@@ -15,229 +16,206 @@
                 $background-light-color 273px,
                 $bg-gradient-color 274px,
                 $background-light-color 275px);
-        }
-
+            }
         @include tablet {
+            padding: 56px 0px 40px;
             width: 1024px;
-            padding: 56px 47px 40px;
+        background-image: linear-gradient(to right,
+            $background-light-color 278px,
+            $bg-gradient-color 279px,
+            $background-light-color 280px,
+            $background-light-color 511px,
+            $bg-gradient-color 512px,
+            $background-light-color 513px,
+            $background-light-color 745px,
+            $bg-gradient-color 746px,
+            $background-light-color 747px);
+
+            }
+        @include desktop {
+            padding: 56px 0 73px;
+            width: 1280px;
+        background-image: linear-gradient(to right,
+            $background-light-color 338px,
+            $bg-gradient-color 339px,
+            $background-light-color 340px,
+            $background-light-color 639px,
+            $bg-gradient-color 640px,
+            $background-light-color 641px,
+            $background-light-color 941px,
+            $bg-gradient-color 942px,
+            $background-light-color 943px);
+            }
+    }
+
+&__container {
+    @include mobile {
+        width: 414px;
+        padding: 0 15px;
+    }
+    
+    @include tablet {
+        width: 1024px;
+        padding: 0 47px;
+    }
+    
+    @include desktop {
+        width: 1280px;
+        padding: 0 85px;  
+    }
+    }
+
+    &__box{
+        @include tablet{
             display: flex;
             justify-content: space-between;
             align-items: center;
-        background-image: linear-gradient(to right,
-                        $background-light-color 270px,
-                        $bg-gradient-footer-color 271px,
-                        $background-light-color 272px,
-                        $background-light-color 511px,
-                        $bg-gradient-footer-color 512px,
-                        $background-light-color 513px,
-                        $background-light-color 745px,
-                        $bg-gradient-footer-color 746px,
-                        $background-light-color 747px);
-        }
-
-        @include desktop {
-            width: 1280px;
-            padding: 56px 85px 73px;
-        background-image: linear-gradient(to right,
-                        $background-light-color 338px,
-                        $bg-gradient-color 339px,
-                        $background-light-color 340px,
-                        $background-light-color 639px,
-                        $bg-gradient-color 640px,
-                        $background-light-color 641px,
-                        $background-light-color 941px,
-                        $bg-gradient-color 942px,
-                        $background-light-color 943px);   
-        }
-
-    }
-
-    &__box {
-        margin: 0 auto;
-        @include tablet {
-            margin: 0;
-        }
-    }
-
-    &__box1 {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 22px;
-        margin-bottom: 16px;
-
-        @include tablet {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            margin-bottom: 24px;
-        }
-    }
-
-    &__box2 {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 54px;
-        margin-bottom: 16px;
-
-        @include tablet {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            margin-bottom: 0;
-        }
+        } 
     }
 
     &__logo {
-        font-family: 'Film P3', sans-serif;
-        font-weight: 700;
-        letter-spacing: 0.3em;
-        font-size: 40px;
-        line-height: 1.075;
-        color: $logo-homepage-color;
-        margin-bottom: 12px;
-        text-transform: uppercase;
-        @include tablet {
-            font-size: 64px;
-            line-height: 1.078;
-            margin-bottom: 8px;
-        }
-
-        @include desktop {
-            margin-bottom: 16px;
-        }
+         font-family: 'Film P3', sans-serif;
+         font-weight: 700;
+         letter-spacing: 0.3em;
+         font-size: 40px;
+         line-height: 1.08;
+         color: $logo-homepage-color;
+         margin-bottom: 12px;
+         text-transform: uppercase;
+    @include tablet {
+        font-size: 64px;
+        line-height: 1.08;
+        margin-bottom: 8px;
     }
 
-    &_title {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $text-rest-homepage-color;
+    @include desktop {
         margin-bottom: 16px;
-
-        @include tablet {
-            margin-bottom: 52px;
-        }
-
-        @include desktop {
-            font-size: 20px;
-            line-height: 1.2;
-            margin-bottom: 40px;
-        }
     }
+    }
+&_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $text-rest-homepage-color;
+@include desktop {
+    font-size: 20px;
+    line-height: 1.2;         
+    }
+}  
+    
 
-    &__text {
-        font-family: 'Montserrat', sans-serif;
+&__address{
+    margin-top: 16px;
+    margin-bottom: 32px;
+@include tablet {
+        margin-top: 52px;
+        margin-bottom: 0px;
+    }
+}
+
+&__text{
+    font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         color: $second-accent-color;
+        min-width: 124px;
     }
-
-    &__item {
+    &__text--hiden{
+        opacity: 0;
+    }
+    &__list{
         display: flex;
-        gap: 11px;
-        justify-content: center;
-        align-items: center;
-        background-color: $main-light-color;
-        border: 0.5px solid rgba(243, 198, 83, 0.7);
-        border-radius: 2px;
-        padding: 8px;
-
-        @include tablet {
-            max-width: 264px;
+        flex-direction: column;
+        gap: 16px;
+    @include tablet {
+            gap: 24px;
         }
     }
 
-    &__link {
+    &__item{
         display: flex;
+        align-items: flex-start;
+    @include tablet {
+        flex-direction: column;
+        gap: 8px;
+    }
+    }
+
+    &__style-box{
+        display: flex;
+        align-items: center;
         justify-content: center;
+        gap: 8px;
+        padding: 9px 8px 7px 10px;
+        
+        background-color: $main-light-color;
+        border: 0.5px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+        }
+
+    &__link{
+        display: flex;
         align-items: center;
         gap: 8px;
-        flex-grow: 1;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: calc(17px / 14px);
         letter-spacing: 0.02em;
         color: #494848;
-
+        
         @include desktop {
             gap: 10px;
+         }
         }
-    }
-
-    &__icon {
-        display: block;
-        width: 24px;
-        height: 24px;
-        fill: rgba(199, 144, 2, 1);
-    }
-
-    &__address {
-        padding-left: 121px;
-        margin-bottom: 32px;
-
-        @include tablet {
-            max-width: 285px;
-            padding-left: 0;
-            margin-bottom: 0;
-            margin-top: 48px;
-        }
-    }
 
     &__location {
         display: flex;
         align-items: center;
-        padding: 8px 32px 8px 10px;
+        margin-right:25px;
         gap: 10px;
-        max-width: 260px;
-        flex-grow: 1;
-        border: 0.5px solid rgba(243, 198, 83, 0.7);
-        border-radius: 2px;
-        background-color: $main-light-color;
         font-family: 'Montserrat', sans-serif;
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: calc(19.5px / 16px);
         letter-spacing: 0.01em;
         color: #494848;
-
         @include tablet {
-            max-width: 285px;
-            padding: 8px 8px 8px 10px;
-            margin-right: 0;
+                margin-right: 6.58px;
+            }
+        }        
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: rgba(199, 144, 2, 1)
         }
-    }
+        
+     &__map-box {
+         width: 100%;
+         height: 220px;
+         margin: 0 auto;
 
-    &__map-box {
-        max-width: 100%;
-        height: 220px;
-        margin: 0 auto;
+         @include tablet {
+             max-width: 535px;
+             height: 412px;
+             margin: 0;
+         }
 
-        @include tablet {
-            width: 535px;
-            height: 412px;
-            margin: 0;
-        }
+         @include desktop {
+             max-width: 634px;
+         }
+     }
 
-        @include desktop {
-            width: 634px;
-        }
-    }
-
-    &__map {
-        width: 100%;
-        height: 100%;
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-    }
-
+     &__map {
+         width: 100%;
+         height: 100%;
+         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+         border-radius: 2px;
+     }   
 }
-
