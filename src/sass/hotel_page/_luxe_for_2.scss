@@ -4,6 +4,11 @@
    
    background-color: $background-light-color;
 
+   @include tablet {
+      position: relative;
+      padding-top: 62px;
+      padding-bottom: 104px;
+   }
    @include desktop {
       max-width: 1280px;
    
@@ -260,6 +265,7 @@
    cursor: pointer;
 }
 .background-gradient {
+
    width: 414px;
    background-image: linear-gradient(to right,
          $background-light-color 138px,
@@ -297,4 +303,20 @@
             $bg-gradient-color 942px,
             $background-light-color 943px);
    }
+   @media screen and (min-width: 1024px) {
+            background-image: linear-gradient(to right,
+                     $background-light-color 27%,
+                     $bg-gradient-color 27%,
+                     $bg-gradient-color 27.1%,
+                     $background-light-color 27.1%,
+                     $background-light-color 50%,
+                     $bg-gradient-color 50%,
+                     $bg-gradient-color 50.1%,
+                     $background-light-color 50.1%,
+                     $background-light-color 73%,
+                     $bg-gradient-color 73%,
+                     $bg-gradient-color 73.1%,
+                     $background-light-color 73.1%);
+   }
+
 }

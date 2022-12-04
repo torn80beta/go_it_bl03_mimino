@@ -1,9 +1,16 @@
-.section {
+.restaurant-menu {
   width: 100%;
-  padding: 32px 0;
+  margin: 0 auto;
   background-color: $background-light-color;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+.gradient__container {
   @media screen and (min-width: 1024px) {
-    padding: 58px 0 40px 0;
+    width: 1024px;
+    margin: 0 auto;
     background-image: linear-gradient(
       to right,
       $background-light-color 745px,
@@ -12,8 +19,7 @@
     );
   }
   @media screen and (min-width: 1280px) {
-    padding: 58px 0 60px 0;
-    max-width: 1280px;
+    width: 1280px;
     margin: 0 auto;
     background-image: linear-gradient(
       to right,
@@ -33,17 +39,17 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 32px 15px;
   @media screen and (min-width: 414px) {
     max-width: 414px;
   }
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    padding: 0 47px;
+    padding: 58px 47px 40px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    padding: 0 85px;
+    padding: 58px 85px 60px;
   }
 }
 .menu {
