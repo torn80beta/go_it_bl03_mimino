@@ -1,44 +1,72 @@
 .rooms {
    margin-left: auto;
    margin-right: auto;
-   
    background-color: $background-light-color;
 
-   @include tablet {
-      position: relative;
-      padding-top: 62px;
-      padding-bottom: 104px;
-   }
    @include desktop {
       max-width: 1280px;
-   
    }
 }
 .rooms__background-gradient {
    margin-left: auto;
    margin-right: auto;
+      width: 414px;
+         background-image: linear-gradient(to right,
+               $background-light-color 138px,
+               $bg-gradient-color 139px,
+               $background-light-color 140px,
+               $background-light-color 273px,
+               $bg-gradient-color 274px,
+               $background-light-color 275px);
+      
+         @media screen and (min-width: 1024px) {
+            width: 1024px;
+            background-image: linear-gradient(to right,
+                  $background-light-color 278px,
+                  $bg-gradient-color 279px,
+                  $background-light-color 280px,
+                  $background-light-color 511px,
+                  $bg-gradient-color 512px,
+                  $background-light-color 513px,
+                  $background-light-color 745px,
+                  $bg-gradient-color 746px,
+                  $background-light-color 747px);
+      
+         }
+      
+         @media screen and (min-width: 1280px) {
+            width: 1280px;
+            background-image: linear-gradient(to right,
+                  $background-light-color 338px,
+                  $bg-gradient-color 339px,
+                  $background-light-color 340px,
+                  $background-light-color 639px,
+                  $bg-gradient-color 640px,
+                  $background-light-color 641px,
+                  $background-light-color 941px,
+                  $bg-gradient-color 942px,
+                  $background-light-color 943px);
+         }
 }
 .rooms__container {
+   position: relative;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
    padding-bottom: 32px;
       padding-top: 32px;
-   overflow: hidden;
 
    @include mobile {
       max-width: 414px;
    }
 
    @include tablet {
-      position: relative;
-      overflow: visible;
       max-width: 1024px;
       padding-left: 47px;
       padding-right: 47px;
       padding-top: 62px;
-         padding-bottom: 104px;
+         padding-bottom: 145px;
    }
 
    @include desktop {
@@ -46,7 +74,7 @@
       padding-left: 85px;
       padding-right: 85px;
          padding-top: 72px;
-            padding-bottom: 112px;
+            padding-bottom: 182px;
 
    }
 }
@@ -88,12 +116,12 @@
 
    @include tablet {
       font-size: 16px;
-      margin-bottom: 176px;
+      margin-bottom: 217px;
       max-width: 439px;
    }
 
    @include desktop {
-      margin-bottom: 188px;
+      margin-bottom: 260px;
       max-width: 400px;
    }
 }
@@ -135,30 +163,11 @@
    }
 }
 
-.rooms__slider {
-   display: flex;
-      gap: 32px;
-   
-      @include tablet-down {
-         margin-bottom: 20px;
-      }
-   
-      @include tablet {
-         position: absolute;
-         right: 502px;
-         top: 226px;
-      }
-      @include desktop {
-         right: 555px;
-         top: 294px;
-      }
-}
-
 .rooms__picture {
    display: block;
    width: 244px;
    margin-left: auto;
-   margin-bottom: 32px;
+   margin-bottom: 298px;
    background: $background-img-color;
    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    border-radius: 2px;
@@ -179,55 +188,18 @@
    }
 }
 
-.rooms-gallery {
-      @include tablet-down {
-            margin-bottom: 20px;
-         }
-}
-
-.rooms-gallery__list {
-   position: relative;
-   width: auto;
-   right: 115px;
-   display: flex;
-   gap: 16px;
-
-   @include tablet {
-      position: static;
-      right: 0;
-      gap: 40px;
-   }
-
-}
-
-.rooms-gallery__img {
-   width: 194px;
-   background: $background-img-color;
-   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-   border-radius: 2px;
-
-   @include desktop {
-      width: 254px;
-   }
-
-}
-
 .rooms__item:not(:last-child) {
    margin-bottom: 16px;
 }
 
 .rooms__list {
    text-align: center;
+
+   @include tablet {
+         text-align: right;
+      }
 }
 
-.rooms__box {
-   @include tablet {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-   }
-}
 .rooms__button--dark {
    background-color: $main-dark-color;
    color: $accent-color;
@@ -253,55 +225,109 @@
 }
 .button-link {
    display: inline-block;
+   text-align: center;
 }
+// slider
 
-.rooms__button-arrow {
-   display: flex;
-   background-color: transparent;
-   border: none;
-   align-items: center;
-   padding: 0;
-   fill: $main-dark-color;
-   cursor: pointer;
-}
-.background-gradient {
-
-   width: 414px;
-   background-image: linear-gradient(to right,
-         $background-light-color 138px,
-         $bg-gradient-color 139px,
-         $background-light-color 140px,
-         $background-light-color 273px,
-         $bg-gradient-color 274px,
-         $background-light-color 275px);
+.rooms-gallery__slider-wrapper--left {
+   position: absolute;
+   bottom: 216px;
+   right: 130px;
+   width: 284px;
+   border-radius: 2px;
+   overflow: hidden;
+   box-shadow: slider-wrapper-shadow;
 
    @media screen and (min-width: 1024px) {
-      width: 1024px;
-      background-image: linear-gradient(to right,
-            $background-light-color 278px,
-            $bg-gradient-color 279px,
-            $background-light-color 280px,
-            $background-light-color 511px,
-            $bg-gradient-color 512px,
-            $background-light-color 513px,
-            $background-light-color 745px,
-            $bg-gradient-color 746px,
-            $background-light-color 747px);
-
+      bottom: 104px;
+      right: 549px;
+      width: 428px;
    }
 
    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      background-image: linear-gradient(to right,
-            $background-light-color 338px,
-            $bg-gradient-color 339px,
-            $background-light-color 340px,
-            $background-light-color 639px,
-            $bg-gradient-color 640px,
-            $background-light-color 641px,
-            $background-light-color 941px,
-            $bg-gradient-color 942px,
-            $background-light-color 943px);
+      bottom: 112px;
+      right: 647px;
+      width: 548px;
    }
 
+   & .slick-list {
+      overflow: hidden;
+   }
+
+   & .slick-track {
+      display: flex;
+      gap: 16px;
+      margin-left: 90px;
+
+      @include tablet {
+         gap: 40px;
+         margin-left: 0;
+      }
+   }
+}
+
+.rooms-gallery__slick-item--left {
+   box-shadow: $slider-item-shadow;
+
+   & .slick__box {
+      border-radius: 2px;
+      overflow: hidden;
+      width: 194px;
+
+      &:nth-child(1n) {
+         box-shadow: $slider-item-shadow;
+      }
+
+      @include desktop {
+         width: 254px;
+      }
+   }
+}
+
+.rooms__container .slider-nav {
+   position: absolute;
+   bottom: 164px;
+   left: 15px;
+   width: 94px;
+   height: 18px;
+
+   @media screen and (min-width: 1024px) {
+      justify-content: space-between;
+      bottom: 40px;
+      left: 377px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      bottom: 40px;
+      left: 542px;
+   }
+
+   & .slick-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-9px);
+      width: 30px;
+      height: 18px;
+      z-index: 10;
+      font-size: 0;
+      border: none;
+
+      &.slick-prev {
+         left: 0;
+         background: url('../images/svg/slider-prev-button.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: transparent;
+      }
+
+      &.slick-next {
+         right: 0;
+         background: url('../images/svg/slider-next-button.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: transparent;
+      }
+   }
 }
