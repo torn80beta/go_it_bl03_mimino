@@ -1,0 +1,2 @@
+for(var openModalEntry=document.querySelectorAll(".btn-open-book-table"),showModalEntry=document.querySelectorAll(".modal-window-entry-table"),closeModalEntry=document.querySelectorAll(".close-entry"),i=0;i<openModalEntry.length;i++)openModalEntry[i].addEventListener("click",(function(e){e.preventDefault(),showModalEntry[0].classList.add("show-entry")}));for(i=0;i<closeModalEntry.length;i++)closeModalEntry[i].addEventListener("click",(function(e){e.preventDefault(),showModalEntry[0].classList.remove("show-entry")}));
+//# sourceMappingURL=restaurant.2e1ddbee.js.map
