@@ -105,50 +105,6 @@
     background-color: transparent;
     cursor: pointer;
   }
-  // &__slider-list .slick-prev.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: calc(30px * $dist);
-  //   height: calc(17px * $dist);
-  //   background-image: url('../images/vectorL.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   z-index: 5;
-  // }
-  // &__slider-list .slick-prev.slick-arrow {
-  //   position: absolute;
-  //   width: calc(30px * $dist);
-  //   height: calc(17px * $dist);
-  //   top: calc(($width + $arrow-distance-from-bottom) * $dist);
-  //   left: calc(
-  //     ($width - $arrows-distance-from-right - $arrow-distance-from-arrow - 60px) *
-  //       $dist
-  //   );
-  //   z-index: 5;
-  // }
-
-  // &__slider-list .slick-next.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: calc(30px * $dist);
-  //   height: calc(17px * $dist);
-  //   background-image: url('../images/vectorR.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   cursor: pointer;
-  //   z-index: 5;
-  // }
-  // &__slider-list .slick-next.slick-arrow {
-  //   position: absolute;
-  //   display: inline-block;
-  //   width: calc(30px * $dist);
-  //   height: calc(17px * $dist);
-  //   top: calc(($width + $arrow-distance-from-bottom) * $dist);
-  //   right: calc($arrows-distance-from-right * $dist);
-  //   z-index: 5;
-  // }
 }
 @mixin slider-two-images(
   $width,
@@ -204,110 +160,7 @@
     background-color: transparent;
     cursor: pointer;
   }
-  // &__slider-list .slick-prev.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 30px;
-  //   height: 17px;
-  //   background-image: url('../images/vectorL.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   z-index: 5;
-  // }
-  // &__slider-list .slick-prev.slick-arrow {
-  //   position: absolute;
-  //   width: 30px;
-  //   height: 17px;
-  //   top: calc($width + $arrow-distance-from-bottom);
-  //   left: $width - $arrows-distance-from-right - $arrow-distance-from-arrow -
-  //     60px;
-  //   z-index: 5;
-  // }
-
-  // &__slider-list .slick-next.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 30px;
-  //   height: 17px;
-  //   background-image: url('../images/vectorR.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   cursor: pointer;
-  //   z-index: 5;
-  // }
-  // &__slider-list .slick-next.slick-arrow {
-  //   position: absolute;
-  //   display: inline-block;
-  //   width: 30px;
-  //   height: 17px;
-  //   top: calc($width + $arrow-distance-from-bottom);
-  //   right: $arrows-distance-from-right;
-  //   z-index: 5;
-  // }
 }
-
-// @mixin two-cards-slider($card-width, $margin, $left: 0px, $right: 0px) {
-//   position: relative;
-//   width: calc($card-width * 2 + $margin - $right);
-//   left: -$left;
-
-//   & img {
-//     display: block;
-//     width: $card-width;
-//     object-fit: cover;
-//     object-position: center;
-//   }
-//   & ul {
-//     margin: 0;
-//     padding: 0;
-//     position: relative;
-//     width: calc($card-width * 2 + $margin * 2);
-//   }
-//   & li {
-//     margin-right: $margin;
-//   }
-//   & .slick-prev.slick-arrow::before {
-//     content: '';
-//     display: inline-block;
-//     width: 30px;
-//     height: 17px;
-//     background-image: url('../images/vectorL.svg');
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-//   & .slick-prev.slick-arrow {
-//     position: absolute;
-//     width: 30px;
-//     height: 20px;
-//     top: 90%;
-//     left: 40%;
-//     z-index: 5;
-//   }
-
-//   & .slick-next.slick-arrow::before {
-//     content: '';
-//     display: inline-block;
-//     width: 30px;
-//     height: 17px;
-//     background-image: url('../images/vectorR.svg');
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     cursor: pointer;
-//   }
-//   & .slick-next.slick-arrow {
-//     position: absolute;
-//     display: inline-block;
-//     width: 30px;
-//     height: 20px;
-//     top: 90%;
-//     left: 50%;
-//     z-index: 5;
-//   }
-// }
 
 @mixin three-cards-slider($width-max, $width-min, $margin, $place-of-big) {
   position: relative;
@@ -364,17 +217,7 @@
     background-color: transparent;
     cursor: pointer;
   }
-  // & .slick-prev.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 30px;
-  //   height: 17px;
-  //   background-image: url('../images/vectorL.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   z-index: 10;
-  // }
+
   & .slick-prev.slick-arrow {
     position: absolute;
     width: 30px;
@@ -384,18 +227,6 @@
     z-index: 5;
   }
 
-  // & .slick-next.slick-arrow::before {
-  //   content: '';
-  //   display: inline-block;
-  //   width: 30px;
-  //   height: 17px;
-  //   background-image: url('../images/vectorR.svg');
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   cursor: pointer;
-  //   z-index: 10;
-  // }
   & .slick-next.slick-arrow {
     position: absolute;
     display: inline-block;
