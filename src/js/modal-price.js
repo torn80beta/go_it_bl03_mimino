@@ -1,5 +1,5 @@
-var openModalEntry = document.querySelectorAll(".btn-open-book-table");
-var showModalEntry = document.querySelectorAll(".modal-window-entry-table");
+var openModalEntry = document.querySelectorAll(".btn_sign");
+var showModalEntry = document.querySelectorAll(".modal-window_entry");
 var closeModalEntry = document.querySelectorAll(".close-entry");
 
 for(var i = 0; i < openModalEntry.length; i++){
