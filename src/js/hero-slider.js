@@ -1,21 +1,16 @@
-$('.hero-slider').slick({
-  prevArrow: '<button type="button" class="my-slick-prev">&xlarr;</button>',
-  nextArrow: '<button type="button" class="my-slick-next">&xrarr;</button>',
-  infinite: true,
-  speed: 300,
-  slidesToShow: 2,
-  // adaptiveHeight: true,
-  fade: true,
-  arrows: true,
-  // appendArrows: $('.hero-slider-nav'),
+$(document).ready(function () {
+  $('.hero-slider').slick({
+    infinite: true,
+    arrows: true,
+    appendArrows: $('.hero-slider-arrows'),
+    speed: 300,
+    cssEase: 'linear',
+  });
 });
 
-// $('.hero-slider').ready(function () {
-//   $('.variable-width').slick({
-//     arrows: true,
-//     slidesToShow: 2,
-//     variableWidth: true,
-//     appendArrows: $('.hero-slider-nav'),
-//     speed: 300,
-//   });
-// });
+//
+// slidesToShow: 1,
+// variableWidth: true,
+// appendArrows: $('.hero-slider-nav'),
+// fade: true,
+// speed: 300,
