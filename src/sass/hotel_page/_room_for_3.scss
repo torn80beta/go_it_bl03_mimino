@@ -18,19 +18,20 @@
 }
 .triple-room__wrapper {
   @include desktop {
-    max-width: 1024px;
-    height: 1238px;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 1257px;
     background-image: linear-gradient(
       to right,
-      $background-light-color 278px,
-      $bg-gradient-color 279px,
-      $background-light-color 280px,
-      $background-light-color 511px,
-      $bg-gradient-color 512px,
-      $background-light-color 513px,
-      $background-light-color 745px,
-      $bg-gradient-color 746px,
-      $background-light-color 747px
+      $logo-header-hotel-color 338px,
+      $main-dark-color 339px,
+      $logo-header-hotel-color 340px,
+      $logo-header-hotel-color 639px,
+      $main-dark-color 640px,
+      $logo-header-hotel-color 641px,
+      $logo-header-hotel-color 941px,
+      $main-dark-color 942px,
+      $logo-header-hotel-color 943px
     );
   }
 }
