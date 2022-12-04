@@ -3,54 +3,57 @@
   width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 32px 15px;
+  background-image: linear-gradient(
+    to right,
+    $background-light-color 138px,
+    $bg-gradient-color 139px,
+    $background-light-color 140px,
+    $background-light-color 273px,
+    $bg-gradient-color 274px,
+    $background-light-color 275px
+  );
 
   @media screen and (min-width: 1024px) {
     width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
-  }
-}
-
-.hotel-section-room {
-  background-color: $background-light-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  @media screen and (min-width: 1024px) {
-    padding-top: 64px;
-    padding-bottom: 104px;
+    padding: 64px 47px 104px;
     background-image: linear-gradient(
       to right,
-      $background-light-color 27%,
-      $bg-gradient-color 27%,
-      $bg-gradient-color 27.1%,
-      $background-light-color 27.1%,
-      $background-light-color 50%,
-      $bg-gradient-color 50%,
-      $bg-gradient-color 50.1%,
-      $background-light-color 50.1%,
-      $background-light-color 73%,
-      $bg-gradient-color 73%,
-      $bg-gradient-color 73.1%,
-      $background-light-color 73.1%
+      $background-light-color 278px,
+      $bg-gradient-color 279px,
+      $background-light-color 280px,
+      $background-light-color 511px,
+      $bg-gradient-color 512px,
+      $background-light-color 513px,
+      $background-light-color 745px,
+      $bg-gradient-color 746px,
+      $background-light-color 747px
     );
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 72px;
-    padding-bottom: 40px;
+    width: 1280px;
+    padding: 72px 85px 182px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-color 338px,
+      $bg-gradient-color 339px,
+      $background-light-color 340px,
+      $background-light-color 639px,
+      $bg-gradient-color 640px,
+      $background-light-color 641px,
+      $background-light-color 941px,
+      $bg-gradient-color 942px,
+      $background-light-color 943px
+    );
   }
+}
+
+.hotel-section-room {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  background-color: $background-light-color;
 
   &__text {
     margin-bottom: 8px;
@@ -121,7 +124,7 @@
 
     @media screen and (min-width: 1024px) {
       width: 439px;
-      margin-bottom: 174px;
+      margin-bottom: 215px;
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.02em;
@@ -129,7 +132,7 @@
 
     @media screen and (min-width: 1280px) {
       width: 400px;
-      margin-bottom: 188px;
+      margin-bottom: 260px;
       font-weight: 700;
     }
   }
@@ -139,80 +142,151 @@
   display: flex;
   margin-left: auto;
   width: 244px;
-  margin-bottom: 32px;
+  margin-bottom: 298px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
     width: 400px;
-    top: -96px;
+    top: -32px;
     right: 112px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 460px;
-    top: -104px;
     right: 180px;
   }
 }
 
 .hotel-section-room--tablet-desktop {
-  overflow: hidden;
   width: 100%;
 
   @media screen and (min-width: 1024px) {
     display: flex;
+    justify-content: end;
   }
 }
 
-.hotel-section-room-slider {
-  position: relative;
-  right: 130px;
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-  margin-bottom: 20px;
+.hotel-section-room__slider {
+  position: absolute;
+  top: 640px;
+  left: 0px;
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
-    right: 0;
+    top: 540px;
+    left: 47px;
   }
 
   @media screen and (min-width: 1280px) {
-  }
-
-  &__images {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-      gap: 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-    }
-  }
-
-  &__img {
-    background: #dadada;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: end;
-    gap: 32px;
+    top: 590px;
+    left: 85px;
   }
 }
 
-.hotel-section-room-slider__button {
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+.hotel-section-room__slider-wrapper {
+  width: 284px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  // overflow: hidden;
+  box-shadow: $slider-wrapper-shadow;
+
+  @media screen and (min-width: 1024px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 548px;
+  }
+
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  & .slick-track {
+    display: flex;
+    margin-left: 90px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 0px;
+    }
+  }
+}
+
+.hotel-section-room__slick-item {
+  width: 194px;
+  margin-left: 16px;
+  box-shadow: $slider-item-shadow;
+
+  @media screen and (min-width: 1024px) {
+    width: 194px;
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 254px;
+    margin-left: 40px;
+  }
+
+  & .slick__box {
+    border-radius: 2px;
+    overflow: hidden;
+
+    &:nth-child(1n) {
+      box-shadow: $slider-item-shadow;
+    }
+  }
+}
+
+.slider-nav {
+  position: absolute;
+  top: 214px;
+  left: 15px;
+  width: 94px;
+  height: 32px;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    justify-content: space-between;
+    top: 224px;
+    left: 334;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    top: 294px;
+    left: 454;
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-9px);
+    width: 30px;
+    height: 18px;
+    z-index: 10;
+    font-size: 0;
     border: none;
+
+    &.slick-prev {
+      height: 18px;
+      left: 0;
+      background-image: url('../images/svg/slider-prev-button.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+    }
+
+    &.slick-next {
+      height: 18px;
+      right: 0;
+      background-image: url('../images/svg/slider-next-button.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+    }
   }
 }
 
@@ -222,6 +296,13 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: end;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hotel-section-room__button {
@@ -229,7 +310,7 @@
   width: 236px;
   padding: 14px 0px;
   text-decoration: none;
-  border: none;
+  border: 2px solid $main-dark-color;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -244,8 +325,8 @@
 
   &:hover,
   &:focus {
-    color: $main-dark-color;
-    background-color: $accent-color;
-    border: none;
+    color: $accent-color;
+    background-color: $main-light-color;
+    border-color: $accent-color;
   }
 }

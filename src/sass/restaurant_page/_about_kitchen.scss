@@ -1,8 +1,8 @@
 .about-kitchen {
-  max-width: 1280px;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: $background-light-color;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow-x: clip;
+    background-color: $background-light-color;
 }
 
 .about-kitchen__wrapper {
