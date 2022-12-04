@@ -20,17 +20,16 @@
   @include desktop {
     margin: 0 auto;
     max-width: 1280px;
-    height: 1257px;
     background-image: linear-gradient(
       to right,
       $logo-header-hotel-color 338px,
-      $main-dark-color 339px,
+      $bg-gradient-color 339px,
       $logo-header-hotel-color 340px,
       $logo-header-hotel-color 639px,
-      $main-dark-color 640px,
+      $bg-gradient-color 64px,
       $logo-header-hotel-color 641px,
       $logo-header-hotel-color 941px,
-      $main-dark-color 942px,
+      $bg-gradient-color 940px,
       $logo-header-hotel-color 943px
     );
   }
