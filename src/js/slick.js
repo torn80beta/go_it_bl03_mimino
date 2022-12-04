@@ -5,7 +5,6 @@ $(document).ready(function () {
         variableWidth: true,
         appendArrows: $('.slider-nav'),
         speed: 300,
-        rtl: true,
     });
 });
 
