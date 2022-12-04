@@ -1,7 +1,7 @@
 .about-kitchen {
     max-width: 1280px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: clip;
     background-color: $background-light-color;
 }
 
