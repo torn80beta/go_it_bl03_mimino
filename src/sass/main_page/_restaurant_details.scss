@@ -385,3 +385,73 @@
     }
   }
 }
+// @mixin double-slider($width, $margin, $left: 0px, $right: 0px) {
+//   & {
+//     position: relative;
+//     width: calc($width * 2 + $margin - $right);
+//   }
+//   &-container {
+//     padding-bottom: 20px;
+//     overflow: hidden;
+//     position: relative;
+//   }
+//   &-wrapper {
+//     overflow: hidden;
+//     position: relative;
+//     margin: 0;
+//     width: calc($width * 2 + $margin);
+//     left: calc((-1) * $left);
+//   }
+//   &-image {
+//     width: $width;
+//     margin-right: $margin;
+//   }
+//   &__buttons {
+//     margin: 0;
+//     position: relative;
+//     top: 20px;
+//     width: 98px;
+//     display: flex;
+//     justify-content: space-between;
+//     &__arrow {
+//       border: none;
+//       background-color: transparent;
+//     }
+//   }
+//   &__arrow-right {
+//     border: none;
+//     background-color: transparent;
+//   }
+//   &__arrow-left {
+//     border: none;
+//     background-color: transparent;
+//   }
+//   &-next {
+//     position: absolute;
+//     top: 0;
+//     left: 56px;
+//     display: block;
+//     width: 45px;
+//     height: 27px;
+//     border: none;
+//     background-color: transparent;
+//     fill: none;
+//   }
+//   &-prev {
+//     position: absolute;
+//     display: block;
+//     width: 45px;
+//     height: 27px;
+//     border: none;
+//     background-color: transparent;
+//     fill: none;
+//   }
+// }
+
+// .probe-slider {
+//   margin: 0;
+//   @include double-slider(250px, 50px, 0px, 0px);
+//   &__buttons {
+//     margin-left: 220px;
+//   }
+// }
