@@ -203,6 +203,10 @@
         }        
 
     &__icon {
+        @media screen and (max-width: 413px) {
+            width: 14px;
+            height: 14px;
+            }
         width: 24px;
         height: 24px;
         fill: rgba(199, 144, 2, 1)
