@@ -42,21 +42,16 @@
 
   &__container {
     @media screen and (min-width: 414px) {
-      .container {
-        width: 414px;
-      }
+      width: 414px;
+      height: 1191px;
     }
     @media screen and (min-width: 1024px) {
-      .container {
-        width: 1024px;
-        padding: 0 47px;
-      }
+      width: 1024px;
+      height: 1238px;
     }
     @media screen and (min-width: 1280px) {
-      .container {
-        width: 1280px;
-        padding: 0 85px;
-      }
+      width: 1280px;
+      height: 1257px;
     }
   }
   &__info {
