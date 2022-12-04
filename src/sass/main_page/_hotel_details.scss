@@ -69,6 +69,10 @@
     @media screen and (min-width: 1024px) {
       max-width: 549px;
     }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 595px;
+    }
   }
 
   &__title {
@@ -143,6 +147,7 @@
 
     @media screen and (min-width: 1024px) {
       align-items: flex-end;
+      gap: 16px;
       margin-right: 32px;
       margin-bottom: 60px;
     }
