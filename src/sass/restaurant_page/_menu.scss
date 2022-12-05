@@ -129,10 +129,18 @@
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
+  display: inline-block;
   &:not(:last-child) {
     padding: 0 0 8px 0;
   }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
   @media screen and (min-width: 1280px) {
+    max-width: 291px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -149,6 +157,7 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
+    padding-right: 15px;
   }
   &__price {
     font-weight: 700;
@@ -183,10 +192,18 @@
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
+  display: inline-block;
   &:not(:last-child) {
     padding: 0 0 8px 0;
   }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
   @media screen and (min-width: 1280px) {
+    max-width: 291px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -210,6 +227,10 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
+    padding-right: 15px;
+    @media screen and (min-width: 1280px) {
+      padding-right: 28px;
+    }
   }
   &__price {
     font-weight: 700;
@@ -221,6 +242,9 @@
     text-align: right;
     @media screen and (min-width: 370px) {
       max-width: none;
+    }
+    @media screen and (min-width: 1024px) {
+      padding-right: 5px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -235,10 +259,18 @@
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
+  display: inline-block;
   &:not(:last-child) {
     padding: 0 0 8px 0;
   }
+  @media screen and (min-width: 414px) {
+    max-width: 221px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 226px;
+  }
   @media screen and (min-width: 1280px) {
+    max-width: 291px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -254,6 +286,7 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
+    padding-right: 15px;
   }
   &__price {
     font-weight: 700;
@@ -291,6 +324,7 @@
   min-width: 197px;
   word-wrap: break-word;
   padding: 0 0 8px 0;
+  display: inline-block;
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.25;
@@ -309,6 +343,10 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
+    padding-right: 15px;
+    @media screen and (min-width: 414px) {
+      padding-right: 0;
+    }
   }
   &__price {
     font-weight: 700;
@@ -337,6 +375,7 @@
   letter-spacing: 0.02em;
   max-width: 187px;
   word-wrap: break-word;
+  display: inline-block;
   .drinks__container &:not(:last-child) {
     padding: 0 0 8px 0;
   }
@@ -356,6 +395,10 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0;
+    padding-right: 15px;
+    @media screen and (min-width: 414px) {
+      padding-right: 0;
+    }
   }
   &__price {
     font-weight: 700;
