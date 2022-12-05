@@ -193,54 +193,24 @@
         overflow: hidden;
     }
 }
-/*
-.hotel_details__slick-item {
-    min-width: 374px;
-    padding-left: 100px;
-    margin-left: -80px;
-    box-shadow: $slider-item-shadow;
-    // outline: 1px solid black;
 
-    @media screen and (min-width: 1024px) {
-        min-width: 662px;
-        padding-left: 234px;
-        margin-left: -194px;        
-    }
-
-    @media screen and (min-width: 1280px) {
-        min-width: 874px;
-        padding-left: 285px;
-        margin-left: -245px;
-    }
-
-    & .slick__box {
-        border-radius: 2px;
-        overflow: hidden;
-
-        &:nth-child(1n) {
-            box-shadow: $slider-item-shadow;
-        }
-    }
-}
-*/
-
-.hotel_details__slider-nav {
+.hotel_details__container .slider-nav {
     position: absolute;
-    bottom: -284px;
-    left: 18px;
+    bottom: 192px;
+    left: 277px;
     width: 94px;
     height: 18px;
 
     @media screen and (min-width: 1024px) {
         justify-content: space-between;
-        bottom: 40px;
-        left: 63px;
+        bottom: 47px;
+        left: 615px;
     }
 
     @media screen and (min-width: 1280px) {
         justify-content: space-between;
-        bottom: 40px;
-        left: 88px;
+        bottom: 48px;
+        left: 830px;
     }
 
     & .slick-arrow {
@@ -255,20 +225,18 @@
 
       &.slick-prev {
           left: 0;
-          background-image: url('../images/svg/slider-prev-button.svg');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-color: transparent;
+          -webkit-mask-image: url('../images/svg/slider-prev-button.svg');
+          mask-image: url('../images/svg/slider-prev-button.svg');
+          background-color: $triple-slider-white;
+          cursor: pointer;
         }
       
       &.slick-next {
         right: 0;
-        background-image: url('../images/svg/slider-next-button.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: transparent;
+        -webkit-mask-image: url('../images/svg/slider-next-button.svg');
+        mask-image: url('../images/svg/slider-next-button.svg');
+        background-color: $triple-slider-white;
+        cursor: pointer;
       }
     }
 }
