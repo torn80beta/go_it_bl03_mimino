@@ -267,46 +267,46 @@
     margin-bottom: 121px;
   }
 }
-.restaurant-about-slider {
-  @include respond-to('max', 'phone') {
-    @include slider-two-images-before-phone(245px, 25px, 0px, 16px, 50px);
-    &__buttons-wrapper {
-      left: calc(100vw * 0.45 + 5px);
-    }
-  }
-  @include respond-to('min', 'phone') {
-    @include slider-two-images(245px, 25px, 205px, 32px);
-    &__wrapper {
-      left: 60px;
-      margin: 0;
-    }
-  }
-  @include respond-to('min', 'tablet') {
-    @include slider-two-images(194px, 40px, 335px);
-    &__wrapper {
-      left: 0;
-      margin-left: 7px;
-    }
-    &__buttons-wrapper {
-      top: 194px + 32px;
-    }
-  }
-  @include respond-to('min', 'desktop') {
-    @include slider-two-images(245px, 40px, 432px);
-    &__wrapper {
-      margin-left: 0px;
-    }
-    &__buttons-wrapper {
-      top: 245px + 32px;
-    }
-  }
-}
-.restaurant-about__slider-cutter {
-  padding-bottom: 60px;
-  @media (min-width: 414px) and (max-width: 1023px) {
-    $diff: calc((100vw - 414px + 30px) / 2);
-    width: calc(100vw - $diff);
-    padding: 60px 0 60px;
-    overflow: hidden;
-  }
-}
+// .restaurant-about-slider {
+//   @include respond-to('max', 'phone') {
+//     @include slider-two-images-before-phone(245px, 25px, 0px, 16px, 50px);
+//     &__buttons-wrapper {
+//       left: calc(100vw * 0.45 + 5px);
+//     }
+//   }
+//   @include respond-to('min', 'phone') {
+//     @include slider-two-images(245px, 25px, 205px, 32px);
+//     &__wrapper {
+//       left: 60px;
+//       margin: 0;
+//     }
+//   }
+//   @include respond-to('min', 'tablet') {
+//     @include slider-two-images(194px, 40px, 335px);
+//     &__wrapper {
+//       left: 0;
+//       margin-left: 7px;
+//     }
+//     &__buttons-wrapper {
+//       top: 194px + 32px;
+//     }
+//   }
+//   @include respond-to('min', 'desktop') {
+//     @include slider-two-images(245px, 40px, 432px);
+//     &__wrapper {
+//       margin-left: 0px;
+//     }
+//     &__buttons-wrapper {
+//       top: 245px + 32px;
+//     }
+//   }
+// }
+// .restaurant-about__slider-cutter {
+//   padding-bottom: 60px;
+//   @media (min-width: 414px) and (max-width: 1023px) {
+//     $diff: calc((100vw - 414px + 30px) / 2);
+//     width: calc(100vw - $diff);
+//     padding: 60px 0 60px;
+//     overflow: hidden;
+//   }
+// }
