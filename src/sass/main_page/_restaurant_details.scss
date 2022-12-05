@@ -1,15 +1,72 @@
 .restaurant-details {
   position: relative;
   max-width: 1280px;
-  margin: 0 auto;
-  // padding: 24px 0 40px;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // @include respond-to('min', 'tablet') {
-  //   padding: 48px 0 50px;
-}
+  margin: 15px auto;
 
+  padding: 24px 0 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include respond-to('min', 'tablet') {
+    padding: 48px 0 50px;
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
+    }
+    @include respond-to('min', 'tablet') {
+      @media screen and (min-device-pixel-ratio: 1),
+        screen and (min-resolution: 96dpi),
+        screen and (min-resolution: 1dppx) {
+        background-image: linear-gradient(
+            $bg-color-homepage-main,
+            $bg-color-homepage-main
+          ),
+          url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
+      }
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            $bg-color-homepage-main,
+            $bg-color-homepage-main
+          ),
+          url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: linear-gradient(
+            $bg-color-homepage-main,
+            $bg-color-homepage-main
+          ),
+          url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
+      }
+    }
+  }
+}
 .restaurant-details-section-container {
   overflow: hidden;
   margin-right: 0;
@@ -17,229 +74,103 @@
   //padding: 0 15px;
   padding: 24px 15px 40px;
   margin: 0 auto;
+  margin-right: 0;
+  min-width: 320px;
+  // padding: 0 15px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media screen and (min-device-pixel-ratio: 1),
-    screen and (min-resolution: 96dpi),
-    screen and (min-resolution: 1dppx) {
-    background-image: repeating-linear-gradient(
-        to right,
-        $bg-gradient-homepage-add,
-        $bg-gradient-homepage-add 140px,
-        $bg-gradient-footer-color 140px,
-        $bg-gradient-footer-color 141px,
-        $bg-gradient-homepage-add 141px,
-        $bg-gradient-homepage-add 275px,
-        $bg-gradient-footer-color 275px,
-        $bg-gradient-footer-color 276px,
-        $bg-gradient-homepage-add 276px
-      ),
-      linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-      url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
-  }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: repeating-linear-gradient(
-        to right,
-        $bg-gradient-homepage-add,
-        $bg-gradient-homepage-add 140px,
-        $bg-gradient-footer-color 140px,
-        $bg-gradient-footer-color 141px,
-        $bg-gradient-homepage-add 141px,
-        $bg-gradient-homepage-add 275px,
-        $bg-gradient-footer-color 275px,
-        $bg-gradient-footer-color 276px,
-        $bg-gradient-homepage-add 276px
-      ),
-      linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-      url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
-  }
-  @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-    background-image: repeating-linear-gradient(
-        to right,
-        $bg-gradient-homepage-add,
-        $bg-gradient-homepage-add 140px,
-        $bg-gradient-footer-color 140px,
-        $bg-gradient-footer-color 141px,
-        $bg-gradient-homepage-add 141px,
-        $bg-gradient-homepage-add 275px,
-        $bg-gradient-footer-color 275px,
-        $bg-gradient-footer-color 276px,
-        $bg-gradient-homepage-add 276px
-      ),
-      linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-      url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
+  padding: 16px 15px 40px;
+  margin: 0 auto;
+  @include respond-to('min', 'phone') {
+    width: screen-width('phone');
   }
   @include respond-to('min', 'tablet') {
-    @media screen and (min-device-pixel-ratio: 1),
-      screen and (min-resolution: 96dpi),
-      screen and (min-resolution: 1dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 278px,
-          $bg-gradient-footer-color 278px,
-          $bg-gradient-footer-color 279px,
-          $bg-gradient-homepage-add 279px,
-          $bg-gradient-homepage-add 513px,
-          $bg-gradient-footer-color 513px,
-          $bg-gradient-footer-color 514px,
-          $bg-gradient-homepage-add 514px,
-          $bg-gradient-homepage-add 748px,
-          $bg-gradient-footer-color 748px,
-          $bg-gradient-footer-color 749px,
-          $bg-gradient-homepage-add 749px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 278px,
-          $bg-gradient-footer-color 278px,
-          $bg-gradient-footer-color 279px,
-          $bg-gradient-homepage-add 279px,
-          $bg-gradient-homepage-add 513px,
-          $bg-gradient-footer-color 513px,
-          $bg-gradient-footer-color 514px,
-          $bg-gradient-homepage-add 514px,
-          $bg-gradient-homepage-add 748px,
-          $bg-gradient-footer-color 748px,
-          $bg-gradient-footer-color 749px,
-          rgba(0, 0, 0, 0) 749px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 278px,
-          $bg-gradient-footer-color 278px,
-          $bg-gradient-footer-color 279px,
-          $bg-gradient-homepage-add 279px,
-          $bg-gradient-homepage-add 513px,
-          $bg-gradient-footer-color 513px,
-          $bg-gradient-footer-color 514px,
-          $bg-gradient-homepage-add 514px,
-          $bg-gradient-homepage-add 748px,
-          $bg-gradient-footer-color 748px,
-          $bg-gradient-footer-color 749px,
-          $bg-gradient-homepage-add 749px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
-    }
+    width: screen-width('tablet');
+    // padding: 0 47px;
+    padding: 48px 48px 96px;
   }
   @include respond-to('min', 'desktop') {
-    @media screen and (min-device-pixel-ratio: 1),
-      screen and (min-resolution: 96dpi),
-      screen and (min-resolution: 1dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 338px,
-          $bg-gradient-footer-color 338px,
-          $bg-gradient-footer-color 339px,
-          $bg-gradient-homepage-add 339px,
-          $bg-gradient-homepage-add 641px,
-          $bg-gradient-footer-color 641px,
-          $bg-gradient-footer-color 642px,
-          $bg-gradient-homepage-add 642px,
-          $bg-gradient-homepage-add 944px,
-          $bg-gradient-footer-color 944px,
-          $bg-gradient-footer-color 945px,
-          $bg-gradient-homepage-add 945px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_landscape_1x.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 338px,
-          $bg-gradient-footer-color 338px,
-          $bg-gradient-footer-color 339px,
-          $bg-gradient-homepage-add 339px,
-          $bg-gradient-homepage-add 641px,
-          $bg-gradient-footer-color 641px,
-          $bg-gradient-footer-color 642px,
-          $bg-gradient-homepage-add 642px,
-          $bg-gradient-homepage-add 944px,
-          $bg-gradient-footer-color 944px,
-          $bg-gradient-footer-color 945px,
-          $bg-gradient-homepage-add 945px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_landscape_2x.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
-      background-image: repeating-linear-gradient(
-          to right,
-          $bg-gradient-homepage-add,
-          $bg-gradient-homepage-add 338px,
-          $bg-gradient-footer-color 338px,
-          $bg-gradient-footer-color 339px,
-          $bg-gradient-homepage-add 339px,
-          $bg-gradient-homepage-add 641px,
-          $bg-gradient-footer-color 641px,
-          $bg-gradient-footer-color 642px,
-          $bg-gradient-homepage-add 642px,
-          $bg-gradient-homepage-add 944px,
-          $bg-gradient-footer-color 944px,
-          $bg-gradient-footer-color 945px,
-          $bg-gradient-homepage-add 945px
-        ),
-        linear-gradient($bg-color-homepage-main, $bg-color-homepage-main),
-        url(../images/restaurant-details/restaurant-details_background_landscape_3x.jpg);
-    }
+    width: screen-width('desktop');
+    // padding: 0 85px;
+    padding: 48px 85px 96px;
   }
 
+  background-image: repeating-linear-gradient(
+    to right,
+    $bg-gradient-homepage-add,
+    $bg-gradient-homepage-add 140px,
+    $bg-gradient-footer-color 140px,
+    $bg-gradient-footer-color 141px,
+    $bg-gradient-homepage-add 141px,
+    $bg-gradient-homepage-add 275px,
+    $bg-gradient-footer-color 275px,
+    $bg-gradient-footer-color 276px,
+    $bg-gradient-homepage-add 276px
+  );
+
   @include respond-to('min', 'tablet') {
-    padding: 48px 0 50px;
-    @include respond-to('min', 'phone') {
-      width: screen-width('phone');
-    }
-    @include respond-to('min', 'tablet') {
-      width: screen-width('tablet');
-      padding: 0 47px;
-    }
-    @include respond-to('min', 'desktop') {
-      width: screen-width('desktop');
-      padding: 0 85px;
-    }
-    @include respond-to('min', 'tablet') {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 32px;
-    }
+    background-image: repeating-linear-gradient(
+      to right,
+      $bg-gradient-homepage-add,
+      $bg-gradient-homepage-add 278px,
+      $bg-gradient-footer-color 278px,
+      $bg-gradient-footer-color 279px,
+      $bg-gradient-homepage-add 279px,
+      $bg-gradient-homepage-add 513px,
+      $bg-gradient-footer-color 513px,
+      $bg-gradient-footer-color 514px,
+      $bg-gradient-homepage-add 514px,
+      $bg-gradient-homepage-add 748px,
+      $bg-gradient-footer-color 748px,
+      $bg-gradient-footer-color 749px,
+      $bg-gradient-homepage-add 749px
+    );
   }
-  .restaurant-details__container {
-    @include respond-to('min', 'tablet') {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 32px;
-    }
+  @include respond-to('min', 'desktop') {
+    background-image: repeating-linear-gradient(
+      to right,
+      $bg-gradient-homepage-add,
+      $bg-gradient-homepage-add 338px,
+      $bg-gradient-footer-color 338px,
+      $bg-gradient-footer-color 339px,
+      $bg-gradient-homepage-add 339px,
+      $bg-gradient-homepage-add 641px,
+      $bg-gradient-footer-color 641px,
+      $bg-gradient-footer-color 642px,
+      $bg-gradient-homepage-add 642px,
+      $bg-gradient-homepage-add 944px,
+      $bg-gradient-footer-color 944px,
+      $bg-gradient-footer-color 945px,
+      $bg-gradient-homepage-add 945px
+    );
+  }
+
+  // padding: 48px 0 50px;
+  // @include respond-to('min', 'phone') {
+  //   width: screen-width('phone');
+  // }
+  // @include respond-to('min', 'tablet') {
+  //   width: screen-width('tablet');
+  //   padding: 0 47px;
+  // }
+  // @include respond-to('min', 'desktop') {
+  //   width: screen-width('desktop');
+  //   padding: 0 85px;
+  // }
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
   }
 }
+.restaurant-details__container {
+  // padding: 24px 0 40px;
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+
 .restaurant-details__wrapper-first {
   display: flex;
   flex-shrink: 1;
