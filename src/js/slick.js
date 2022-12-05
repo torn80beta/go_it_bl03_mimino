@@ -13,7 +13,7 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 2,
         variableWidth: true,
-        appendArrows: $('.slider-nav'),
+        appendArrows: $('.slider-navigation'),
         speed: 300,
     });
 });
