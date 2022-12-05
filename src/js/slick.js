@@ -47,3 +47,13 @@ $(document).ready(function () {
         speed: 300,
     });
 });
+
+$(document).ready(function () {
+    $('.about-hotel__slider').slick({
+        arrows: true,
+        slidesToShow: 2,
+        variableWidth: true,
+        appendArrows: $('.about-hotel__slider-nav'),
+        speed: 300,
+    });
+});
