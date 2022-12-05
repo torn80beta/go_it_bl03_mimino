@@ -7,8 +7,35 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 1),
+    screen and (min-resolution: 96dpi),
+    screen and (min-resolution: 1dppx) {
+    background-image: linear-gradient(
+        $bg-color-homepage-main,
+        $bg-color-homepage-main
+      ),
+      url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        $bg-color-homepage-main,
+        $bg-color-homepage-main
+      ),
+      url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+        $bg-color-homepage-main,
+        $bg-color-homepage-main
+      ),
+      url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
+  }
   @include respond-to('min', 'tablet') {
-    padding: 48px 0 50px;
     @media screen and (min-device-pixel-ratio: 1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
@@ -16,7 +43,7 @@
           $bg-color-homepage-main,
           $bg-color-homepage-main
         ),
-        url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
+        url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -25,7 +52,7 @@
           $bg-color-homepage-main,
           $bg-color-homepage-main
         ),
-        url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
+        url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
     }
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
@@ -34,39 +61,11 @@
           $bg-color-homepage-main,
           $bg-color-homepage-main
         ),
-        url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
-    }
-    @include respond-to('min', 'tablet') {
-      @media screen and (min-device-pixel-ratio: 1),
-        screen and (min-resolution: 96dpi),
-        screen and (min-resolution: 1dppx) {
-        background-image: linear-gradient(
-            $bg-color-homepage-main,
-            $bg-color-homepage-main
-          ),
-          url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
-      }
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            $bg-color-homepage-main,
-            $bg-color-homepage-main
-          ),
-          url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
-      }
-      @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-        background-image: linear-gradient(
-            $bg-color-homepage-main,
-            $bg-color-homepage-main
-          ),
-          url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
-      }
+        url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
     }
   }
 }
+
 .restaurant-details-section-container {
   overflow: hidden;
   margin-right: 0;
