@@ -335,14 +335,11 @@
   }
 }
 
-///////////////////@at-root
 .restaurant-details-slider {
   &__wrapper {
     position: relative;
     left: 26px;
     margin-bottom: 60px;
-    // @include respond-to('max', 'tablet') {
-    // }
   }
   &__container {
     width: 365px;
@@ -398,6 +395,10 @@
     //   object-fit: cover;
     //}
     &__image--big {
+      width: 270px;
+      height: auto;
+    }
+    &__item--big {
       width: 270px;
       height: auto;
     }
