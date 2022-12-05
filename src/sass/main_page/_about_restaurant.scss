@@ -1,4 +1,67 @@
 .restaurant-about {
+  // background-image: repeating-linear-gradient(
+  //   to right,
+  //   $logo-header-room-color,
+  //   $logo-header-room-color 140px,
+  //   $bg-gradient-color 140px,
+  //   $bg-gradient-color 141px,
+  //   $logo-header-room-color 141px,
+  //   $logo-header-room-color 275px,
+  //   $bg-gradient-color 275px,
+  //   $bg-gradient-color 276px,
+  //   $logo-header-room-color 276px
+  // );
+  // @include respond-to('min', 'tablet') {
+  //   background-image: repeating-linear-gradient(
+  //     to right,
+  //     $logo-header-room-color,
+  //     $logo-header-room-color 278px,
+  //     $bg-gradient-color 278px,
+  //     $bg-gradient-color 279px,
+  //     $logo-header-room-color 279px,
+  //     $logo-header-room-color 513px,
+  //     $bg-gradient-color 513px,
+  //     $bg-gradient-color 514px,
+  //     $logo-header-room-color 514px,
+  //     $logo-header-room-color 748px,
+  //     $bg-gradient-color 748px,
+  //     $bg-gradient-color 749px,
+  //     $logo-header-room-color 749px
+  //   );
+  // }
+  // @include respond-to('min', 'desktop') {
+  //   background-image: repeating-linear-gradient(
+  //     to right,
+  //     $logo-header-room-color,
+  //     $logo-header-room-color 338px,
+  //     $bg-gradient-color 338px,
+  //     $bg-gradient-color 339px,
+  //     $logo-header-room-color 339px,
+  //     $logo-header-room-color 641px,
+  //     $bg-gradient-color 641px,
+  //     $bg-gradient-color 642px,
+  //     $logo-header-room-color 642px,
+  //     $logo-header-room-color 943px,
+  //     $bg-gradient-color 943px,
+  //     $bg-gradient-color 944px,
+  //     $logo-header-room-color 944px
+  //   );
+  // }
+  max-width: 1280px;
+  margin: 0 auto;
+  // padding: 16px 0 72px;
+  @include respond-to('min', 'tablet') {
+    // padding: 120px 0 87px;
+    position: relative;
+    height: 1250px;
+  }
+  @include respond-to('min', 'desktop') {
+    // padding: 120px 0 120px;
+    height: 1275px;
+  }
+}
+
+.restaurant-about-section-container {
   background-image: repeating-linear-gradient(
     to right,
     $logo-header-room-color,
@@ -47,47 +110,29 @@
       $logo-header-room-color 944px
     );
   }
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 16px 0 72px;
-  padding: 16px 0 12px;
-  //height: 1200px;
-  @include respond-to('min', 'tablet') {
-    padding: 120px 0 87px;
-    position: relative;
-    height: 1250px;
-  }
-  @include respond-to('min', 'desktop') {
-    padding: 120px 0 120px;
-    height: 1275px;
-  }
-}
-
-.restaurant-about-section-container {
   @media screen and (max-width: 414px) {
     overflow: hidden;
   }
   margin-right: 0;
   min-width: 320px;
-  padding: 0 15px;
+  // padding: 0 15px;
+  padding: 16px 15px 72px;
   margin: 0 auto;
   @include respond-to('min', 'phone') {
     width: screen-width('phone');
   }
   @include respond-to('min', 'tablet') {
     width: screen-width('tablet');
-    padding: 0 47px;
+    // padding: 0 47px;
+    padding: 120px 47px 87px;
   }
   @include respond-to('min', 'desktop') {
     width: screen-width('desktop');
-    padding: 0 85px;
+    // padding: 0 85px;
+    padding: 120px 85px 120px;
+    padding: 120px 85px 225px;
   }
 }
-// .is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
 
 .restaurant-about__container {
   position: relative;
@@ -166,9 +211,9 @@
     align-items: center;
     margin-bottom: 32px;
 
-    @media (min-width: 414px) and (max-width: 1083px) {
-      margin-bottom: -28px;
-    }
+    // @media (min-width: 414px) and (max-width: 1083px) {
+    //   margin-bottom: -28px;
+    // }
   }
 }
 .restaurant-about__wrapper-second {
@@ -265,5 +310,110 @@
     width: 460px;
     height: 574px;
     margin-bottom: 121px;
+  }
+}
+.restaurant-about-slider {
+  &__wrapper {
+    position: relative;
+    left: 50px;
+    @include respond-to('min', 'desktop') {
+      left: 10px;
+    }
+  }
+  &__container {
+    width: 330px;
+
+    @include respond-to('min', 'tablet') {
+      width: 430px;
+    }
+    @include respond-to('min', 'desktop') {
+      width: 550px;
+    }
+  }
+  & .slick-track {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    @include respond-to('min', 'tablet') {
+      gap: 40px;
+    }
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 245px;
+    height: 245px;
+    @include respond-to('min', 'tablet') {
+      width: 194px;
+      height: 194px;
+    }
+    @include respond-to('min', 'desktop') {
+      width: 254px;
+      height: 254px;
+    }
+  }
+  &__img {
+    width: 245px;
+    height: 245px;
+    @include respond-to('min', 'tablet') {
+      width: 194px;
+      height: 194px;
+    }
+    @include respond-to('min', 'desktop') {
+      width: 254px;
+      height: 254px;
+    }
+  }
+  &__wrapper .slick-prev {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 10;
+    width: 45px;
+    height: 25px;
+    border: none;
+  }
+  &__wrapper .slick-next {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    width: 45px;
+    height: 25px;
+    left: 55px;
+    border: none;
+  }
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__buttons {
+    position: absolute;
+    top: 265px;
+    left: 215px;
+    width: 108px;
+    @include respond-to('max', 'phone') {
+      left: 175px;
+    }
+    @include respond-to('min', 'tablet') {
+      top: 230px;
+      left: 325px;
+    }
+
+    @include respond-to('min', 'desktop') {
+      top: 290px;
+      left: 450px;
+    }
+  }
+  &__arrow-left-svg {
+    fill: black;
   }
 }

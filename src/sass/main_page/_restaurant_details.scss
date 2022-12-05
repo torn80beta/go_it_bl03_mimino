@@ -2,13 +2,26 @@
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 24px 0 40px;
+  // padding: 24px 0 40px;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // @include respond-to('min', 'tablet') {
+  //   padding: 48px 0 50px;
+}
+
+.restaurant-details-section-container {
+  overflow: hidden;
+  margin-right: 0;
+  min-width: 320px;
+  //padding: 0 15px;
+  padding: 24px 15px 40px;
+  margin: 0 auto;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @include respond-to('min', 'tablet') {
-    padding: 48px 0 50px;
-  }
+
   @media screen and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
@@ -199,38 +212,34 @@
         url(../images/restaurant-details/restaurant-details_background_landscape_3x.jpg);
     }
   }
-}
-.restaurant-details-section-container {
-  overflow: hidden;
-  margin-right: 0;
-  min-width: 320px;
-  padding: 0 15px;
-  margin: 0 auto;
-  @include respond-to('min', 'phone') {
-    width: screen-width('phone');
-  }
-  @include respond-to('min', 'tablet') {
-    width: screen-width('tablet');
-    padding: 0 47px;
-  }
-  @include respond-to('min', 'desktop') {
-    width: screen-width('desktop');
-    padding: 0 85px;
-  }
-  @include respond-to('min', 'tablet') {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 32px;
-  }
-}
-.restaurant-details__container {
-  @include respond-to('min', 'tablet') {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 32px;
-  }
-}
 
+  @include respond-to('min', 'tablet') {
+    padding: 48px 0 50px;
+    @include respond-to('min', 'phone') {
+      width: screen-width('phone');
+    }
+    @include respond-to('min', 'tablet') {
+      width: screen-width('tablet');
+      padding: 0 47px;
+    }
+    @include respond-to('min', 'desktop') {
+      width: screen-width('desktop');
+      padding: 0 85px;
+    }
+    @include respond-to('min', 'tablet') {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 32px;
+    }
+  }
+  .restaurant-details__container {
+    @include respond-to('min', 'tablet') {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 32px;
+    }
+  }
+}
 .restaurant-details__wrapper-first {
   display: flex;
   flex-shrink: 1;
@@ -359,55 +368,37 @@
   & .slick-list {
     overflow: hidden;
   }
-  @include respond-to('max', 'phone') {
-    &__item {
-      width: 270px;
+
+  &__item--small-tablet {
+    @include respond-to('min', 'tablet') {
+      width: 162px;
       height: 270px;
     }
-    &__img {
-      width: 270px;
-      height: auto;
-    }
   }
-  @include respond-to('min', 'tablet') {
-    &__item--small {
+  &__image--small-tablet {
+    @include respond-to('min', 'tablet') {
       width: 162px;
       height: 270px;
       object-position: center;
       object-fit: cover;
     }
-    &__image--small {
-      width: 162px;
-      height: 270px;
-      object-position: center;
-      object-fit: cover;
-    }
-    // &__item.slick-current.slick-active {
-    //   width: 270px;
-    //   height: 270px;
-    //   object-position: center;
-    //   object-fit: cover;
-    // }
-    // &__item.slick-current.slick-active > image {
-    //   width: 270px;
-    //   height: 270px;
-    //   object-position: center;
-    //   object-fit: cover;
-    //}
-    &__image--big {
-      width: 270px;
-      height: auto;
-    }
-    &__item--big {
-      width: 270px;
-      height: auto;
-    }
   }
+  // @include respond-to('max', 'phone') {
+  //   &__item {
+  //     width: 270px;
+  //     height: 270px;
+  //   }
+  //   &__img {
+  //     width: 270px;
+  //     height: auto;
+  //   }
+  // }
 
   &__wrapper .slick-prev {
     position: absolute;
     background-color: transparent;
     font-size: 0;
+    z-index: 10;
     width: 45px;
     height: 25px;
     border: none;
@@ -424,8 +415,9 @@
     font-size: 0;
     width: 45px;
     height: 25px;
-    left: 50px;
+    left: 55px;
     border: none;
+
     &:hover,
     &:focus {
       .restaurant-details-slider__arrow-right-svg {
@@ -434,16 +426,20 @@
     }
   }
   &__arrow-left {
+    padding: 0;
     border: none;
+    margin-right: 30px;
     background-color: transparent;
   }
   &__arrow-right {
+    padding: 0;
     border: none;
     background-color: transparent;
   }
   &__buttons {
     position: absolute;
-    top: 285px;
+    top: 290px;
+    width: 108px;
   }
   &__arrow-left-svg {
     fill: $main-light-color;
