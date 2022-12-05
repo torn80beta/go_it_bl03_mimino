@@ -7,7 +7,16 @@
   padding: 0 15px;
 
   &--room-page {
-    height: 664px;
+    height: 420px;
+
+    @media screen and (min-width: 360px) {
+      height: 567px;
+    }
+
+    @media screen and (min-width: 414px) {
+      height: 664px;
+    }
+
     @media screen and (min-width: 1024px) {
       height: 620px;
     }
@@ -403,7 +412,7 @@
 
   &--room-page {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 55px;
 
     @media screen and (min-width: 414px) {
@@ -445,8 +454,6 @@
 
   @media screen and (min-width: 414px) {
     width: 325px;
-    bottom: 118px;
-    left: 15px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -497,12 +504,10 @@
 // Header and hero  backgrounds
 
 .hero-room-background {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: $footer-background-color;
-
-  @media screen and (min-width: 1280px) {
-    margin: 0 auto;
-    width: 1280px;
-  }
 }
 
 .hero-main-background {
@@ -750,7 +755,16 @@
   }
 
   & .slick-slide {
-    height: 740px;
+    height: 571px;
+
+    @media screen and (min-width: 360px) {
+      height: 646px;
+    }
+
+    @media screen and (min-width: 414px) {
+      height: 740px;
+    }
+
     @media screen and (min-width: 1024px) {
       height: 720px;
     }
