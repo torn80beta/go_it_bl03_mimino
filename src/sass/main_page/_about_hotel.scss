@@ -6,12 +6,11 @@
   max-height: 100%;
   padding-top: 18px;
   padding-bottom: 28px;
-  overflow: hidden;
+ 
   background-color: $logo-header-room-color;
 
   @include desktop {
-    position: relative;
-    min-height: 1275px; 
+     min-height: 1275px; 
     padding-top: 120px;
     padding-bottom: 58px;
   }
@@ -28,7 +27,7 @@
       flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+      margin: 0 auto;
 
     background-image: linear-gradient(to right,
         $background-light-color 138px,
@@ -371,52 +370,3 @@
     }
   }
 }
-
-// .button-slider {
-//   display: flex;
-//   gap: 34px;
-//   margin-top: 48px;
-//   margin-left: 16px;
-
-//   @include tablet {
-//       margin-top: 40px;
-//         margin-left: 48px;
-//     }
-
-//     @include desktop {
-//       margin-top: 48px;
-//         margin-left: 86px;
-//     }
-// }
-//  .button-slider__button-arrow {
-//    display: flex;
-//    background-color: transparent;
-//    border: none;
-//    align-items: center;
-//    padding: 0;
-//    fill: $main-dark-color;
-//    cursor: pointer;
-//  }
-
-//  .swiper {
-
-//  &__swiper-wrapper {
-// display: flex;
-// gap: 40px
-//  }
-
-//  &__swiper-slide {
-//    }
-
-//   &__photo-slide {
-// width: 194px;
-//   background: $background-img-color;
-//   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-//   border-radius: 2px;
-
-//   @include desktop {
-//     width: 254px;
-//   }
-//   }
-
-//  }
