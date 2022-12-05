@@ -11,6 +11,7 @@
    transition: visibility $cubic,
       opacity $cubic;
    overflow: scroll;
+   z-index: 999;
 
    &.show-entry {
       opacity: 1;
