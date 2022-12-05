@@ -270,29 +270,10 @@
 }
 
 .about-kitchen__container .slider-nav {
-  position: absolute;
-  bottom: -284px;
-  right: 18px;
-  width: 94px;
-  height: 18px;
-
-  @media screen and (min-width: 1024px) {
-    justify-content: space-between;
-    bottom: 40px;
-    right: 63px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    justify-content: space-between;
-    bottom: 40px;
-    right: 88px;
-  }
-
-  & .slick-arrow {
     position: absolute;
-    top: 50%;
-    transform: translateY(-9px);
-    width: 30px;
+    bottom: -284px;
+    right: 18px;
+    width: 94px;
     height: 18px;
 
     @media screen and (min-width: 1024px) {
@@ -313,31 +294,52 @@
         transform: translateY(-9px);
         width: 30px;
         height: 18px;
-        z-index: 10;
-        font-size: 0;
-        border: none;
 
-        &.slick-prev {
-            left: 0;
-            background-image: url('../images/svg/slider-prev-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-            cursor: pointer;
+        @media screen and (min-width: 1024px) {
+            justify-content: space-between;
+            bottom: 40px;
+            right: 63px;
         }
 
-        &.slick-next {
-            right: 0;
-            background-image: url('../images/svg/slider-next-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-            cursor: pointer;
+        @media screen and (min-width: 1280px) {
+            justify-content: space-between;
+            bottom: 40px;
+            right: 88px;
+        }
+
+        & .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-9px);
+            width: 30px;
+            height: 18px;
+            z-index: 10;
+            font-size: 0;
+            border: none;
+
+            &.slick-prev {
+                left: 0;
+                background-image: url('../images/svg/slider-prev-button.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            &.slick-next {
+                right: 0;
+                background-image: url('../images/svg/slider-next-button.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
+                cursor: pointer;
+            }
         }
     }
 }
+
 
 /* 
 .about-kitchen__slider-wrapper--left {
@@ -448,4 +450,4 @@
         }
     }
 }
- */
+*/
