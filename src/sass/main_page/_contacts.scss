@@ -81,7 +81,7 @@
          letter-spacing: 0.3em;
          font-size: 40px;
          line-height: 1.08;
-         color: $logo-homepage-color;
+         color: $logo-rest-hotel-color;
          margin-bottom: 12px;
          text-transform: uppercase;
     @include tablet {
@@ -92,6 +92,7 @@
 
     @include desktop {
         margin-bottom: 16px;
+        color: $logo-homepage-color;
     }
     }
 &_title {
