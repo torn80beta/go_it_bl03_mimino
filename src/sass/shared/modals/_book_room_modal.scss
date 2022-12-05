@@ -1,0 +1,34 @@
+// назва класу та його стилі замість backdrop is hidden
+.modal-window-entry-room {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: $buttons-light-color;
+   opacity: 0;
+   visibility: hidden;
+   transition: visibility $cubic,
+      opacity $cubic;
+   overflow: scroll;
+   z-index: 999;
+
+   &.show-entry {
+      opacity: 1;
+      visibility: visible;
+   }
+}
+.modal-room__icon {
+   display: block;
+   background: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin-left: auto;
+   padding: 0;
+
+   @media screen and (min-width: 1024px) {
+      margin-top: -44px;
+      margin-right: -44px;
+   }
+}
