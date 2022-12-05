@@ -372,33 +372,36 @@
       height: auto;
     }
   }
-
-  // &__item.slick-current.slick-active {
-  //   width: 270px;
-  //   object-position: center;
-  //   object-fit: cover;
-  // }
-
-  // &__item {
-  //   width: 162px;
-  //   height: 270px;
-  //   object-position: center;
-  //   object-fit: cover;
-  // }
-  // &__image {
-  //   width: 162px;
-  //   height: 270px;
-  //   object-position: center;
-  //   object-fit: cover;
-  // }
-  // &__item.slick-current.slick-active > image {
-  //   width: 270px;
-  //   object-position: center;
-  //   object-fit: cover;
-  // }
-  // &__item {
-  //   width: 162px;
-  // }
+  @include respond-to('min', 'tablet') {
+    &__item {
+      width: 162px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+    &__image {
+      width: 162px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+    // &__item.slick-current.slick-active {
+    //   width: 270px;
+    //   height: 270px;
+    //   object-position: center;
+    //   object-fit: cover;
+    // }
+    // &__item.slick-current.slick-active > image {
+    //   width: 270px;
+    //   height: 270px;
+    //   object-position: center;
+    //   object-fit: cover;
+    //}
+    &__image--big {
+      width: 270px;
+      height: auto;
+    }
+  }
 
   &__wrapper .slick-prev {
     position: absolute;
