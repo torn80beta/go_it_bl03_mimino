@@ -1,16 +1,15 @@
 .about-hotel {
-  
   max-width: 1280px;
   margin: 0 auto;
   height: 1191px;
   max-height: 100%;
   padding-top: 18px;
   padding-bottom: 72px;
- 
+
   background-color: $logo-header-room-color;
 
   @include desktop {
-     min-height: 1275px; 
+    min-height: 1275px;
     padding-top: 120px;
     padding-bottom: 122px;
   }
@@ -24,18 +23,10 @@
   &__container-hotel {
     position: relative;
     display: flex;
-      flex-direction: column;
+    flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
-      margin: 0 auto;
-
-    background-image: linear-gradient(to right,
-        $background-light-color 138px,
-        $bg-gradient-color 139px,
-        $background-light-color 140px,
-        $background-light-color 273px,
-        $bg-gradient-color 274px,
-        $background-light-color 275px);
+    margin: 0 auto;
 
     @include mobile {
       max-width: 414px;
@@ -43,32 +34,10 @@
 
     @include tablet {
       max-width: 1024px;
-    
-      background-image: linear-gradient(to right,
-          $background-light-color 278px,
-          $bg-gradient-color 279px,
-          $background-light-color 280px,
-          $background-light-color 511px,
-          $bg-gradient-color 512px,
-          $background-light-color 513px,
-          $background-light-color 745px,
-          $bg-gradient-color 746px,
-          $background-light-color 747px);
     }
 
     @include desktop {
-      max-width: 100%;
-      
-      background-image: linear-gradient(to right,
-          $background-light-color 338px,
-          $bg-gradient-color 339px,
-          $background-light-color 340px,
-          $background-light-color 639px,
-          $bg-gradient-color 640px,
-          $background-light-color 641px,
-          $background-light-color 941px,
-          $bg-gradient-color 942px,
-          $background-light-color 943px);
+      max-width: 100%;     
     }
   }
 
@@ -193,23 +162,21 @@
 }
 
 .hotel-hall {
-    display: flex;  
-     align-items: center;
-     margin-top: 280px;
- 
- 
+  display: flex;
+  align-items: center;
+  margin-top: 280px;
 
   @media screen and (min-width: 1024px) {
-      margin-bottom: 262px;
-      width: 710px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 207px;
-      width: 804px;
-    }
+    margin-bottom: 262px;
+    width: 710px;
+  }
 
-  &__text-hall { 
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 207px;
+    width: 804px;
+  }
+
+  &__text-hall {
     // margin-top: 350px;
     width: 163px;
     height: 100%;
@@ -238,18 +205,17 @@
   }
 
   &__photo-hall {
-   margin-bottom: 32px;
+    margin-bottom: 32px;
     margin-left: 21px;
-       min-width: 200px;
+    min-width: 200px;
 
-    
     background: $background-img-color;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
     @include tablet {
       position: absolute;
-           top: 325px;
+      top: 325px;
       right: 47px;
       width: 400px;
       margin-bottom: 0;
@@ -268,7 +234,7 @@
 //  Slider
 
 .about-hotel__slider-wrapper {
-  position: absolute;  
+  position: absolute;
   top: 856px;
   right: 84px;
   width: 330px;
@@ -337,7 +303,7 @@
   @media screen and (min-width: 1024px) {
     justify-content: space-between;
     bottom: 4px;
-   left: 48px;
+    left: 48px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -373,5 +339,25 @@
       background-size: cover;
       background-color: transparent;
     }
+  }
+}
+
+.background-gradient {
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(
+      to right,
+      $background-light-color 27%,
+      $bg-gradient-color 27%,
+      $bg-gradient-color 27.1%,
+      $background-light-color 27.1%,
+      $background-light-color 50%,
+      $bg-gradient-color 50%,
+      $bg-gradient-color 50.1%,
+      $background-light-color 50.1%,
+      $background-light-color 73%,
+      $bg-gradient-color 73%,
+      $bg-gradient-color 73.1%,
+      $background-light-color 73.1%
+    );
   }
 }
