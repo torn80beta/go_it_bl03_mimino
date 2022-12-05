@@ -1,56 +1,119 @@
 .hotel_details {
+  padding: 0;
   margin: 0 auto;
-  padding: 24px 15px 40px;
-  position: relative;
-  background-color: $main-dark-color;
-  background-image: linear-gradient(to right, #000000a6, #000000a6),
-    url(../images/homepage/background-hotel_414.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  max-width: 414px;
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(to right, #000000a6, #000000a6),
-      url(../images/homepage/background-hotel_414@2x.jpg);
-  }
-
-  @media screen and (min-width: 415px) {
-    max-width: 1024px;
-    background-image: linear-gradient(to right, #000000a6, #000000a6),
-      url(../images/homepage/background-hotel_1024.jpg);
+  &__content {
+    margin: 0 auto;
+    padding: 24px 15px 40px;
+    position: relative;
+    background-color: $main-dark-color;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7) 138px,
+        $bg-gradient-footer-color 139px,
+        rgba(0, 0, 0, 0.7) 140px,
+        rgba(0, 0, 0, 0.7) 273px,
+        $bg-gradient-footer-color 274px,
+        rgba(0, 0, 0, 0.7) 275px
+      ),
+      url(../images/homepage/background-hotel_414.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 414px;
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, #000000a6, #000000a6),
-        url(../images/homepage/background-hotel_1024@2x.jpg);
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 138px,
+          $bg-gradient-footer-color 139px,
+          $background-section-color 140px,
+          $background-section-color 273px,
+          $bg-gradient-footer-color 274px,
+          $background-section-color 275px
+        ),
+        url(../images/homepage/background-hotel_414@2x.jpg);
     }
-  }
+    @media screen and (min-width: 1024px) {
+      max-width: 1024px;
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 278px,
+          $bg-gradient-footer-color 279px,
+          $background-section-color 280px,
+          $background-section-color 511px,
+          $bg-gradient-footer-color 512px,
+          $background-section-color 513px,
+          $background-section-color 745px,
+          $bg-gradient-footer-color 746px,
+          $background-section-color 747px
+        ),
+        url(../images/homepage/background-hotel_1024.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            $background-section-color 278px,
+            $bg-gradient-footer-color 279px,
+            $background-section-color 280px,
+            $background-section-color 511px,
+            $bg-gradient-footer-color 512px,
+            $background-section-color 513px,
+            $background-section-color 745px,
+            $bg-gradient-footer-color 746px,
+            $background-section-color 747px
+          ),
+          url(../images/homepage/background-hotel_1024@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 338px,
+          $bg-gradient-footer-color 339px,
+          $background-section-color 340px,
+          $background-section-color 639px,
+          $bg-gradient-footer-color 640px,
+          $background-section-color 641px,
+          $background-section-color 941px,
+          $bg-gradient-footer-color 942px,
+          $background-section-color 943px
+        ),
+        url(../images/homepage/background-hotel_1280.jpg);
 
-  @media screen and (min-width: 1025px) {
-    max-width: 1280px;
-    background-image: linear-gradient(to right, #000000a6, #000000a6),
-      url(../images/homepage/background-hotel_1280.jpg);
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, #000000a6, #000000a6),
-        url(../images/homepage/background-hotel_1280@2x.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            $background-section-color 338px,
+            $bg-gradient-footer-color 339px,
+            $background-section-color 340px,
+            $background-section-color 639px,
+            $bg-gradient-footer-color 640px,
+            $background-section-color 641px,
+            $background-section-color 941px,
+            $bg-gradient-footer-color 942px,
+            $background-section-color 943px
+          ),
+          url(../images/homepage/background-hotel_1280@2x.jpg);
+      }
     }
   }
 
   &__container {
+    margin: 0 auto;
+
     @media screen and (min-width: 414px) {
-      width: 414px;
+      max-width: 1023px;
     }
 
     @media screen and (min-width: 1024px) {
-      width: 1024px;
+      max-width: 1279px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -65,13 +128,16 @@
     justify-content: right;
     max-width: 243px;
     position: relative;
+    margin-bottom: 48px;
 
     @media screen and (min-width: 1024px) {
       max-width: 549px;
+      margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
       max-width: 595px;
+      margin-bottom: 18px;
     }
   }
 
@@ -127,19 +193,6 @@
     }
   }
 
-  &__photo-scroll {
-    height: 270px;
-
-    @media screen and (min-width: 1024px) {
-      width: 664px;
-      margin: 0;
-    }
-
-    @media screen and (min-width: 1024px) {
-      width: 874px;
-    }
-  }
-
   &__buttons {
     margin: 40px auto 0;
     display: flex;
@@ -153,9 +206,12 @@
       margin-right: 32px;
       margin-bottom: 60px;
     }
+    @media screen and (min-width: 1024px) {
+      margin-right: 71px;
+      margin-bottom: 55px;
+    }
   }
 }
-
 
 .hotel_details__slider-wrapper {
   position: absolute;
