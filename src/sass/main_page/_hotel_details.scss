@@ -3,24 +3,25 @@
   margin: 0 auto;
 
   &__content {
+    position: relative;
     margin: 0 auto;
     padding: 24px 15px 40px;
-    position: relative;
+    height: 735px;
+
     background-color: $main-dark-color;
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.7) 138px,
+        $background-section-color 138px,
         $bg-gradient-footer-color 139px,
-        rgba(0, 0, 0, 0.7) 140px,
-        rgba(0, 0, 0, 0.7) 273px,
+        $background-section-color 140px,
+        $background-section-color 273px,
         $bg-gradient-footer-color 274px,
-        rgba(0, 0, 0, 0.7) 275px
+        $background-section-color 275px
       ),
       url(../images/homepage/background-hotel_414.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 414px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -38,6 +39,7 @@
     }
     @media screen and (min-width: 1024px) {
       max-width: 1024px;
+      height: 620px;
       background-image: linear-gradient(
           to right,
           $background-section-color 278px,
@@ -126,7 +128,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    align-content: flex-start;
     max-width: 243px;
+
     position: relative;
     margin-bottom: 48px;
 
@@ -194,7 +198,9 @@
   }
 
   &__buttons {
-    margin: 40px auto 0;
+    margin: 398px auto 0;
+    width: 236px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,12 +209,14 @@
     @media screen and (min-width: 1024px) {
       align-items: flex-end;
       gap: 16px;
-      margin-right: 32px;
-      margin-bottom: 60px;
+      // margin-right: 32px;
+      // margin-bottom: 60px;
+      margin: 194px 32px 60px 726px;
     }
-    @media screen and (min-width: 1024px) {
-      margin-right: 71px;
-      margin-bottom: 55px;
+    @media screen and (min-width: 1280px) {
+      // margin-right: 71px;
+      // margin-bottom: 55px;
+      margin: 199px 71px 55px auto;
     }
   }
 }
