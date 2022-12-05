@@ -14,15 +14,15 @@
     screen and (min-resolution: 1dppx) {
     background-image: repeating-linear-gradient(
         to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0) 140px,
-        rgba(122, 122, 122, 0.4) 140px,
-        rgba(122, 122, 122, 0.4) 141px,
-        rgba(0, 0, 0, 0) 141px,
-        rgba(0, 0, 0, 0) 275px,
-        rgba(122, 122, 122, 0.4) 275px,
-        rgba(122, 122, 122, 0.4) 276px,
-        rgba(0, 0, 0, 0) 276px
+        $bg-gradient-homepage-add,
+        $bg-gradient-homepage-add 140px,
+        bg-gradient-footer-color 140px,
+        bg-gradient-footer-color 141px,
+        $bg-gradient-homepage-add 141px,
+        $bg-gradient-homepage-add 275px,
+        $bg-gradient-footer-color 275px,
+        $bg-gradient-footer-color 276px,
+        $bg-gradient-homepage-add 276px
       ),
       linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
@@ -32,15 +32,15 @@
     screen and (min-resolution: 2dppx) {
     background-image: repeating-linear-gradient(
         to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0) 140px,
-        rgba(122, 122, 122, 0.4) 140px,
-        rgba(122, 122, 122, 0.4) 141px,
-        rgba(0, 0, 0, 0) 141px,
-        rgba(0, 0, 0, 0) 275px,
-        rgba(122, 122, 122, 0.4) 275px,
-        rgba(122, 122, 122, 0.4) 276px,
-        rgba(0, 0, 0, 0) 276px
+        $bg-gradient-homepage-add,
+        $bg-gradient-homepage-add 140px,
+        $bg-gradient-footer-color 140px,
+        $bg-gradient-footer-color 141px,
+        $bg-gradient-homepage-add 141px,
+        $bg-gradient-homepage-add 275px,
+        $bg-gradient-footer-color 275px,
+        $bg-gradient-footer-color 276px,
+        $bg-gradient-homepage-add 276px
       ),
       linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
@@ -50,15 +50,15 @@
     screen and (min-resolution: 3dppx) {
     background-image: repeating-linear-gradient(
         to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0) 140px,
-        rgba(122, 122, 122, 0.4) 140px,
-        rgba(122, 122, 122, 0.4) 141px,
-        rgba(0, 0, 0, 0) 141px,
-        rgba(0, 0, 0, 0) 275px,
-        rgba(122, 122, 122, 0.4) 275px,
-        rgba(122, 122, 122, 0.4) 276px,
-        rgba(0, 0, 0, 0) 276px
+        $bg-gradient-homepage-add,
+        $bg-gradient-homepage-add 140px,
+        $bg-gradient-footer-color 140px,
+        $bg-gradient-footer-color 141px,
+        $bg-gradient-homepage-add 141px,
+        $bg-gradient-homepage-add 275px,
+        $bg-gradient-footer-color 275px,
+        $bg-gradient-footer-color 276px,
+        $bg-gradient-homepage-add 276px
       ),
       linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/restaurant-details/restaurant-details_background_phone_3x.jpg);
@@ -69,19 +69,19 @@
       screen and (min-resolution: 1dppx) {
       background-image: repeating-linear-gradient(
           to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 278px,
-          rgba(122, 122, 122, 0.4) 278px,
-          rgba(122, 122, 122, 0.4) 279px,
-          rgba(0, 0, 0, 0) 279px,
-          rgba(0, 0, 0, 0) 513px,
-          rgba(122, 122, 122, 0.4) 513px,
-          rgba(122, 122, 122, 0.4) 514px,
-          rgba(0, 0, 0, 0) 514px,
-          rgba(0, 0, 0, 0) 748px,
-          rgba(122, 122, 122, 0.4) 748px,
-          rgba(122, 122, 122, 0.4) 749px,
-          rgba(0, 0, 0, 0) 749px
+          $bg-gradient-homepage-add,
+          $bg-gradient-homepage-add 278px,
+          $bg-gradient-footer-color 278px,
+          $bg-gradient-footer-color 279px,
+          $bg-gradient-homepage-add 279px,
+          $bg-gradient-homepage-add 513px,
+          $bg-gradient-footer-color 513px,
+          $bg-gradient-footer-color 514px,
+          $bg-gradient-homepage-add 514px,
+          $bg-gradient-homepage-add 748px,
+          r$bg-gradient-footer-color 748px,
+          $bg-gradient-footer-color 749px,
+          $bg-gradient-homepage-add 749px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
@@ -91,18 +91,18 @@
       screen and (min-resolution: 2dppx) {
       background-image: repeating-linear-gradient(
           to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 278px,
-          rgba(122, 122, 122, 0.4) 278px,
-          rgba(122, 122, 122, 0.4) 279px,
-          rgba(0, 0, 0, 0) 279px,
-          rgba(0, 0, 0, 0) 513px,
-          rgba(122, 122, 122, 0.4) 513px,
-          rgba(122, 122, 122, 0.4) 514px,
-          rgba(0, 0, 0, 0) 514px,
-          rgba(0, 0, 0, 0) 748px,
-          rgba(122, 122, 122, 0.4) 748px,
-          rgba(122, 122, 122, 0.4) 749px,
+          $bg-gradient-homepage-add,
+          $bg-gradient-homepage-add 278px,
+          $bg-gradient-footer-color 278px,
+          $bg-gradient-footer-color 279px,
+          $bg-gradient-homepage-add 279px,
+          $bg-gradient-homepage-add 513px,
+          $bg-gradient-footer-color 513px,
+          $bg-gradient-footer-color 514px,
+          $bg-gradient-homepage-add 514px,
+          $bg-gradient-homepage-add 748px,
+          $bg-gradient-footer-color 748px,
+          $bg-gradient-footer-color 749px,
           rgba(0, 0, 0, 0) 749px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -113,19 +113,19 @@
       screen and (min-resolution: 3dppx) {
       background-image: repeating-linear-gradient(
           to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 278px,
-          rgba(122, 122, 122, 0.4) 278px,
-          rgba(122, 122, 122, 0.4) 279px,
-          rgba(0, 0, 0, 0) 279px,
-          rgba(0, 0, 0, 0) 513px,
-          rgba(122, 122, 122, 0.4) 513px,
-          rgba(122, 122, 122, 0.4) 514px,
-          rgba(0, 0, 0, 0) 514px,
-          rgba(0, 0, 0, 0) 748px,
-          rgba(122, 122, 122, 0.4) 748px,
-          rgba(122, 122, 122, 0.4) 749px,
-          rgba(0, 0, 0, 0) 749px
+          $bg-gradient-homepage-add,
+          $bg-gradient-homepage-add 278px,
+          $bg-gradient-footer-color 278px,
+          $bg-gradient-footer-color 279px,
+          $bg-gradient-homepage-add 279px,
+          $bg-gradient-homepage-add 513px,
+          $bg-gradient-footer-color 513px,
+          $bg-gradient-footer-color 514px,
+          $bg-gradient-homepage-add 514px,
+          $bg-gradient-homepage-add 748px,
+          $bg-gradient-footer-color 748px,
+          $bg-gradient-footer-color 749px,
+          $bg-gradient-homepage-add 749px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/restaurant-details/restaurant-details_background_tablet_3x.jpg);
@@ -137,19 +137,19 @@
       screen and (min-resolution: 1dppx) {
       background-image: repeating-linear-gradient(
           to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 338px,
-          rgba(122, 122, 122, 0.4) 338px,
-          rgba(122, 122, 122, 0.4) 339px,
-          rgba(0, 0, 0, 0) 339px,
-          rgba(0, 0, 0, 0) 641px,
-          rgba(122, 122, 122, 0.4) 641px,
-          rgba(122, 122, 122, 0.4) 642px,
-          rgba(0, 0, 0, 0) 642px,
-          rgba(0, 0, 0, 0) 944px,
-          rgba(122, 122, 122, 0.4) 944px,
-          rgba(122, 122, 122, 0.4) 945px,
-          rgba(0, 0, 0, 0) 945px
+          $bg-gradient-homepage-add,
+          $bg-gradient-homepage-add 338px,
+          $bg-gradient-footer-color 338px,
+          $bg-gradient-footer-color 339px,
+          $bg-gradient-homepage-add 339px,
+          $bg-gradient-homepage-add 641px,
+          $bg-gradient-footer-color 641px,
+          $bg-gradient-footer-color 642px,
+          $bg-gradient-homepage-add 642px,
+          $bg-gradient-homepage-add 944px,
+          $bg-gradient-footer-color 944px,
+          $bg-gradient-footer-color 945px,
+          $bg-gradient-homepage-add 945px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url(../images/restaurant-details/restaurant-details_background_landscape_1x.jpg);
@@ -159,18 +159,18 @@
       screen and (min-resolution: 2dppx) {
       background-image: repeating-linear-gradient(
           to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 338px,
-          rgba(122, 122, 122, 0.4) 338px,
-          rgba(122, 122, 122, 0.4) 339px,
-          rgba(0, 0, 0, 0) 339px,
-          rgba(0, 0, 0, 0) 641px,
-          rgba(122, 122, 122, 0.4) 641px,
-          rgba(122, 122, 122, 0.4) 642px,
+          $bg-gradient-homepage-add,
+          $bg-gradient-homepage-add 338px,
+          $bg-gradient-footer-color 338px,
+          $bg-gradient-footer-color 339px,
+          $bg-gradient-homepage-add 339px,
+          $bg-gradient-homepage-add 641px,
+          $bg-gradient-footer-color 641px,
+          $bg-gradient-footer-color 642px,
           rgba(0, 0, 0, 0) 642px,
           rgba(0, 0, 0, 0) 944px,
-          rgba(122, 122, 122, 0.4) 944px,
-          rgba(122, 122, 122, 0.4) 945px,
+          $bg-gradient-footer-color 944px,
+          $bg-gradient-footer-color 945px,
           rgba(0, 0, 0, 0) 945px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -183,16 +183,16 @@
           to right,
           rgba(0, 0, 0, 0),
           rgba(0, 0, 0, 0) 338px,
-          rgba(122, 122, 122, 0.4) 338px,
-          rgba(122, 122, 122, 0.4) 339px,
+          $bg-gradient-footer-color 338px,
+          $bg-gradient-footer-color 339px,
           rgba(0, 0, 0, 0) 339px,
           rgba(0, 0, 0, 0) 641px,
-          rgba(122, 122, 122, 0.4) 641px,
-          rgba(122, 122, 122, 0.4) 642px,
+          $bg-gradient-footer-color 641px,
+          $bg-gradient-footer-color 642px,
           rgba(0, 0, 0, 0) 642px,
           rgba(0, 0, 0, 0) 944px,
-          rgba(122, 122, 122, 0.4) 944px,
-          rgba(122, 122, 122, 0.4) 945px,
+          $bg-gradient-footer-color 944px,
+          $bg-gradient-footer-color 945px,
           rgba(0, 0, 0, 0) 945px
         ),
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -370,13 +370,13 @@
     }
   }
   @include respond-to('min', 'tablet') {
-    &__item {
+    &__item--small {
       width: 162px;
       height: 270px;
       object-position: center;
       object-fit: cover;
     }
-    &__image {
+    &__image--small {
       width: 162px;
       height: 270px;
       object-position: center;
