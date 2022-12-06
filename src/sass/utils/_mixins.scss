@@ -39,3 +39,6 @@
     }
   }
 }
+@function screen-width($width) {
+  @return map-get($breakpoints-list, $width);
+}
