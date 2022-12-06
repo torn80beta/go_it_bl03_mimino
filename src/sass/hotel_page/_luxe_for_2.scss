@@ -275,10 +275,6 @@
       overflow: hidden;
       width: 194px;
 
-      &:nth-child(1n) {
-         // box-shadow: $slider-item-shadow;
-      }
-
       @include desktop {
          width: 254px;
       }
