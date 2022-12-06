@@ -355,6 +355,12 @@
       height: 254px;
     }
   }
+  &__image {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.08);
+      @include respond-to('min', 'tablet') {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.14);
+      }
+  }
   &__img {
     width: 245px;
     height: 245px;
@@ -375,6 +381,7 @@
     width: 45px;
     height: 25px;
     border: none;
+    cursor: pointer;
   }
   &__wrapper .slick-next {
     position: absolute;
@@ -384,6 +391,7 @@
     height: 25px;
     left: 55px;
     border: none;
+    cursor: pointer;
   }
   &__arrow-left {
     padding: 0;

@@ -1,9 +1,19 @@
 $(document).ready(function () {
-  $('.variable-width').slick({
+  $('.about-kitchen__slider').slick({
     arrows: true,
     slidesToShow: 2,
     variableWidth: true,
-    appendArrows: $('.slider-nav'),
+    appendArrows: $('.about-kitchen__slider-nav'),
+    speed: 300,
+  });
+});
+
+$(document).ready(function () {
+  $('.hotel-section-room__slick').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.hotel-section-room__slider-nav'),
     speed: 300,
   });
 });
@@ -54,6 +64,26 @@ $(document).ready(function () {
         slidesToShow: 2,
         variableWidth: true,
         appendArrows: $('.about-hotel__slider-nav'),
+        speed: 300,
+    });
+});
+
+$(document).ready(function () {
+  $('.restaurant-about-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.restaurant-about__slider-nav'),
+    speed: 300,
+  });
+});
+
+$(document).ready(function () {
+    $('.restaurant-details-slider').slick({
+        arrows: true,
+        slidesToShow: 2,
+        variableWidth: true,
+        appendArrows: $('.restaurant-details__slider-nav'),
         speed: 300,
     });
 });
