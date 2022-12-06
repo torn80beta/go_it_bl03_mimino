@@ -3,13 +3,10 @@
    max-width: 1280px;
    background-color: $background-light-color;
 
-   @include desktop {
-      max-width: 1280px;
-   }
 }
 .rooms__background-gradient {
    margin: 0 auto;
-   max-width: 1280px;
+   max-width: 414px;
    background-image: linear-gradient(to right,
          $background-light-color 138px,
          $bg-gradient-color 139px,
@@ -19,7 +16,7 @@
          $background-light-color 275px);
       
    @media screen and (min-width: 1024px) {
-      width: 1024px;
+      max-width: 1024px;
       background-image: linear-gradient(to right,
             $background-light-color 278px,
             $bg-gradient-color 279px,
@@ -34,7 +31,7 @@
    }
 
    @media screen and (min-width: 1280px) {
-      width: 1280px;
+      max-width: 1280px;
       background-image: linear-gradient(to right,
             $background-light-color 338px,
             $bg-gradient-color 339px,

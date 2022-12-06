@@ -1,16 +1,14 @@
 .triple-room {
   margin: 0 auto;
+  max-width: 1280px;
   background-color: $logo-header-hotel-color;
   overflow-x: clip;
 
-  @include desktop {
-    max-width: 1280px;
-  }
 }
 
 .triple-room__wrapper {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 414px;
   background-image: linear-gradient(to right,
       $logo-header-hotel-color 138px,
       $bg-gradient-color 139px,
@@ -20,7 +18,7 @@
       $logo-header-hotel-color 275px);
 
   @include tablet {
-    width: 1024px;
+    max-width: 1024px;
     background-image: linear-gradient(to right,
         $logo-header-hotel-color 278px,
         $bg-gradient-color 279px,
@@ -34,7 +32,7 @@
   }
 
   @include desktop {
-    width: 1280px;
+    max-width: 1280px;
     background-image: linear-gradient(to right,
         $logo-header-hotel-color 338px,
         $bg-gradient-color 339px,
@@ -56,11 +54,11 @@
   padding-bottom: 32px;
 
   @include mobile {
-    width: 414px;
+    max-width: 414px;
   }
 
   @include tablet {
-    width: 1024px;
+    max-width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
     padding-top: 62px;
@@ -68,7 +66,7 @@
   }
 
   @include desktop {
-    width: 1280px;
+    max-width: 1280px;
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 72px;
