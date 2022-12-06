@@ -1,8 +1,8 @@
 .about-kitchen {
-    max-width: 1280px;
-    margin: 0 auto;
-    overflow-x: clip;
-    background-color: $background-light-color;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: clip;
+  background-color: $background-light-color;
 }
 
 .about-kitchen__wrapper {
@@ -159,7 +159,7 @@
     right: 112px;
     min-width: 400px;
     min-height: 524px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 70px 17px $shadow-color-photo;
   }
 
   @media screen and (min-width: 1280px) {
@@ -270,56 +270,55 @@
 }
 
 .about-kitchen__slider-nav {
+  position: absolute;
+  bottom: -284px;
+  right: 18px;
+  width: 94px;
+  height: 18px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+    bottom: 40px;
+    right: 63px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    bottom: 40px;
+    right: 88px;
+  }
+
+  & .slick-arrow {
     position: absolute;
-    bottom: -284px;
-    right: 18px;
-    width: 94px;
+    top: 50%;
+    transform: translateY(-9px);
+    width: 30px;
     height: 18px;
+    z-index: 10;
+    font-size: 0;
+    border: none;
 
-    @media screen and (min-width: 1024px) {
-        justify-content: space-between;
-        bottom: 40px;
-        right: 63px;
+    &.slick-prev {
+      left: 0;
+      background-image: url('../images/svg/slider-prev-button.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      cursor: pointer;
     }
 
-    @media screen and (min-width: 1280px) {
-        justify-content: space-between;
-        bottom: 40px;
-        right: 88px;
+    &.slick-next {
+      right: 0;
+      background-image: url('../images/svg/slider-next-button.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      cursor: pointer;
     }
-
-    & .slick-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-9px);
-        width: 30px;
-        height: 18px;
-        z-index: 10;
-        font-size: 0;
-        border: none;
-
-        &.slick-prev {
-            left: 0;
-            background-image: url('../images/svg/slider-prev-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        &.slick-next {
-            right: 0;
-            background-image: url('../images/svg/slider-next-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-            cursor: pointer;
-        }
-    }
+  }
 }
-
 
 /* 
 .about-kitchen__slider-wrapper--left {

@@ -62,54 +62,49 @@
 }
 
 .restaurant-about-section-container {
-  background-image: repeating-linear-gradient(
+  width: 414px;
+  background-image: linear-gradient(
     to right,
-    $logo-header-room-color,
-    $logo-header-room-color 140px,
-    $bg-gradient-color 140px,
-    $bg-gradient-color 141px,
-    $logo-header-room-color 141px,
-    $logo-header-room-color 275px,
-    $bg-gradient-color 275px,
-    $bg-gradient-color 276px,
-    $logo-header-room-color 276px
+    $background-light-color 138px,
+    $bg-gradient-color 139px,
+    $background-light-color 140px,
+    $background-light-color 273px,
+    $bg-gradient-color 274px,
+    $background-light-color 275px
   );
-  @include respond-to('min', 'tablet') {
-    background-image: repeating-linear-gradient(
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    background-image: linear-gradient(
       to right,
-      $logo-header-room-color,
-      $logo-header-room-color 278px,
-      $bg-gradient-color 278px,
+      $background-light-color 278px,
       $bg-gradient-color 279px,
-      $logo-header-room-color 279px,
-      $logo-header-room-color 513px,
-      $bg-gradient-color 513px,
-      $bg-gradient-color 514px,
-      $logo-header-room-color 514px,
-      $logo-header-room-color 748px,
-      $bg-gradient-color 748px,
-      $bg-gradient-color 749px,
-      $logo-header-room-color 749px
+      $background-light-color 280px,
+      $background-light-color 511px,
+      $bg-gradient-color 512px,
+      $background-light-color 513px,
+      $background-light-color 745px,
+      $bg-gradient-color 746px,
+      $background-light-color 747px
     );
   }
-  @include respond-to('min', 'desktop') {
-    background-image: repeating-linear-gradient(
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-image: linear-gradient(
       to right,
-      $logo-header-room-color,
-      $logo-header-room-color 338px,
-      $bg-gradient-color 338px,
+      $background-light-color 338px,
       $bg-gradient-color 339px,
-      $logo-header-room-color 339px,
-      $logo-header-room-color 641px,
-      $bg-gradient-color 641px,
-      $bg-gradient-color 642px,
-      $logo-header-room-color 642px,
-      $logo-header-room-color 943px,
-      $bg-gradient-color 943px,
-      $bg-gradient-color 944px,
-      $logo-header-room-color 944px
+      $background-light-color 340px,
+      $background-light-color 639px,
+      $bg-gradient-color 640px,
+      $background-light-color 641px,
+      $background-light-color 941px,
+      $bg-gradient-color 942px,
+      $background-light-color 943px
     );
   }
+
   @media screen and (max-width: 414px) {
     overflow: hidden;
   }
@@ -264,7 +259,7 @@
     width: calc((100vw) / (414px) * 244px);
   }
   @include respond-to('max', 'tablet') {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 60px 2px $shadow-color-photo;
     border-radius: 2px;
     margin-bottom: 32px;
     margin-left: auto;
@@ -277,7 +272,7 @@
     width: 460px;
     height: 574px;
     height: auto;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: (0px 4px 4px $shadow-color-photo);
   }
 }
 .restaurant-about_photo-second {
@@ -295,7 +290,7 @@
     //flex-shrink: 3;
   }
   @include respond-to('max', 'phone') {
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 70px 17px $shadow-color-photo;
     border-radius: 2px;
   }
   @include respond-to('min', 'tablet') {
@@ -313,7 +308,7 @@
 .restaurant-about-slider {
   &__wrapper {
     position: relative;
-    left: 50px;
+    left: 70px;
 
     @include respond-to('min', 'desktop') {
       left: 10px;
@@ -356,10 +351,10 @@
     }
   }
   &__image {
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.08);
-      @include respond-to('min', 'tablet') {
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.14);
-      }
+    box-shadow: 2px 2px 60px 2px $shadow-color-photo;
+    @include respond-to('min', 'tablet') {
+      box-shadow: 2px 2px 60px 2px $shadow-color-photo;
+    }
   }
   &__img {
     width: 245px;
@@ -407,13 +402,16 @@
   &__buttons {
     position: absolute;
     top: 265px;
-    right: 215px;
+    //right: 215px;
     width: 108px;
-    @media screen and (max-width: 350px) {
-      left: 145px;
-    }
+    // @media screen and (max-width: 320px) {
+    //   left: 145px;
+    //}
     @include respond-to('max', 'phone') {
-      left: 175px;
+      left: 120px;
+    }
+    @include respond-to('min', 'phone') {
+      left: 215px;
     }
     @include respond-to('min', 'tablet') {
       top: 230px;
@@ -426,6 +424,6 @@
     }
   }
   &__arrow-left-svg {
-    fill: black;
+    fill: $main-dark-color;
   }
 }
