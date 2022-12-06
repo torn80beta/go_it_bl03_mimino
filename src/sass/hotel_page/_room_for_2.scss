@@ -188,11 +188,12 @@
   width: 284px;
   margin-bottom: 20px;
   border-radius: 2px;
-  // overflow: hidden;
-  box-shadow: $slider-wrapper-shadow;
+  overflow: hidden;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 1024px) {
     width: 428px;
+    box-shadow: $slider-wrapper-shadow;
   }
 
   @media screen and (min-width: 1280px) {
