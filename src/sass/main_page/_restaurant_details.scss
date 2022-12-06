@@ -1,0 +1,370 @@
+.restaurant-details {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px;
+
+  // padding: 24px 0 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.restaurant-details-section-container {
+  overflow: hidden;
+  margin-right: 0;
+  min-width: 320px;
+  //padding: 0 15px;
+  padding: 24px 15px 40px;
+  margin: 0 auto;
+  margin-right: 0;
+  min-width: 320px;
+  // padding: 0 15px;
+
+  padding: 16px 15px 40px;
+  margin: 0 auto;
+  @include respond-to('min', 'phone') {
+    width: screen-width('phone');
+  }
+  @include respond-to('min', 'tablet') {
+    width: screen-width('tablet');
+    // padding: 0 47px;
+    padding: 48px 48px 96px;
+  }
+  @include respond-to('min', 'desktop') {
+    width: screen-width('desktop');
+    // padding: 0 85px;
+    padding: 48px 85px 96px;
+  }
+  @include respond-to('max', 'tablet') {
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_phone_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_phone_2x.jpg);
+    }
+  }
+
+  @include respond-to('min', 'tablet') {
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_tablet_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_tablet_2x.jpg);
+    }
+  }
+
+  @include respond-to('min', 'desktop') {
+    @media screen and (min-device-pixel-ratio: 1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_landscape_1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $bg-color-homepage-main,
+          $bg-color-homepage-main
+        ),
+        url(../images/restaurant-details/restaurant-details_background_landscape_2x.jpg);
+    }
+  }
+  width: 414px;
+  background-image: linear-gradient(
+    to right,
+    $bg-gradient-homepage-add 138px,
+    $bg-gradient-color 139px,
+    $bg-gradient-homepage-add 140px,
+    $bg-gradient-homepage-add 273px,
+    $bg-gradient-color 274px,
+    $bg-gradient-homepage-add 275px
+  );
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    background-image: linear-gradient(
+      to right,
+      $bg-gradient-homepage-add 278px,
+      $bg-gradient-color 279px,
+      $bg-gradient-homepage-add 280px,
+      $bg-gradient-homepage-add 511px,
+      $bg-gradient-color 512px,
+      $bg-gradient-homepage-add 513px,
+      $bg-gradient-homepage-add 745px,
+      $bg-gradient-color 746px,
+      $bg-gradient-homepage-add 747px
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-image: linear-gradient(
+      to right,
+      $bg-gradient-homepage-add 338px,
+      $bg-gradient-color 339px,
+      $bg-gradient-homepage-add 340px,
+      $bg-gradient-homepage-add 639px,
+      $bg-gradient-color 640px,
+      $bg-gradient-homepage-add 641px,
+      $bg-gradient-homepage-add 941px,
+      $bg-gradient-color 942px,
+      $bg-gradient-homepage-add 943px
+    );
+  }
+
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+.restaurant-details__container {
+  // padding: 24px 0 40px;
+  @include respond-to('min', 'tablet') {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+}
+
+.restaurant-details__wrapper-first {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  // padding-bottom: 94px;
+  @include respond-to('min', 'tablet') {
+    padding-bottom: 50px;
+  }
+}
+.restaurant-details__wrapper-second {
+  @include respond-to('min', 'tablet') {
+    flex-grow: 1;
+  }
+}
+.restaurant-details__button {
+  // display: block;
+  // width: 236px;
+  // align-self: center;
+  @include button($main-dark-color);
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-color;
+  }
+}
+.restaurant-details__logo {
+  padding: 0;
+  margin: 0 0 12px;
+  font-family: 'Film P3';
+  // font-family: 'Film P3';
+  color: $main-light-color;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  margin-bottom: 12px;
+
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+  }
+  // @include respond-to('max', 'phone') {
+  //   margin-left: calc((100vw - 414px) / 414 * 125);
+  // }
+  @include respond-to('min', 'tablet') {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 16px;
+    position: relative;
+    left: -34px;
+  }
+}
+.restaurant-details__title {
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: $main-light-color;
+
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+  }
+  @include respond-to('min', 'tablet') {
+    font-size: 24px;
+    line-height: calc(29.3 / 24);
+    margin-bottom: 8px;
+    position: relative;
+    left: -34px;
+  }
+}
+.restaurant-details__info {
+  padding: 0;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(14.6 / 12);
+  letter-spacing: 0.02em;
+
+  color: $text-second-homepage-color;
+  margin-bottom: 48px;
+
+  @include respond-to('max', 'phone') {
+    font-size: calc((100vw) / (414px) * 12px);
+    max-width: calc((100vw) / (414px) * 259px);
+  }
+  @include respond-to('max', 'tablet') {
+    margin-left: 125px;
+    max-width: 259px;
+  }
+  @include respond-to('min', 'tablet') {
+    font-size: 16px;
+    line-height: calc(19.5 / 16);
+    margin-bottom: 40px;
+    width: 610px;
+    position: relative;
+    left: -34px;
+  }
+}
+
+.restaurant-details-slider {
+  &__wrapper {
+    position: relative;
+    left: 35px;
+    margin-bottom: 60px;
+  }
+  &__container {
+    width: 365px;
+
+    @include respond-to('min', 'tablet') {
+      width: 682px;
+    }
+  }
+  & .slick-track {
+    position: relative;
+    display: flex;
+    gap: 26px;
+    @include respond-to('min', 'tablet') {
+      gap: 34px;
+    }
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  &__item--small-tablet {
+    @include respond-to('min', 'tablet') {
+      width: 162px;
+      height: 270px;
+    }
+  }
+  &__image--small-tablet {
+    @include respond-to('min', 'tablet') {
+      width: 162px;
+      height: 270px;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__wrapper .slick-prev {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 10;
+    width: 45px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      .restaurant-details-slider__arrow-left-svg {
+        fill: $accent-color;
+      }
+    }
+  }
+  &__wrapper .slick-next {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    width: 45px;
+    height: 25px;
+    left: 55px;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      .restaurant-details-slider__arrow-right-svg {
+        fill: $accent-color;
+      }
+    }
+  }
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__buttons {
+    position: absolute;
+    top: 290px;
+    width: 108px;
+  }
+  &__arrow-left-svg {
+    fill: $main-light-color;
+    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+  &__arrow-right-svg {
+    // position: relative;
+    // z-index: 10;
+    fill: $main-light-color;
+    translate: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}

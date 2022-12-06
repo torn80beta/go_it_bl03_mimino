@@ -1,0 +1,308 @@
+.hotel_details {
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: clip;
+
+  &__content {
+    margin: 0 auto;
+    position: relative;
+    padding: 24px 15px 40px;
+    height: 735px;
+    max-width: 414px;
+
+    background-color: $main-dark-color;
+    background-image: linear-gradient(
+        to right,
+        $background-section-color 138px,
+        $bg-gradient-footer-color 139px,
+        $background-section-color 140px,
+        $background-section-color 273px,
+        $bg-gradient-footer-color 274px,
+        $background-section-color 275px
+      ),
+      url(../images/homepage/background-hotel_414.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 138px,
+          $bg-gradient-footer-color 139px,
+          $background-section-color 140px,
+          $background-section-color 273px,
+          $bg-gradient-footer-color 274px,
+          $background-section-color 275px
+        ),
+        url(../images/homepage/background-hotel_414@2x.jpg);
+    }
+    @media screen and (min-width: 1024px) {
+      max-width: 1024px;
+      height: 620px;
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 278px,
+          $bg-gradient-footer-color 279px,
+          $background-section-color 280px,
+          $background-section-color 511px,
+          $bg-gradient-footer-color 512px,
+          $background-section-color 513px,
+          $background-section-color 745px,
+          $bg-gradient-footer-color 746px,
+          $background-section-color 747px
+        ),
+        url(../images/homepage/background-hotel_1024.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            $background-section-color 278px,
+            $bg-gradient-footer-color 279px,
+            $background-section-color 280px,
+            $background-section-color 511px,
+            $bg-gradient-footer-color 512px,
+            $background-section-color 513px,
+            $background-section-color 745px,
+            $bg-gradient-footer-color 746px,
+            $background-section-color 747px
+          ),
+          url(../images/homepage/background-hotel_1024@2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      background-image: linear-gradient(
+          to right,
+          $background-section-color 338px,
+          $bg-gradient-footer-color 339px,
+          $background-section-color 340px,
+          $background-section-color 639px,
+          $bg-gradient-footer-color 640px,
+          $background-section-color 641px,
+          $background-section-color 941px,
+          $bg-gradient-footer-color 942px,
+          $background-section-color 943px
+        ),
+        url(../images/homepage/background-hotel_1280.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            $background-section-color 338px,
+            $bg-gradient-footer-color 339px,
+            $background-section-color 340px,
+            $background-section-color 639px,
+            $bg-gradient-footer-color 640px,
+            $background-section-color 641px,
+            $background-section-color 941px,
+            $bg-gradient-footer-color 942px,
+            $background-section-color 943px
+          ),
+          url(../images/homepage/background-hotel_1280@2x.jpg);
+      }
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+
+    @media screen and (min-width: 414px) {
+      max-width: 1023px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: 1279px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 17px;
+    max-width: 243px;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 549px;
+      margin-left: 182px;
+      gap: 8px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 595px;
+      margin-left: 332px;
+    }
+  }
+
+  &__title {
+    padding-left: 111px;
+
+    @media screen and (min-width: 1024px) {
+      padding-left: 500px;
+    }
+  }
+
+  &__logo {
+    font-family: 'Film P3';
+    color: $main-light-color;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+      line-height: 1.47;
+    }
+  }
+
+  &__sub-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $main-light-color;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-top: 8px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    color: $text-second-homepage-color;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__buttons {
+    margin: 398px auto 0;
+    width: 236px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    @media screen and (min-width: 1024px) {
+      align-items: flex-end;
+      gap: 16px;
+      margin: 194px 32px 60px 726px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin: 199px 71px 55px auto;
+    }
+  }
+}
+
+.hotel_details__slider-wrapper {
+  position: absolute;
+  top: 233px;
+  right: 40px;
+  width: 374px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: slider-wrapper-shadow;
+
+  & .slick-track {
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    top: 254px;
+    right: 315px;
+    width: 662px;
+
+    & .slick-track {
+      gap: 34px;
+      margin-left: -100px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 254px;
+    right: 354px;
+    width: 874px;
+
+    & .slick-track {
+      gap: 86px;
+      margin-left: 0px;
+    }
+  }
+
+  & .slick-list {
+    overflow: hidden;
+  }
+}
+
+.hotel_details__slider-nav {
+  position: absolute;
+  bottom: 192px;
+  right: 43px;
+  width: 94px;
+  height: 18px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+    bottom: 47px;
+    right: 315px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    bottom: 48px;
+    right: 357px;
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-9px);
+    width: 30px;
+    height: 18px;
+    z-index: 10;
+    font-size: 0;
+    border: none;
+
+    &.slick-prev {
+      left: 0;
+      -webkit-mask-image: url('../images/svg/slider-prev-button.svg');
+      mask-image: url('../images/svg/slider-prev-button.svg');
+      background-color: $triple-slider-white;
+      cursor: pointer;
+    }
+
+    &.slick-next {
+      right: 0;
+      -webkit-mask-image: url('../images/svg/slider-next-button.svg');
+      mask-image: url('../images/svg/slider-next-button.svg');
+      background-color: $triple-slider-white;
+      cursor: pointer;
+    }
+  }
+}
