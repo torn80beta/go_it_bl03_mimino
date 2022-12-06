@@ -9,16 +9,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.restaurant-about-slider').slick({
-    arrows: true,
-    slidesToShow: 2,
-    variableWidth: true,
-    appendArrows: $('.restaurant-about__slider-nav'),
-    speed: 300,
-  });
-});
-
-$(document).ready(function () {
   $('.hotel-section-room__slick').slick({
     arrows: true,
     slidesToShow: 2,
@@ -79,13 +69,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('.restaurant-about__slider').slick({
-        arrows: true,
-        slidesToShow: 2,
-        variableWidth: true,
-        appendArrows: $('.restaurant-about__slider-nav'),
-        speed: 300,
-    });
+  $('.restaurant-about-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: $('.restaurant-about__slider-nav'),
+    speed: 300,
+  });
 });
 
 $(document).ready(function () {
@@ -93,7 +83,7 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 2,
         variableWidth: true,
-        /* appendArrows: $('.restaurant-details__slider-nav'), */
+        appendArrows: $('.restaurant-details__slider-nav'),
         speed: 300,
     });
 });
