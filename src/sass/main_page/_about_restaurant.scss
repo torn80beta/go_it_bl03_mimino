@@ -53,7 +53,7 @@
   @include respond-to('min', 'tablet') {
     // padding: 120px 0 87px;
     position: relative;
-    height: 1250px;
+    height: 1220px;
   }
   @include respond-to('min', 'desktop') {
     // padding: 120px 0 120px;
@@ -124,16 +124,15 @@
   @include respond-to('min', 'tablet') {
     width: screen-width('tablet');
     // padding: 0 47px;
-    padding: 120px 47px 87px;
+    padding: 120px 47px 260px;
   }
   @include respond-to('min', 'desktop') {
     width: screen-width('desktop');
     // padding: 0 85px;
     padding: 120px 85px 120px;
-    padding: 120px 85px 225px;
+    padding: 120px 85px 240px;
   }
 }
-
 .restaurant-about__container {
   position: relative;
   @include respond-to('min', 'tablet') {
@@ -273,7 +272,6 @@
   @include respond-to('min', 'tablet') {
     width: 350px;
     height: 500px;
-    height: auto;
   }
   @include respond-to('min', 'desktop') {
     width: 460px;
@@ -316,12 +314,14 @@
   &__wrapper {
     position: relative;
     left: 50px;
+
     @include respond-to('min', 'desktop') {
       left: 10px;
     }
   }
   &__container {
     width: 330px;
+    box-shadow: $slider-wrapper-shadow;
 
     @include respond-to('min', 'tablet') {
       width: 430px;
@@ -345,6 +345,7 @@
   &__item {
     width: 245px;
     height: 245px;
+    box-shadow: $slider-item-shadow;
     @include respond-to('min', 'tablet') {
       width: 194px;
       height: 194px;
@@ -400,6 +401,9 @@
     top: 265px;
     left: 215px;
     width: 108px;
+    @media screen and (max-width: 350px) {
+      left: 145px;
+    }
     @include respond-to('max', 'phone') {
       left: 175px;
     }
