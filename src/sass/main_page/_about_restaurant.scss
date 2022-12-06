@@ -375,6 +375,7 @@
     width: 45px;
     height: 25px;
     border: none;
+    cursor: pointer;
   }
   &__wrapper .slick-next {
     position: absolute;
@@ -384,6 +385,7 @@
     height: 25px;
     left: 55px;
     border: none;
+    cursor: pointer;
   }
   &__arrow-left {
     padding: 0;
