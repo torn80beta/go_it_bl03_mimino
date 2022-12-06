@@ -92,7 +92,7 @@
   font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
   line-height: calc(23 / 20);
-  color: #b4b4b4;
+  color: $subtitles-color;
   text-align: left;
   margin-bottom: 12px;
 
@@ -107,7 +107,7 @@
   width: 127px;
   height: 43px;
   margin-bottom: 12px;
-  fill: #494848;
+  fill: $logo-rest-hotel-color;
 
   @media screen and (min-width: 1024px) {
     width: 202px;
@@ -121,14 +121,14 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $text-rest-homepage-color;
 
   &--brown {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
-    color: #c79002;
+    color: $second-accent-color;
   }
 
   @media screen and (min-width: 1024px) {
@@ -149,9 +149,8 @@
   max-height: 322px;
   margin-bottom: 32px;
   margin-left: auto;
-  background-color: #939393;
   border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: $small-images-shadow;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -159,7 +158,7 @@
     right: 112px;
     min-width: 400px;
     min-height: 524px;
-    box-shadow: 5px 5px 70px 17px $shadow-color-photo;
+    box-shadow: $big-images-shadow;
   }
 
   @media screen and (min-width: 1280px) {
@@ -168,7 +167,7 @@
     right: 180px;
     min-width: 460px;
     min-height: 574px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: $big-images-shadow;
   }
 }
 
@@ -193,14 +192,13 @@
   height: 278px;
   margin-right: 20px;
   border-radius: 2px;
-  background-color: #939393;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: $small-images-shadow;
 
   @media screen and (min-width: 1024px) {
     min-width: 350px;
     min-height: 500px;
     margin-right: 48px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: $big-images-shadow;
   }
 
   @media screen and (min-width: 1280px) {
