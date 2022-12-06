@@ -1,6 +1,7 @@
 .hotel_details {
   padding: 0;
   margin: 0 auto;
+  overflow-x: clip;
 
   &__content {
     margin: 0 auto;
@@ -220,7 +221,7 @@
 .hotel_details__slider-wrapper {
   position: absolute;
   top: 233px;
-  left: 0px;
+  right: 40px;
   width: 374px;
   border-radius: 2px;
   overflow: hidden;
@@ -234,7 +235,7 @@
 
   @media screen and (min-width: 1024px) {
     top: 254px;
-    left: 47px;
+    right: 315px;
     width: 662px;
 
     & .slick-track {
@@ -245,7 +246,7 @@
 
   @media screen and (min-width: 1280px) {
     top: 254px;
-    left: 52px;
+    right: 354px;
     width: 874px;
 
     & .slick-track {
@@ -262,20 +263,20 @@
 .hotel_details__slider-nav {
   position: absolute;
   bottom: 192px;
-  left: 277px;
+  right: 43px;
   width: 94px;
   height: 18px;
 
   @media screen and (min-width: 1024px) {
     justify-content: space-between;
     bottom: 47px;
-    left: 615px;
+    right: 315px;
   }
 
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
     bottom: 48px;
-    left: 830px;
+    right: 357px;
   }
 
   & .slick-arrow {
