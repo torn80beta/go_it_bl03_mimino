@@ -1,0 +1,27 @@
+.form-button {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    background-color: $modal-black;
+    border: 1px solid $modal-accentYellow;
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $modal-background;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 250ms linear, color 250ms linear;
+
+    &:hover,
+    &:focus {
+        background-color: $modal-accentYellow;
+        color: $modal-black;
+    }
+}
