@@ -10,7 +10,7 @@
 .rooms__background-gradient {
    margin-left: auto;
    margin-right: auto;
-      width: 414px;
+      max-width: 414px;
          background-image: linear-gradient(to right,
                $background-light-color 138px,
                $bg-gradient-color 139px,

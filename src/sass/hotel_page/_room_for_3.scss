@@ -2,6 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $logo-header-hotel-color;
+  overflow-x: clip;
 
   @include desktop {
     max-width: 1280px;
@@ -10,7 +11,7 @@
 
 .triple-room__wrapper {
   margin: 0 auto;
-  width: 414px;
+  max-width: 414px;
   background-image: linear-gradient(to right,
       $logo-header-hotel-color 138px,
       $bg-gradient-color 139px,
