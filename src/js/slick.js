@@ -27,3 +27,33 @@ $(document).ready(function () {
         speed: 300,
     });
 });
+
+$(document).ready(function () {
+    $('.hotel_details__triple-slider').slick({
+        arrows: true,
+        slidesToShow: 2,
+        variableWidth: true,
+        appendArrows: $('.hotel_details__slider-nav'),
+        speed: 300,
+    });
+});
+
+$(document).ready(function () {
+    $('.triple-room__slider').slick({
+        arrows: true,
+        slidesToShow: 2,
+        variableWidth: true,
+        appendArrows: $('.triple-room__slider-nav'),
+        speed: 300,
+    });
+});
+
+$(document).ready(function () {
+    $('.about-hotel__slider').slick({
+        arrows: true,
+        slidesToShow: 2,
+        variableWidth: true,
+        appendArrows: $('.about-hotel__slider-nav'),
+        speed: 300,
+    });
+});
