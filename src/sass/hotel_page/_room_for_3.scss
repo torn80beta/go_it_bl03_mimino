@@ -1,46 +1,55 @@
 .triple-room {
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  background-color: $logo-header-hotel-color;
-
-  @include tablet-down() {
-    min-height: 1050px;
-    overflow: hidden;
-  }
-
-  @include tablet() {
-    min-height: 838px;
-    // padding-top: 66px;
-    // padding-bottom: 112px;
-  }
-
-  @include desktop {
-    min-height: 956px;
-    // padding-top: 72px;
-  }
-}
-.triple-room__wrapper {
-  @include desktop {
-    margin: 0 auto;
-    max-width: 1280px;
-    background-image: linear-gradient(
-      to right,
-      $logo-header-hotel-color 338px,
-      $bg-gradient-color 339px,
-      $logo-header-hotel-color 340px,
-      $logo-header-hotel-color 639px,
-      $bg-gradient-color 64px,
-      $logo-header-hotel-color 641px,
-      $logo-header-hotel-color 941px,
-      $bg-gradient-color 940px,
-      $logo-header-hotel-color 943px
-    );
-  }
-}
-.triple-room__container {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
+  background-color: $logo-header-hotel-color;
+
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+
+.triple-room__wrapper {
+  margin: 0 auto;
+  width: 414px;
+  background-image: linear-gradient(to right,
+      $logo-header-hotel-color 138px,
+      $bg-gradient-color 139px,
+      $logo-header-hotel-color 140px,
+      $logo-header-hotel-color 273px,
+      $bg-gradient-color 274px,
+      $logo-header-hotel-color 275px);
+
+  @include tablet {
+    width: 1024px;
+    background-image: linear-gradient(to right,
+        $logo-header-hotel-color 278px,
+        $bg-gradient-color 279px,
+        $logo-header-hotel-color 280px,
+        $logo-header-hotel-color 511px,
+        $bg-gradient-color 512px,
+        $logo-header-hotel-color 513px,
+        $logo-header-hotel-color 745px,
+        $bg-gradient-color 746px,
+        $logo-header-hotel-color 747px);
+  }
+
+  @include desktop {
+    width: 1280px;
+    background-image: linear-gradient(to right,
+        $logo-header-hotel-color 338px,
+        $bg-gradient-color 339px,
+        $logo-header-hotel-color 340px,
+        $logo-header-hotel-color 639px,
+        $bg-gradient-color 64px,
+        $logo-header-hotel-color 641px,
+        $logo-header-hotel-color 941px,
+        $bg-gradient-color 940px,
+        $logo-header-hotel-color 943px);
+  }
+}
+
+.triple-room__container {
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 32px;
@@ -54,8 +63,8 @@
     width: 1024px;
     padding-left: 47px;
     padding-right: 47px;
-    padding-top: 66px;
-    padding-bottom: 112px;
+    padding-top: 62px;
+    padding-bottom: 145px;
   }
 
   @include desktop {
@@ -63,29 +72,33 @@
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 72px;
+
+    padding-bottom: 182px;
   }
 }
+
 .triple-room__subtitle {
   margin-bottom: 8px;
   padding-right: 10px;
-  text-align: end;
+  text-align: right;
   font-family: 'Times New Roman';
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
   color: $subtitles-color;
 
-  @include tablet() {
+  @include tablet {
     font-size: 32px;
     line-height: calc(37 / 32);
     margin-bottom: 4px;
     padding-right: 20px;
   }
 
-  @include desktop() {
+  @include desktop {
     padding-right: 57px;
   }
 }
+
 .triple-room__logo {
   display: block;
   margin-bottom: 32px;
@@ -109,11 +122,7 @@
     padding-right: 40px;
   }
 }
-// .text-box {
-// display: flex;
-// flex-direction: column;
 
-// }
 .triple-room__title {
   text-align: end;
   margin-bottom: 12px;
@@ -139,8 +148,8 @@
     padding-right: 57px;
   }
 }
+
 .triple-room__text {
-  //   margin-left: 98px;
   margin-left: calc(100% - 280px);
   margin-bottom: 32px;
   font-family: 'Montserrat';
@@ -151,91 +160,86 @@
   width: 242px;
   color: $text-rest-homepage-color;
 
-  @include tablet() {
+  @include tablet {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
-    margin-bottom: 169px;
+    margin-bottom: 210px;
     width: 420px;
     margin-left: calc(100% - 392px);
     padding-right: 20px;
   }
 
-  @include desktop() {
-    margin-bottom: 188px;
-    margin-left: calc(100% - 475px);
+  @include desktop {
+    margin-bottom: 260px;
+    margin-left: calc(100% - 480px);
   }
 }
+
 .triple-room__img {
-  margin-bottom: 32px;
+  display: block;
+  width: 244px;
+  margin-bottom: 298px;
   background: $background-img-color;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
   @include tablet() {
     position: absolute;
-    // top: -98px;
     top: -32px;
     left: 112px;
+    margin-bottom: 0;
+    width: 400px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
   @include desktop() {
-    // top: -104px;
     left: 180px;
     width: 460px;
     height: 574px;
   }
 }
-.gallery-swiper {
-  position: relative;
-  left: 120px;
-  display: flex;
-  gap: 16px;
-  margin-bottom: 27px;
 
-  @include tablet() {
-    left: 0;
-    gap: 40px;
-    margin-bottom: 0;
+
+.btn-list {
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
   }
 }
 
-.triple-room__box {
-  @include tablet() {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: relative;
-  }
-}
-
-.triple-room__btn {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  fill: $main-dark-color;
-  cursor: pointer;
-}
-.triple-room__icon {
-  @include desktop() {
-    fill: $modal-placeholder;
-  }
-}
-.btn-list__btn {
-  @include button($main-dark-color);
-  &:hover,
-  &:focus {
-    border: 2px solid $accent-color;
-  }
-}
 .btn-list__item:not(:last-child) {
   margin-bottom: 16px;
 }
+.btn-list__btn {
+  background-color: $main-dark-color;
+  color: $accent-color;
+  width: 236px;
+  padding: 14px 0;
+  border: 2px solid $logo-header-room-color;
+  border-radius: 25px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
+  &:focus {
+    background-color: $main-light-color;
+    border-color: $accent-color;
+  }
+
+}
+
+.button-link {
+  display: inline-block;
+  text-align: center;
+}
 
 .triple-room__slider-wrapper {
   position: absolute;

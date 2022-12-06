@@ -236,7 +236,7 @@
    width: 284px;
    border-radius: 2px;
    overflow: hidden;
-   box-shadow: slider-wrapper-shadow;
+   
 
    @media screen and (min-width: 1024px) {
       bottom: 104px;
@@ -275,7 +275,7 @@
       width: 194px;
 
       &:nth-child(1n) {
-         box-shadow: $slider-item-shadow;
+         // box-shadow: $slider-item-shadow;
       }
 
       @include desktop {
@@ -293,12 +293,12 @@
 
    @media screen and (min-width: 1024px) {
       justify-content: space-between;
-      bottom: 40px;
+      bottom: 47px;
       left: 377px;
    }
 
    @media screen and (min-width: 1280px) {
-      bottom: 40px;
+      bottom: 47px;
       left: 542px;
    }
 
@@ -319,6 +319,7 @@
          background-repeat: no-repeat;
          background-size: cover;
          background-color: transparent;
+         cursor: pointer;
       }
 
       &.slick-next {
@@ -328,6 +329,7 @@
          background-repeat: no-repeat;
          background-size: cover;
          background-color: transparent;
+         cursor: pointer;
       }
    }
 }
