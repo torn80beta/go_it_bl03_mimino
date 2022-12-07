@@ -307,13 +307,12 @@
   height: 18px;
 
   @media screen and (min-width: 1024px) {
-    /* justify-content: space-between; */
+    justify-content: space-between;
     bottom: 40px;
     left: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-    /* justify-content: space-between; */
     bottom: 57px;
     left: 86px;
   }
