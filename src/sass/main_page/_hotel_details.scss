@@ -27,7 +27,7 @@
     }
 
     @media screen and (min-width: 415px) {
-      max-width: 1024px;
+      max-width: 1023px;
       background-image: linear-gradient
           (to right, ($background-section-color, $background-section-color)),
         url(../images/homepage/background-hotel_1024.jpg);
@@ -39,7 +39,7 @@
           (to right, ($background-section-color, $background-section-color)),
         url(../images/homepage/background-hotel_1024@2x.jpg);
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       max-width: 1280px;
       height: 620px;
       background-image: linear-gradient(
