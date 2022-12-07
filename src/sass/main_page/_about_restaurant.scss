@@ -59,22 +59,21 @@
     // padding: 120px 0 120px;
     height: 1275px;
   }
-}
-
-.restaurant-about-section-container {
-  max-width: 414px;
-  background-image: linear-gradient(
-    to right,
-    $background-light-color 138px,
-    $bg-gradient-color 139px,
-    $background-light-color 140px,
-    $background-light-color 273px,
-    $bg-gradient-color 274px,
-    $background-light-color 275px
-  );
+  @include respond-to('max', 'phone') {
+    max-width: 414px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-color 138px,
+      $bg-gradient-color 139px,
+      $background-light-color 140px,
+      $background-light-color 273px,
+      $bg-gradient-color 274px,
+      $background-light-color 275px
+    );
+  }
 
   @media screen and (min-width: 1024px) {
-    width: 1024px;
+    max-width: 1024px;
     background-image: linear-gradient(
       to right,
       $background-light-color 278px,
@@ -90,7 +89,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    max-width: 1280px;
     background-image: linear-gradient(
       to right,
       $background-light-color 338px,
@@ -104,7 +103,9 @@
       $background-light-color 943px
     );
   }
+}
 
+.restaurant-about-section-container {
   @media screen and (max-width: 414px) {
     overflow: hidden;
   }
@@ -115,6 +116,7 @@
   margin: 0 auto;
   @include respond-to('min', 'phone') {
     width: screen-width('phone');
+    //width: 1150px;
   }
   @include respond-to('min', 'tablet') {
     width: screen-width('tablet');
