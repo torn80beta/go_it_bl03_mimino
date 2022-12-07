@@ -1,4 +1,5 @@
 .restaurant-details {
+  overflow: hidden;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
@@ -59,6 +60,9 @@
 
 .restaurant-details-section-container {
   overflow: hidden;
+  @media screen and (min-width: 415px) {
+    overflow: visible;
+  }
   margin-right: 0;
   min-width: 320px;
   //padding: 0 15px;
@@ -293,28 +297,38 @@
     // overflow: hidden;
     left: 35px;
     margin-bottom: 60px;
-    @include respond-to('max', 'tablet') {
+    @media screen and (max-width: 414px) {
       max-width: 365px;
-      // padding-bottom: 60px;
-      // margin-bottom: 10px;
     }
+    @media screen and (min-width: 415px) {
+      width: 645px;
+    }
+    // @include respond-to('max', 'tablet') {
+    //   max-width: 365px;
+    // }
   }
   &__container {
     width: 365px;
-
-    @include respond-to('min', 'tablet') {
-      width: 682px;
+    @media screen and (min-width: 415px) {
+      // width: 682px;
+      width: 645px;
     }
+    // @include respond-to('min', 'tablet') {
+    //   width: 682px;
+    //}
     @include respond-to('min', 'desktop') {
-      width: 886px;
+      width: 873px;
     }
   }
   & .slick-track {
     position: relative;
     display: flex;
     gap: 26px;
-    @include respond-to('min', 'tablet') {
-      gap: 34px;
+    // @include respond-to('min', 'tablet') {
+    //   gap: 34px;
+    // }
+    @media screen and (min-width: 415px) {
+      gap: 26px;
     }
     @include respond-to('min', 'desktop') {
       gap: 87px;
@@ -325,13 +339,23 @@
   }
 
   &__item--small-tablet {
-    @include respond-to('min', 'tablet') {
+    // @include respond-to('min', 'tablet') {
+    //   width: 162px;
+    //   height: 270px;
+    // }
+    @media screen and (min-width: 415px) {
       width: 162px;
       height: 270px;
     }
   }
   &__image--small-tablet {
-    @include respond-to('min', 'tablet') {
+    // @include respond-to('min', 'tablet') {
+    //   width: 162px;
+    //   height: 270px;
+    //   object-position: center;
+    //   object-fit: cover;
+    // }
+    @media screen and (min-width: 415px) {
       width: 162px;
       height: 270px;
       object-position: center;
