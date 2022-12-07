@@ -1,7 +1,6 @@
 .about-hotel {
   max-width: 1280px;
   margin: 0 auto;
-  height: 1191px;
   overflow-x: clip;
   background-color: $logo-header-room-color;
 
@@ -62,7 +61,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 18px;
-    padding-bottom: 72px;
+    padding-bottom: 349px;
     margin: 0 auto;
 
     @include mobile {
@@ -80,13 +79,14 @@
     @include desktop {
       max-width: 100%;
       padding-top: 120px;
-      padding-bottom: 122px;
+      padding-bottom: 197px;
+      padding-left: 85px;
+      padding-right: 85px;
     }
   }
 
   &__title-about {
     margin-left: auto;
-    margin-right: 0;
     margin-bottom: 6px;
 
     font-family: 'Times New Roman';
@@ -97,7 +97,6 @@
     color: $subtitles-color;
 
     @include tablet {
-      margin-left: 660px;
       margin-right: 0;
       margin-bottom: 4px;
       width: 307px;
@@ -105,7 +104,6 @@
     }
 
     @include desktop {
-      margin-left: 880px;
       margin-right: 0;
       margin-bottom: 4px;
       width: 304px;
@@ -115,7 +113,6 @@
 
   &__logo-about {
     margin-left: auto;
-    margin-right: 0;
     margin-bottom: 16px;
     font-family: 'Film P3';
     font-weight: 700;
@@ -127,16 +124,12 @@
     text-transform: uppercase;
 
     @include tablet {
-      margin-left: 765px;
-      margin-right: 0;
       font-size: 64px;
       line-height: 1.078;
       margin-bottom: 24px;
     }
 
     @include desktop {
-      margin-left: 980px;
-      margin-right: 0;
       margin-bottom: 24px;
       font-size: 64px;
       line-height: 1.078;
@@ -145,7 +138,6 @@
 
   &__text-couch {
     margin-left: auto;
-    margin-right: 0;
     margin-bottom: 382px;
     max-width: 242px;
 
@@ -158,17 +150,13 @@
     color: $text-rest-homepage-color;
 
     @include tablet {
-      margin-left: 550px;
-      margin-right: 0;
-      margin-bottom: 45px;
+      margin-bottom: 142px;
       min-width: 419px;
       font-size: 16px;
     }
 
     @include desktop {
-      margin-left: 695px;
-      margin-right: 0;
-      margin-bottom: 45px;
+      margin-bottom: 162px;
       min-width: 488px;
       font-size: 16px;
     }
@@ -198,7 +186,6 @@
     @include desktop {
       width: 460px;
       height: 574px;
-      top: -150px;
       left: 180px;
     }
   }
@@ -206,24 +193,22 @@
 
 .hotel-hall {
   display: flex;
-  align-items: center;
   margin-left: auto;
-  /* width: 710px; */
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 262px;
     width: 710px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 207px;
-    width: 804px;
+    width: 816px;
   }
 
   &__text-hall {
-    // margin-top: 350px;
+    margin-top: 70px;
+    margin-right: 21px;
     width: 163px;
     height: 120px;
+    
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -235,18 +220,19 @@
 
     @include tablet {
       min-width: 312px;
+      margin-right: 48px;
       font-size: 16px;
     }
 
     @include desktop {
       min-width: 311px;
       font-size: 16px;
+      margin-right: 45px;
     }
   }
 
   &__photo-hall {
     min-width: 200px;
-    margin-left: 21px;
 
     background: $background-img-color;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -254,11 +240,9 @@
 
     @include tablet {
       min-width: 350px;
-      margin-left: 48px;
     }
 
     @include desktop {
-      /* position: absolute; */
       width: 460px;
       height: 574px;
       top: 360px;
