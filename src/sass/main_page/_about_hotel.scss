@@ -220,6 +220,7 @@
 
     @include tablet {
       min-width: 312px;
+      margin-top: 200px;
       margin-right: 48px;
       font-size: 16px;
     }
@@ -255,7 +256,7 @@
 
 .about-hotel__slider-wrapper {
   position: absolute;
-  top: 874px;
+  bottom: 72px;
   right: 84px;
   width: 330px;
   border-radius: 2px;
@@ -268,26 +269,26 @@
       margin-left: 85px;
     }
 
-    @media screen and (min-width: 1024px) {
-      top: 830px;
-      right: 549px;
-      width: 428px;
+  @media screen and (min-width: 1024px) {
+    bottom: 96px;
+    right: 549px;
+    width: 428px;
 
-      & .slick-track {
-          gap: 40px;
-          margin-left: 0px;
-        }
-    }
+    & .slick-track {
+        gap: 40px;
+        margin-left: 0px;
+      }
+  }
 
-    @media screen and (min-width: 1280px) {
-      top: 760px;
-      right: 665px;
-      width: 530px;
-    }
+  @media screen and (min-width: 1280px) {
+    bottom: 119px;
+    right: 665px;
+    width: 530px;
+  }
 
-    & .slick-list {
-      overflow: hidden;
-    }
+  & .slick-list {
+    overflow: hidden;
+  }
 }
 
 .about-hotel__slick-item:nth-child(1n) {
@@ -300,21 +301,21 @@
 
 .about-hotel__slider-nav {
   position: absolute;
-  top: 1146px;
+  bottom: 28px;
   left: 16px;
   width: 94px;
   height: 18px;
 
   @media screen and (min-width: 1024px) {
-    justify-content: space-between;
-    bottom: 4px;
+    /* justify-content: space-between; */
+    bottom: 40px;
     left: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-    justify-content: space-between;
-    bottom: -88px;
-    left: 90px;
+    /* justify-content: space-between; */
+    bottom: 57px;
+    left: 86px;
   }
 
   & .slick-arrow {
