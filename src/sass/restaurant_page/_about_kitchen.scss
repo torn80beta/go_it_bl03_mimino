@@ -92,7 +92,7 @@
   font-family: 'Times New Roman', sans-serif;
   font-size: 20px;
   line-height: calc(23 / 20);
-  color: #b4b4b4;
+  color: $subtitles-color;
   text-align: left;
   margin-bottom: 12px;
 
@@ -107,7 +107,7 @@
   width: 127px;
   height: 43px;
   margin-bottom: 12px;
-  fill: #494848;
+  fill: $logo-rest-hotel-color;
 
   @media screen and (min-width: 1024px) {
     width: 202px;
@@ -121,14 +121,14 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
-  color: #5f5f5f;
+  color: $text-rest-homepage-color;
 
   &--brown {
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
-    color: #c79002;
+    color: $second-accent-color;
   }
 
   @media screen and (min-width: 1024px) {
@@ -149,9 +149,8 @@
   max-height: 322px;
   margin-bottom: 32px;
   margin-left: auto;
-  background-color: #939393;
   border-radius: 2px;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: $small-images-shadow;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -159,7 +158,7 @@
     right: 112px;
     min-width: 400px;
     min-height: 524px;
-    box-shadow: 5px 5px 70px 17px $shadow-color-photo;
+    box-shadow: $big-images-shadow;
   }
 
   @media screen and (min-width: 1280px) {
@@ -168,7 +167,7 @@
     right: 180px;
     min-width: 460px;
     min-height: 574px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: $big-images-shadow;
   }
 }
 
@@ -193,14 +192,13 @@
   height: 278px;
   margin-right: 20px;
   border-radius: 2px;
-  background-color: #939393;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: $small-images-shadow;
 
   @media screen and (min-width: 1024px) {
     min-width: 350px;
     min-height: 500px;
     margin-right: 48px;
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: $big-images-shadow;
   }
 
   @media screen and (min-width: 1280px) {
@@ -283,7 +281,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    justify-content: space-between;
     bottom: 40px;
     right: 88px;
   }
@@ -319,114 +316,3 @@
     }
   }
 }
-
-/* 
-.about-kitchen__slider-wrapper--left {
-    position: absolute;
-    top: 879px;
-    right: 84px;
-    width: 330px;
-    border-radius: 2px;
-    overflow: hidden;
-    box-shadow: slider-wrapper-shadow;
-    // outline: 1px solid black;
-
-    @media screen and (min-width: 1024px) {
-        top: 948px;
-        right: 549px;
-        width: 428px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        top: 908px;
-        right: 665px;
-        width: 530px;
-    }
-
-    & .slick-list {
-        overflow: hidden;
-    }
-
-    & .slick-track {
-        display: flex;
-    }
-}
-
-.about-kitchen__slick-item--left {
-    min-width: 330px;
-    padding-left: 85px;
-    margin-left: -61px;
-    box-shadow: $slider-item-shadow;
-    // outline: 1px solid black;
-
-    @media screen and (min-width: 1024px) {
-        min-width: 428px;
-        padding-left: 234px;
-        margin-left: -194px;        
-    }
-
-    @media screen and (min-width: 1280px) {
-        min-width: 530px;
-        padding-left: 285px;
-        margin-left: -245px;
-    }
-
-    & .slick__box {
-        border-radius: 2px;
-        overflow: hidden;
-
-        &:nth-child(1n) {
-            box-shadow: $slider-item-shadow;
-        }
-    }
-}
-
-.slider-nav--left {
-    position: absolute;
-    bottom: -284px;
-    left: 18px;
-    width: 94px;
-    height: 18px;
-
-    @media screen and (min-width: 1024px) {
-        justify-content: space-between;
-        bottom: 40px;
-        left: 63px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        justify-content: space-between;
-        bottom: 40px;
-        left: 88px;
-    }
-
-    & .slick-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-9px);
-        width: 30px;
-        height: 18px;
-        z-index: 10;
-        font-size: 0;
-        border: none;
-
-        &.slick-prev {
-            left: 0;
-            background: url('../images/svg/slider-prev-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-        }
-
-        &.slick-next {
-            right: 0;
-            background: url('../images/svg/slider-next-button.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: transparent;
-        }
-    }
-}
-*/

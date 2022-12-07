@@ -1,9 +1,13 @@
 .amenities{
+    @media screen and (max-width: 1280px) {
+    background-color: $background-light-color;
+    }
 
+    &__section{
         max-width: 414px;
         padding: 32px 15px;
         margin: 0 auto;
-        background-color: $background-light-color;
+        
         
 
         @media screen and (min-width: 1024px) {
@@ -26,6 +30,7 @@
                             $bg-gradient-color 942px,
                             $background-light-color 943px);
         }
+    }
 
     &__title{
         margin-bottom: 16px;

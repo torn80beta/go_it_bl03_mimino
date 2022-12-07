@@ -1,52 +1,60 @@
 .hotel-section-room-container {
   position: relative;
-  max-width: 1280px;
+  max-width: 414px;
   margin-left: auto;
   margin-right: auto;
   padding: 32px 15px;
-  background-image: linear-gradient(
-    to right,
-    $background-light-color 138px,
-    $bg-gradient-color 139px,
-    $background-light-color 140px,
-    $background-light-color 273px,
-    $bg-gradient-color 274px,
-    $background-light-color 275px
-  );
 
-  @media screen and (min-width: 1024px) {
-    width: 1024px;
-    padding: 64px 47px 104px;
-    background-image: linear-gradient(
-      to right,
-      $background-light-color 278px,
-      $bg-gradient-color 279px,
-      $background-light-color 280px,
-      $background-light-color 511px,
-      $bg-gradient-color 512px,
-      $background-light-color 513px,
-      $background-light-color 745px,
-      $bg-gradient-color 746px,
-      $background-light-color 747px
-    );
+  @include tablet {
+    max-width: 1024px;
+      padding: 64px 47px 104px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding: 72px 85px 182px;
-    background-image: linear-gradient(
-      to right,
-      $background-light-color 338px,
-      $bg-gradient-color 339px,
-      $background-light-color 340px,
-      $background-light-color 639px,
-      $bg-gradient-color 640px,
-      $background-light-color 641px,
-      $background-light-color 941px,
-      $bg-gradient-color 942px,
-      $background-light-color 943px
-    );
+  @include desktop {
+  max-width: 1280px;
+  padding: 72px 85px 182px;
   }
+  
+}
+
+.hotel-section-room__wrapper {
+  margin: 0 auto;
+    max-width: 414px;
+    background-image: linear-gradient(to right,
+          $background-light-color 138px,
+          $bg-gradient-color 139px,
+          $background-light-color 140px,
+          $background-light-color 273px,
+          $bg-gradient-color 274px,
+          $background-light-color 275px);
+    
+      @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+        background-image: linear-gradient(to right,
+            $background-light-color 278px,
+            $bg-gradient-color 279px,
+            $background-light-color 280px,
+            $background-light-color 511px,
+            $bg-gradient-color 512px,
+            $background-light-color 513px,
+            $background-light-color 745px,
+            $bg-gradient-color 746px,
+            $background-light-color 747px);
+      }
+    
+      @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        background-image: linear-gradient(to right,
+            $background-light-color 338px,
+            $bg-gradient-color 339px,
+            $background-light-color 340px,
+            $background-light-color 639px,
+            $bg-gradient-color 640px,
+            $background-light-color 641px,
+            $background-light-color 941px,
+            $bg-gradient-color 942px,
+            $background-light-color 943px);
+      }
 }
 
 .hotel-section-room {
@@ -313,7 +321,7 @@
   width: 236px;
   padding: 14px 0px;
   text-decoration: none;
-  border: 2px solid $main-dark-color;
+  border: 2px solid $main-light-color;
   cursor: pointer;
   justify-content: center;
   align-items: center;

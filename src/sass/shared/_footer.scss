@@ -213,7 +213,7 @@ fill: $icons-footer-color;
  
  .up-button {
     position: fixed;
-    bottom: 70px;
+    bottom: 65px;
     right: 15px;
 
     @media screen and (min-width: 470px) {
@@ -230,6 +230,6 @@ fill: $icons-footer-color;
  .up-button__link {
     width: 45px;
     height: 80px;
-    fill: #f3c653;
+    fill: $accent-color;
     border-radius: 12px;
  }
