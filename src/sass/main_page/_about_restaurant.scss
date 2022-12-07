@@ -48,6 +48,7 @@
   //   );
   // }
   max-width: 1280px;
+  background-color: $background-light-color;
   margin: 0 auto;
   // padding: 16px 0 72px;
   @include respond-to('min', 'tablet') {
@@ -59,18 +60,67 @@
     // padding: 120px 0 120px;
     height: 1275px;
   }
-  @include respond-to('max', 'phone') {
-    max-width: 414px;
-    background-image: linear-gradient(
-      to right,
-      $background-light-color 138px,
-      $bg-gradient-color 139px,
-      $background-light-color 140px,
-      $background-light-color 273px,
-      $bg-gradient-color 274px,
-      $background-light-color 275px
-    );
+  // @include respond-to('max', 'phone') {
+  //   max-width: 414px;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $background-light-color 138px,
+  //     $bg-gradient-color 139px,
+  //     $background-light-color 140px,
+  //     $background-light-color 273px,
+  //     $bg-gradient-color 274px,
+  //     $background-light-color 275px
+  //   );
+  // }
+
+  // @media screen and (min-width: 1024px) {
+  //   max-width: 1024px;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $background-light-color 278px,
+  //     $bg-gradient-color 279px,
+  //     $background-light-color 280px,
+  //     $background-light-color 511px,
+  //     $bg-gradient-color 512px,
+  //     $background-light-color 513px,
+  //     $background-light-color 745px,
+  //     $bg-gradient-color 746px,
+  //     $background-light-color 747px
+  //   );
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //   max-width: 1280px;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $background-light-color 338px,
+  //     $bg-gradient-color 339px,
+  //     $background-light-color 340px,
+  //     $background-light-color 639px,
+  //     $bg-gradient-color 640px,
+  //     $background-light-color 641px,
+  //     $background-light-color 941px,
+  //     $bg-gradient-color 942px,
+  //     $background-light-color 943px
+  //   );
+  // }
+}
+
+.restaurant-about-section-container {
+  @media screen and (max-width: 414px) {
+    overflow: hidden;
   }
+
+  max-width: 414px;
+  background-image: linear-gradient(
+    to right,
+    $background-light-color 138px,
+    $bg-gradient-color 139px,
+    $background-light-color 140px,
+    $background-light-color 273px,
+    $bg-gradient-color 274px,
+    $background-light-color 275px
+  );
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
@@ -102,12 +152,6 @@
       $bg-gradient-color 942px,
       $background-light-color 943px
     );
-  }
-}
-
-.restaurant-about-section-container {
-  @media screen and (max-width: 414px) {
-    overflow: hidden;
   }
   margin-right: 0;
   min-width: 320px;
@@ -196,6 +240,12 @@
     font-size: 16px;
     line-height: calc(20 / 16);
   }
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    margin-bottom: 142px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
   @include respond-to('min', 'desktop') {
     margin-bottom: 162px;
   }
@@ -203,6 +253,7 @@
 .restaurant-about__wrapper-inside {
   @include respond-to('max', 'tablet') {
     display: flex;
+    //flex-direction: column;
     gap: 20px;
     align-items: center;
     margin-bottom: 32px;
@@ -210,6 +261,9 @@
     // @media (min-width: 414px) and (max-width: 1083px) {
     //   margin-bottom: -28px;
     // }
+  }
+  @media screen and (min-width: 1024px) {
+    display: block;
   }
 }
 .restaurant-about__wrapper-second {
@@ -269,6 +323,7 @@
   @include respond-to('min', 'tablet') {
     width: 350px;
     height: 500px;
+    margin-left: 0;
   }
   @include respond-to('min', 'desktop') {
     width: 460px;
