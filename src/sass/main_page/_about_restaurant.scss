@@ -62,7 +62,7 @@
 }
 
 .restaurant-about-section-container {
-  width: 414px;
+  max-width: 414px;
   background-image: linear-gradient(
     to right,
     $background-light-color 138px,
@@ -309,7 +309,12 @@
   &__wrapper {
     position: relative;
     left: 70px;
+    margin: 0;
+
     box-shadow: $slider-wrapper-shadow;
+    @include respond-to('max', 'tablet') {
+      max-width: 328px;
+    }
 
     @include respond-to('min', 'desktop') {
       left: 10px;
@@ -317,7 +322,6 @@
   }
   &__container {
     width: 330px;
-    
 
     @include respond-to('min', 'tablet') {
       width: 430px;
