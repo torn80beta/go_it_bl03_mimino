@@ -5,8 +5,7 @@
 
   &__content {
     position: relative;
-    padding: 24px 15px 40px;
-    height: 735px;
+
     margin: 0 auto;
     background-color: $main-dark-color;
     background-image: linear-gradient(
@@ -27,7 +26,7 @@
     }
 
     @media screen and (min-width: 415px) {
-      max-width: 1024px;
+      max-width: 1023px;
       background-image: linear-gradient
           (to right, ($background-section-color, $background-section-color)),
         url(../images/homepage/background-hotel_1024.jpg);
@@ -39,9 +38,9 @@
           (to right, ($background-section-color, $background-section-color)),
         url(../images/homepage/background-hotel_1024@2x.jpg);
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
       max-width: 1280px;
-      height: 620px;
+
       background-image: linear-gradient(
           to right,
           ($background-section-color, $background-section-color)
@@ -61,6 +60,7 @@
 
   &__liner-gradient {
     margin: 0 auto;
+    height: 100%;
     max-width: 414px;
     background-image: linear-gradient(
       to right,
@@ -107,6 +107,7 @@
 
   &__container {
     margin: 0 auto;
+    padding: 24px 15px 40px;
 
     @media screen and (min-width: 414px) {
       max-width: 1023px;
@@ -117,7 +118,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      width: 1280px;
+      max-width: 1280px;
     }
   }
 
