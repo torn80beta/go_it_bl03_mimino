@@ -218,7 +218,9 @@
   position: absolute;
   top: 233px;
   right: 40px;
-  width: 374px;
+  /* left: 0px; */
+  /* width: 374px; */
+  width: 662px;
   border-radius: 2px;
   overflow: hidden;
   box-shadow: slider-wrapper-shadow;
@@ -226,12 +228,18 @@
   & .slick-track {
     display: flex;
     gap: 20px;
-    margin-left: 100px;
+    margin-left: -100px;
+  }
+
+  @media screen and (min-width: 756px) {
+    right: none;
+    left: 47px;
   }
 
   @media screen and (min-width: 1024px) {
     top: 254px;
-    right: 315px;
+    /* right: 315px; */
+    /* left: 0px; */
     width: 662px;
 
     & .slick-track {
@@ -242,7 +250,7 @@
 
   @media screen and (min-width: 1280px) {
     top: 254px;
-    right: 354px;
+    left: 52px;
     width: 874px;
 
     & .slick-track {
