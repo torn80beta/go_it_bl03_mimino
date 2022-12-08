@@ -169,7 +169,6 @@
     display: block;
     width: 244px;
     margin-right: auto;
-    margin-left: 15px;
     margin-bottom: 32px;
 
     background: $background-img-color;
@@ -194,7 +193,7 @@
 }
 
 .hotel-hall {
-  display: flex;
+  display: flex;align-items: center;
   margin-left: auto;
 
 
@@ -207,7 +206,7 @@
   }
 
   &__text-hall {
-   
+  //  width: 163px;
     margin-right: 21px;
     
 
@@ -220,12 +219,12 @@
     color: $second-accent-color;
 
     @include mobile {
-      margin-top: 70px;
+      // margin-top: 70px;
     }
 
     @include tablet {
       min-width: 312px;
-      margin-top: 200px;
+      
       margin-right: 48px;
       font-size: 16px;
     }
@@ -233,6 +232,7 @@
     @include desktop {
       min-width: 311px;
       font-size: 16px;
+  margin-top: -100px;
       margin-right: 45px;
     }
   }
@@ -246,11 +246,11 @@
     border-radius: 2px;
 
     @include tablet {
-      min-width: 350px;
+      max-width: 350px;
     }
 
     @include desktop {
-      width: 460px;
+      max-width: 460px;
       height: 574px;
       top: 360px;
       right: 85px;
