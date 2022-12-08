@@ -167,7 +167,7 @@
     top: 210px;
     left: 15px;
     display: block;
-    width: 244px;
+    
     margin-right: auto;
     margin-bottom: 32px;
 
@@ -176,8 +176,12 @@
     border-radius: 2px;
     z-index: 1;
 
+    @include tablet-down {
+      min-width: 244px;
+      height: 322px;
+    }
+
     @include tablet {
-      position: absolute;
       top: -24px;
       left: 112px;
       width: 400px;
