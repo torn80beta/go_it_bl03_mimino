@@ -211,10 +211,15 @@
   }
 }
 
+// slider-------------------------------->
+
 .about-kitchen__slider-wrapper {
   position: absolute;
-  bottom: 0;
-  right: 0;
+
+  @media screen and (min-width: 1280px) {
+    right: 85px;
+    bottom: 104px;
+  }
 }
 
 .about-kitchen__slider {
@@ -226,19 +231,19 @@
   box-shadow: $slider-wrapper-shadow;
 
   @media screen and (min-width: 1024px) {
-    top: 948px;
-    left: 536px;
+    // top: 948px;
+    // left: 536px;
     // width: 428px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 908px;
-    left: 665px;
+    // bottom: 0;
+    // left: 0;
     // width: 530px;
   }
 
   & .slick-list {
-    width: 404px;
+    // width: 404px;
     overflow: hidden;
 
     @media screen and (min-width: 1024px) {
@@ -246,7 +251,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      width: 530px;
+      // width: 530px;
     }
   }
 
@@ -289,21 +294,21 @@
 
 .about-kitchen__slider-nav {
   position: absolute;
-  bottom: -284px;
-  right: 18px;
+  bottom: 0;
+  right: 0;
   width: 94px;
   height: 18px;
 
   @media screen and (min-width: 1024px) {
     justify-content: space-between;
-    bottom: 40px;
-    right: 63px;
+    bottom: -50px;
+    right: 50px;
   }
 
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
-    bottom: 40px;
-    right: 88px;
+    bottom: -60px;
+    right: 60px;
   }
 
   & .slick-arrow {
