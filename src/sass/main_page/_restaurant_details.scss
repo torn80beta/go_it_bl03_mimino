@@ -130,7 +130,6 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    //max-width: 1280px;
     background-image: linear-gradient(
       to right,
       $bg-gradient-homepage-add 338px,
@@ -169,14 +168,12 @@
   }
 }
 .restaurant-details__container {
-  // padding: 24px 0 40px;
   @include respond-to('min', 'tablet') {
     display: flex;
     flex-direction: row-reverse;
     //gap: 32px;
   }
 }
-
 .restaurant-details__wrapper-first {
   display: flex;
   // flex-shrink: 1;
@@ -196,20 +193,17 @@
   }
 }
 .restaurant-details__button {
-  // display: block;
-  // width: 236px;
-  // align-self: center;
   @include button($main-dark-color);
   &:hover,
   &:focus {
     border: 2px solid $accent-color;
   }
 }
-.restaurant-details__logo {
+.restaurant-details__logo-name {
   padding: 0;
   margin: 0 0 12px;
-  font-family: 'Film P3';
-  // font-family: 'Film P3';
+  text-transform: uppercase;
+  font-family: 'Film P3', sans-serif;
   color: $main-light-color;
   font-weight: 700;
   font-size: 40px;
@@ -220,9 +214,6 @@
   @include respond-to('max', 'tablet') {
     margin-left: 125px;
   }
-  // @include respond-to('max', 'phone') {
-  //   margin-left: calc((100vw - 414px) / 414 * 125);
-  // }
   @include respond-to('min', 'tablet') {
     font-size: 64px;
     line-height: calc(69 / 64);
@@ -303,19 +294,12 @@
     @media screen and (min-width: 415px) {
       width: 645px;
     }
-    // @include respond-to('max', 'tablet') {
-    //   max-width: 365px;
-    // }
   }
   &__container {
     width: 365px;
     @media screen and (min-width: 415px) {
-      // width: 682px;
       width: 645px;
     }
-    // @include respond-to('min', 'tablet') {
-    //   width: 682px;
-    //}
     @include respond-to('min', 'desktop') {
       width: 873px;
     }
@@ -324,9 +308,6 @@
     position: relative;
     display: flex;
     gap: 26px;
-    // @include respond-to('min', 'tablet') {
-    //   gap: 34px;
-    // }
     @media screen and (min-width: 415px) {
       gap: 26px;
     }
@@ -339,22 +320,12 @@
   }
 
   &__item--small-tablet {
-    // @include respond-to('min', 'tablet') {
-    //   width: 162px;
-    //   height: 270px;
-    // }
     @media screen and (min-width: 415px) {
       width: 162px;
       height: 270px;
     }
   }
   &__image--small-tablet {
-    // @include respond-to('min', 'tablet') {
-    //   width: 162px;
-    //   height: 270px;
-    //   object-position: center;
-    //   object-fit: cover;
-    // }
     @media screen and (min-width: 415px) {
       width: 162px;
       height: 270px;
