@@ -4,5 +4,7 @@ $(document).ready(function () {
     arrows: true,
     speed: 300,
     cssEase: 'linear',
+    variableWidth: true,
+    centerMode: true,
   });
 });
