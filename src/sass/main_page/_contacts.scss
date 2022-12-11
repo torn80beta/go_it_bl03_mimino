@@ -181,6 +181,17 @@
         @include desktop {
             gap: 10px;
          }
+         &:hover,
+         &:focus {
+             border-color: $accent-color;
+             color: $accent-color;
+         }
+     
+         &:hover .home-contacts__icon,
+         &:focus .home-contacts__icon { 
+         fill: $accent-color;  
+        }
+
         }
 
     &__location {
@@ -201,6 +212,16 @@
         @include tablet {
                 margin-right: 6.58px;
             }
+            &:hover,
+            &:focus {
+                border-color: $accent-color;
+                color: $accent-color;
+            }
+        
+            &:hover .home-contacts__icon,
+            &:focus .home-contacts__icon { 
+            fill: $accent-color;  
+           }
         }        
 
     &__icon {
