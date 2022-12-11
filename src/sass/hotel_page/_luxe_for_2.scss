@@ -307,23 +307,27 @@
       border: none;
 
       &.slick-prev {
-         left: 0;
-         background: url('../images/svg/slider-prev-button.svg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-color: transparent;
-         cursor: pointer;
-      }
-
+            left: 0;
+            -webkit-mask-image: url('../images/svg/slider-prev-button.svg');
+            mask-image: url('../images/svg/slider-prev-button.svg');
+            background-color: $main-dark-color;
+            cursor: pointer;
+      
+            &:hover {
+               background-color: $accent-color;
+            }
+         }
+   
       &.slick-next {
          right: 0;
-         background: url('../images/svg/slider-next-button.svg');
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-color: transparent;
+         -webkit-mask-image: url('../images/svg/slider-next-button.svg');
+         mask-image: url('../images/svg/slider-next-button.svg');
+         background-color: $main-dark-color;
          cursor: pointer;
+   
+         &:hover {
+            background-color: $accent-color;
+         }
       }
    }
 }
