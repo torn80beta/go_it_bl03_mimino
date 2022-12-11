@@ -1,17 +1,17 @@
 import $ from 'jquery';
 
 //Make sure the user has scrolled at least double the height of the browser
-var toggleHeight = $(window).outerHeight() * 2;
+var toggleHeight = $(window).outerHeight() * 1.2;
 
 
 $(window).scroll(function() {
   if ($(document).scrollTop() > toggleHeight) {
     //Adds active class to make button visible
-    $("#button").addClass("active");
+    $("#up-button").addClass("active");
     
   } else {
     //Removes active class to make button visible
-    $("#button").removeClass("active");
+    $("#up-button").removeClass("active");
   }
 });
 
