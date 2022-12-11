@@ -1,10 +1,11 @@
-.footer { 
+.footer {
     position: relative;
     margin: auto;
     max-width: 1280px;
     background-color: $footer-background-color;
     display: flex;
     justify-content: center;
+
     @media screen and (min-width: 1024px) {
         justify-content: normal;
     }
@@ -12,38 +13,39 @@
 
 .footer-grad {
     background-image: linear-gradient(to right,
-        $footer-background-color 273px,
-        $bg-gradient-footer-color 274px,
-        $footer-background-color 275px);
+            $footer-background-color 273px,
+            $bg-gradient-footer-color 274px,
+            $footer-background-color 275px);
 
     @media screen and (max-width: 414px) {
         background-image: linear-gradient(to right,
-        $footer-background-color 273px,
-        // $bg-gradient-footer-color 274px,
-        $footer-background-color 275px);
+                $footer-background-color 273px,
+                // $bg-gradient-footer-color 274px,
+                $footer-background-color 275px);
     }
 
-    @media screen and (min-width: 1024px) { 
-        margin: 0 auto;     
+
+    @media screen and (min-width: 1024px) {
+        margin: 0 auto;
         width: 1024px;
         background-image: linear-gradient(to right,
-            $footer-background-color 511px,
-            $bg-gradient-footer-color 512px,
-            $footer-background-color 513px,
-            $footer-background-color 745px,
-            $bg-gradient-footer-color 746px,
-            $footer-background-color 747px);
+                $footer-background-color 511px,
+                $bg-gradient-footer-color 512px,
+                $footer-background-color 513px,
+                $footer-background-color 745px,
+                $bg-gradient-footer-color 746px,
+                $footer-background-color 747px);
     }
 
     @media screen and (min-width: 1280px) {
         width: 1280px;
         background-image: linear-gradient(to right,
-            $footer-background-color  639px,
-            $bg-gradient-footer-color 640px,
-            $footer-background-color  641px,
-            $footer-background-color 941px,
-            $bg-gradient-footer-color 942px,
-            $footer-background-color  943px);
+                $footer-background-color 639px,
+                $bg-gradient-footer-color 640px,
+                $footer-background-color 641px,
+                $footer-background-color 941px,
+                $bg-gradient-footer-color 942px,
+                $footer-background-color 943px);
     }
 }
 
@@ -54,9 +56,11 @@
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
+
     @media screen and (max-width: 414px) {
         min-width: 320px;
     }
+
     @media screen and (min-width: 414px) {
         max-width: 414px;
     }
@@ -83,42 +87,54 @@
     margin-left: 59px;
     margin-right: 70px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus
-     {
-   color: $second-accent-color;}
 
-    @media screen and (max-width: 414px) {
-        margin-right: 30px;
-        margin-left: 10px;
+    &:hover,
+    &:focus {
+        color: $second-accent-color;
     }
 
+    @media screen and (max-width: 414px) {
+
+        margin-right: 30px;
+        margin-left: 10px;
+
+
+    }
+
+
     @media screen and (min-width: 1024px) {
+
         margin-right: 148px;
         margin-left: 154px;
         font-size: 64px;
         width: 202px;
         height: 69px;
+
+
     }
 
     @media screen and (min-width: 1280px) {
+
         margin-right: 201px;
         margin-left: 231px;
+
     }
 }
+
 
 .footer__nav {
     display: flex;
     flex-direction: column;
     color: $accent-color;
+
     @media screen and (min-width: 1024px) {
         margin-right: 137px;
-        
+
     }
 
     @media screen and (min-width: 1280px) {
         margin-right: 199px;
-        
+
     }
 }
 
@@ -130,24 +146,27 @@
     letter-spacing: 0.02em;
     color: $accent-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
-    &:focus
-     {
-   color: $second-accent-color;}
+    &:focus {
+        color: $second-accent-color;
+    }
 }
 
 .footer__link:not(:last-child) {
-        margin-bottom: 16px;
-      }
+    margin-bottom: 16px;
+}
+
 
 .footer__soc-name {
-        display: none;
-    
-        @media screen and (min-width: 1024px) {
-            display: flex;
-            margin-right: 15px;
-        }
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        margin-right: 15px;
     }
+}
+
 
 .footer__soc {
     display: flex;
@@ -155,24 +174,24 @@
     margin-top: 32px;
 
     @media screen and (min-width: 1024px) {
-    flex-direction: column-reverse;
-    margin-top: 0px;
-    gap: 0px;
-    color: $accent-color;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        gap: 0px;
+        color: $accent-color;
     }
 }
 
 .footer__icon {
     fill: $icons-footer-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover {
-        fill: $second-accent-color;  
-    }
- }
 
-@media screen and (min-width: 1024px){
-    
+    &:hover {
+        fill: $second-accent-color;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
     .footer__soc-button {
         display: flex;
         justify-content: center;
@@ -190,22 +209,21 @@
         color: $accent-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
- }
-       
-.footer__box {
-    &:hover,
-    &:focus {
-        border-color: $second-accent-color;
-        color: $second-accent-color;
-    }
 
-    &:hover .footer__icon,
-    &:focus .footer__icon { 
-        fill: $second-accent-color;  
+        &:hover,
+        &:focus {
+            border-color: $second-accent-color;
+            color: $second-accent-color;
+        }
+
+        &:hover .footer__icon,
+        &:focus .footer__icon {
+            fill: $second-accent-color;
+        }
     }
-}   
- 
+}
+
+
 .footer__box {
     display: flex;
     padding-top: 40px;
@@ -216,11 +234,11 @@
         flex-direction: row;
         padding-top: 80px;
         padding-bottom: 80px;
+
     }
 }
 
 @media screen and (min-width: 1024px) {
-
     .footer__soc-box {
         display: flex;
         flex-direction: column-reverse;
